@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/imports/new/DEC_JUEGO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DEC_JUEGO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DEC_JUEGO_tb'
