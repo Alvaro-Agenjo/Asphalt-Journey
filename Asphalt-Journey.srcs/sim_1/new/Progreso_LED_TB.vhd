@@ -45,17 +45,17 @@ architecture Behavioral of Progreso_LED_TB is
     port(
         RESET: in std_logic;                    -- Asincrono y activo a nivel alto
         CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        CARRETERA_ACTUAL : in natural;          -- Número de fases completdas
-        LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
+        CICLO: in std_logic;                    -- pulso cada vez que se cambia de fase
+        LEDS: out std_logic_vector (15 downto 0)    -- Barra de progreso
     );
     end component Progreso_LED;
     
     --señales
     signal s_reset: std_logic;
     signal s_clk: std_logic := '0';
-    signal s_carretera_actual: natural;
-    signal s_leds: std_logic_vector(0 to 15);
-    
+    signal s_ciclo: std_logic;
+    signal s_leds: std_logic_vector (15 downto 0);
+       
     --Constantes 
     constant CLK_PERIOD: time := 20 ns;
     
@@ -87,7 +87,11 @@ begin
             report "[ERROR] Expected value: " & integer'image(0) &
                    " Obtained: " & integer'image(TO_INTEGER(unsigned (s_leds)))
             severity failure;
-    
+        
+        report "***** Test light *****";
+        s_reset <= '0';
+        
+        --Fin de simulacion
         wait for 0.2* CLK_PERIOD;
         assert false
             report "[PASSED] Test passed successfully"
