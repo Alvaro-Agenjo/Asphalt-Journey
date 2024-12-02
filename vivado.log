@@ -3,52 +3,31 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Nov 30 12:57:05 2024
-# Process ID: 3548
-# Current directory: C:/Users/cesar/Documents/GitHub/Asphalt-Journey
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9792 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
-# Log file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/vivado.log
-# Journal file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey\vivado.jou
-# Running On        :DESKTOP-1HN8B7K
+# Start of session at: Mon Dec  2 17:19:59 2024
+# Process ID: 2804
+# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12268 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
+# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/vivado.log
+# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
+# Running On        :DESKTOP-A7KB9SN
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
-# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-# CPU Frequency     :2803 MHz
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency     :2496 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :16969 MB
-# Swap memory       :18253 MB
-# Total Virtual     :35223 MB
-# Available Virtual :22099 MB
+# Host memory       :8373 MB
+# Swap memory       :6979 MB
+# Total Virtual     :15352 MB
+# Available Virtual :7263 MB
 #-----------------------------------------------------------
-ststart_guopen_project C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr
-ININFO: [Project 1-313] Project file moved from 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey' since last save.
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/../../../Users/alvag/AppData/Roaming/Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/Users/alvag/AppData/Roaming/Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store'.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.ip_user_files'.
+start_gui
+open_project {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey'
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -130,306 +109,287 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 availa
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'opopen_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1537.895 ; gain = 501.03fiexit
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 13:03:54 2024...
-srcs/sources_1/new
-close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd w ]
-add_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd
-close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd w ]
-add_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd
-close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd w ]
-add_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 1488.957 ; gain = 451.137
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd
-export_ip_user_files -of_objects  [get_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd
-export_ip_user_files -of_objects  [get_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd
-import_files -norecurse {C:/Users/cesar/Documents/Estudios/Universidad/7_Cuatrimestre/Sistemas_Electronicos_Digitales/Trabajo/SUPER_DECODER/SUPER_DECODER.srcs/sources_1/new/DEC_JUEGO.vhd C:/Users/cesar/Documents/Estudios/Universidad/7_Cuatrimestre/Sistemas_Electronicos_Digitales/Trabajo/SUPER_DECODER/SUPER_DECODER.srcs/sources_1/new/DEC_TXT.vhd C:/Users/cesar/Documents/Estudios/Universidad/7_Cuatrimestre/Sistemas_Electronicos_Digitales/Trabajo/SUPER_DECODER/SUPER_DECODER.srcs/sources_1/new/DEC_NUM.vhd}
+close [ open {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd} w ]
+add_files {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd}}
 update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
+synth_design -top Progreso_LED -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top Progreso_LED -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8620
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1949.250 ; gain = 423.676
+INFO: [Common 17-344] 'synth_design' was cancelled
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-import_files -fileset sim_1 -norecurse {C:/Users/cesar/Documents/Estudios/Universidad/7_Cuatrimestre/Sistemas_Electronicos_Digitales/Trabajo/SUPER_DECODER/SUPER_DECODER.srcs/sim_1/new/DEC_TXT_tb.vhd C:/Users/cesar/Documents/Estudios/Universidad/7_Cuatrimestre/Sistemas_Electronicos_Digitales/Trabajo/SUPER_DECODER/SUPER_DECODER.srcs/sim_1/new/DEC_NUM_tb.vhd C:/Users/cesar/Documents/Estudios/Universidad/7_Cuatrimestre/Sistemas_Electronicos_Digitales/Trabajo/SUPER_DECODER/SUPER_DECODER.srcs/sim_1/new/DEC_JUEGO_tb.vhd}
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
+close [ open {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd} w ]
+add_files -fileset sim_1 {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd}}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
 update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-set_property top DEC_TXT_tb [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Progreso_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Progreso_LED_TB.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top Display_LED [current_fileset]
+set_property top Display_LED_TB [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
+update_compile_order -fileset sources_1
 update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'DEC_TXT_tb'
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'DEC_TXT_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj DEC_TXT_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/imports/new/DEC_TXT.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'DEC_TXT'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_TXT_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'DEC_TXT_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DEC_TXT_tb_behav xil_defaultlib.DEC_TXT_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DEC_TXT_tb_behav xil_defaultlib.DEC_TXT_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.DEC_TXT [dec_txt_default]
-Compiling architecture behavioral of entity xil_defaultlib.dec_txt_tb
-Built simulation snapshot DEC_TXT_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "DEC_TXT_tb_behav -key {Behavioral:sim_1:Functional:DEC_TXT_tb} -tclbatch {DEC_TXT_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source DEC_TXT_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: [FIN SIMULACION]
-Time: 260 ns  Iteration: 0  Process: /DEC_TXT_tb/sr  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_TXT_tb.vhd
-$finish called at time : 260 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_TXT_tb.vhd" Line 103
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'DEC_TXT_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1642.141 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-set_property top DEC_NUM_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-ERROR: [Common 17-180] Spawn failed: No error
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:47]
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:48]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+ERROR: [VRFC 10-2989] 'to_unsigned' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:80]
+ERROR: [VRFC 10-9434] type conversion expression type for 'std_logic_vector' cannot be uniquely determined [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:80]
+ERROR: [VRFC 10-2989] 'to_integer' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:82]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:38]
+INFO: [VRFC 10-8704] VHDL file 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1975.863 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'DEC_NUM_tb'
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'DEC_NUM_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj DEC_NUM_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/imports/new/DEC_NUM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'DEC_NUM'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_NUM_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'DEC_NUM_tb'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:47]
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:48]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+ERROR: [VRFC 10-2989] 'to_unsigned' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:80]
+ERROR: [VRFC 10-9434] type conversion expression type for 'std_logic_vector' cannot be uniquely determined [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:80]
+ERROR: [VRFC 10-2989] 'to_integer' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:82]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:38]
+INFO: [VRFC 10-8704] VHDL file 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:47]
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:48]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+ERROR: [VRFC 10-2989] 'to_unsigned' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:80]
+ERROR: [VRFC 10-9434] type conversion expression type for 'std_logic_vector' cannot be uniquely determined [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:80]
+ERROR: [VRFC 10-2989] 'to_integer' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:82]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:38]
+INFO: [VRFC 10-8704] VHDL file 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:47]
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:48]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DEC_NUM_tb_behav xil_defaultlib.DEC_NUM_tb -log elaborate.log"
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DEC_NUM_tb_behav xil_defaultlib.DEC_NUM_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.DEC_NUM [dec_num_default]
-Compiling architecture behavioral of entity xil_defaultlib.dec_num_tb
-Built simulation snapshot DEC_NUM_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "DEC_NUM_tb_behav -key {Behavioral:sim_1:Functional:DEC_NUM_tb} -tclbatch {DEC_NUM_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source DEC_NUM_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: [FIN SIMULACION]
-Time: 100 ns  Iteration: 0  Process: /DEC_NUM_tb/sr  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_NUM_tb.vhd
-$finish called at time : 100 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_NUM_tb.vhd" Line 85
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'DEC_NUM_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-set_property top DEC_JUEGO_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [VRFC 10-718] formal port <RESET> does not exist in entity <Display_LED>.  Please compare the definition of block <Display_LED> to its component declaration and its instantion to detect the mismatch. [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:43]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit display_led_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1976.762 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'DEC_JUEGO_tb'
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'DEC_JUEGO_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj DEC_JUEGO_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/imports/new/DEC_JUEGO.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'DEC_JUEGO'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_JUEGO_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'DEC_JUEGO_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DEC_JUEGO_tb_behav xil_defaultlib.DEC_JUEGO_tb -log elaborate.log"
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DEC_JUEGO_tb_behav xil_defaultlib.DEC_JUEGO_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -439,19 +399,18 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.DEC_JUEGO [dec_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.dec_juego_tb
-Built simulation snapshot DEC_JUEGO_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Compiling architecture behavioral of entity xil_defaultlib.Display_LED [display_led_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_led_tb
+Built simulation snapshot Display_LED_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "DEC_JUEGO_tb_behav -key {Behavioral:sim_1:Functional:DEC_JUEGO_tb} -tclbatch {DEC_JUEGO_tb.tcl} -log {simulate.log}"
+   with args "Display_LED_TB_behav -key {Behavioral:sim_1:Functional:Display_LED_TB} -tclbatch {Display_LED_TB.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source DEC_JUEGO_tb.tcl
+source Display_LED_TB.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -462,43 +421,590 @@ source DEC_JUEGO_tb.tcl
 #   }
 # }
 # run 1000ns
-Failure: [FIN SIMULACION]
-Time: 60 ns  Iteration: 0  Process: /DEC_JUEGO_tb/sr  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_JUEGO_tb.vhd
-$finish called at time : 60 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_JUEGO_tb.vhd" Line 81
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'DEC_JUEGO_tb_behav' loaded.
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Failure: [ERROR] Expected value: 0 Obtained: 0
+Time: 4 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+$finish called at time : 4 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" Line 83
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Display_LED_TB_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_JUEGO_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_JUEGO_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_JUEGO_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_NUM_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_JUEGO_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_JUEGO_tb.vhd:]
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2022.777 ; gain = 23.320
+close_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+INFO: [Simtcl 6-16] Simulation closed
 ERROR: [Common 17-180] Spawn failed: No error
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_JUEGO_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_TXT.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_NUM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\imports\new\DEC_JUEGO.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\imports\new\DEC_TXT_tb.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Display_LED [display_led_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_led_tb
+Built simulation snapshot Display_LED_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Display_LED_TB_behav -key {Behavioral:sim_1:Functional:Display_LED_TB} -tclbatch {Display_LED_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Display_LED_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Note: ***** Test light *****
+Time: 4 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Failure: [PASSED] Test passed successfully
+Time: 8 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+$finish called at time : 8 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Display_LED_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2034.965 ; gain = 0.703
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+ERROR: [VRFC 10-2989] 's_led' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:120]
+ERROR: [VRFC 10-2989] 's_led' is not declared [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:123]
+ERROR: [VRFC 10-9434] type conversion expression type for 'unsigned' cannot be uniquely determined [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:123]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:38]
+INFO: [VRFC 10-8704] VHDL file 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+ERROR: [VRFC 10-874] illegal selected name prefix [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:121]
+ERROR: [VRFC 10-3673] record name prefix type 'vec_test' is not a record type [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:121]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:38]
+INFO: [VRFC 10-8704] VHDL file 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+ERROR: [VRFC 10-1471] type error near t_led ; current type std_logic_vector; expected type integer [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:121]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd:38]
+INFO: [VRFC 10-8704] VHDL file 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Display_LED [display_led_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_led_tb
+Built simulation snapshot Display_LED_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Display_LED_TB_behav -key {Behavioral:sim_1:Functional:Display_LED_TB} -tclbatch {Display_LED_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Display_LED_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Note: ***** Test light *****
+Time: 4 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Failure: [ERROR] Expected value: 32768 Obtained: 0
+Time: 12 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+$finish called at time : 12 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" Line 123
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Display_LED_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2035.871 ; gain = 0.906
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:47]
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:48]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Display_LED [display_led_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_led_tb
+Built simulation snapshot Display_LED_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Display_LED_TB_behav -key {Behavioral:sim_1:Functional:Display_LED_TB} -tclbatch {Display_LED_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Display_LED_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Note: ***** Test light *****
+Time: 4 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Failure: [ERROR] Expected value: 32768 Obtained: 0
+Time: 12 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+$finish called at time : 12 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" Line 123
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Display_LED_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2036.461 ; gain = 0.562
+close_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+INFO: [Simtcl 6-16] Simulation closed
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:47]
+WARNING: [VRFC 10-9374] signal 'n_led' is used in a subtype-indication or type-definition [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd:48]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Display_LED [display_led_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_led_tb
+Built simulation snapshot Display_LED_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Display_LED_TB_behav -key {Behavioral:sim_1:Functional:Display_LED_TB} -tclbatch {Display_LED_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Display_LED_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Note: ***** Test light *****
+Time: 4 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Failure: [ERROR] Expected value: 49152 Obtained: 32768
+Time: 32 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+$finish called at time : 32 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" Line 123
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Display_LED_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2038.965 ; gain = 2.500
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Display_LED [display_led_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_led_tb
+Built simulation snapshot Display_LED_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Display_LED_TB_behav -key {Behavioral:sim_1:Functional:Display_LED_TB} -tclbatch {Display_LED_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Display_LED_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Note: ***** Test light *****
+Time: 4 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Failure: [ERROR] Expected value: 32768 Obtained: 0
+Time: 12 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+$finish called at time : 12 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" Line 123
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Display_LED_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2038.965 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Display_LED_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Display_LED_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Display_LED_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_LED_TB_behav xil_defaultlib.Display_LED_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Display_LED [display_led_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_led_tb
+Built simulation snapshot Display_LED_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Display_LED_TB_behav -key {Behavioral:sim_1:Functional:Display_LED_TB} -tclbatch {Display_LED_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Display_LED_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Note: ***** Test light *****
+Time: 4 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+Failure: [PASSED] Test passed successfully
+Time: 316 ns  Iteration: 0  Process: /Display_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd
+$finish called at time : 316 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd" Line 130
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Display_LED_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2079.586 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property is_enabled false [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd}}]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property is_enabled false [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd}}]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sim_1\new\Display_LED_TB.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.srcs\sources_1\new\Display_LED.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 19:18:45 2024...
