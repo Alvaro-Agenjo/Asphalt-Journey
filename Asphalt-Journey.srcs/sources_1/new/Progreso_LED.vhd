@@ -32,33 +32,67 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Progreso_LED is
-    generic(
-        TOTAL_CARRETERA: positive := 5        -- Número de fases hasta terminar el nivel
+    generic (
+        TOTAL_LENGTH: natural := 5
     );
     port(
-        RESET: in std_logic;                    -- Asincrono y activo a nivel alto
-        CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        ENABLE: in std_logic;                   -- Habilita la barra de progreso
-        FASE: in positive;                      -- fase en la que se encuentra el jugador
-        LEDS: out std_logic_vector (15 downto 0)    -- Barra de progreso
+        RESET_N: in std_logic;
+        CLK: in std_logic;
+        ENABLE: in std_logic;
+        PULSO: in std_logic;
+        LEDS: out std_logic_vector (0 to 15);
+        FIN_OK: out std_logic
     );
 end Progreso_LED;
 
-architecture Behavioral of Progreso_LED is
-    signal s_LEDs: std_logic_vector (LEDS'range);
-begin
+architecture Structural of Progreso_LED is
+
+     --Componente
+    component Display_LED is
     
-    process (RESET, CLK)
-    begin
-        if RESET = '1' then
-            LEDS <= (LEDS'right=>'1', others => '0');
-        elsif rising_edge(CLK) then
-            if ENABLE = '1' then
-                 
-            else
-                s_LEDs <= (others => '0');
-            end if;
-            s_LEDs <= std_logic_vector((TOTAL_CARRETERA * FASE) rem 16);             
-       end if;
-   end process;
-end Behavioral;
+    port(
+        RESET_N: in std_logic;                    -- Asincrono y activo a nivel alto
+        CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
+        N_LED: in positive;                    -- Numero de leds a iluminar
+        LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
+    );
+    end component Display_LED;
+    
+    component Logic_LED is
+    generic (
+        TOTAL_LENGTH: positive := 5     --Numero de fases del escenario
+    );
+    port(
+        RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
+        ENABLE: in std_logic;           --Habilitacion del Módulo
+        CLK: in std_logic;              --Reloj (activo solo en cambio de fase)
+        N_LED: out natural;             --Numero de leds a encender
+        FIN_OK: out std_logic           --Se ha llegado al final del escenario
+    );
+    end component Logic_LED;
+    
+    --señales intermedias
+    signal s_n_led: positive;
+   
+begin
+    Unidad_logica: Logic_LED 
+    generic map(
+        TOTAL_LENGTH => TOTAL_LENGTH     
+    )
+    port map(
+        RESET_N => RESET_N,
+        ENABLE => ENABLE,
+        CLK => PULSO,
+        N_LED => s_n_led,
+        FIN_OK => FIN_OK
+    );
+    
+    Display: Display_LED 
+    port map(
+        RESET_N => RESET_N,
+        CLK => CLK,
+        N_LED => s_n_led,
+        LEDS => LEDS
+    );
+    
+end architecture Structural;

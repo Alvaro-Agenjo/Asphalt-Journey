@@ -36,13 +36,13 @@ entity Display_LED_TB is
 end Display_LED_TB;
 
 architecture Behavioral of Display_LED_TB is
---Componente
+    --Componente
     component Display_LED is
     
     port(
         RESET_N: in std_logic;                    -- Asincrono y activo a nivel alto
         CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        N_LED: in positive;                    -- Numero de leds a iluminar
+        N_LED: in natural;                    -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     );
     end component Display_LED;
@@ -50,7 +50,7 @@ architecture Behavioral of Display_LED_TB is
     --señales
     signal s_reset_n: std_logic;
     signal s_clk: std_logic := '0';
-    signal s_n_led: positive;
+    signal s_n_led: natural := 0;
     signal s_leds: std_logic_vector (0 to 15);
        
     --Constantes 
@@ -58,13 +58,14 @@ architecture Behavioral of Display_LED_TB is
     
     --Vectores de test
    type led_test is record
-        t_n_led: positive;
+        t_n_led: natural;
         t_led: std_logic_vector( 0 to 15);
     end record;
 
     type vec_test is array (natural range <>) of led_test;
     -- Vector de pruebas
     constant value: vec_test := (
+    (t_n_led => 0,  t_led => "0000000000000000"),
     (t_n_led => 1,  t_led => "1000000000000000"),
     (t_n_led => 2,  t_led => "1100000000000000"),
     (t_n_led => 3,  t_led => "1110000000000000"),

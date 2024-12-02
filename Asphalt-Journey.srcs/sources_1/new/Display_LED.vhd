@@ -35,7 +35,7 @@ entity Display_LED is
     port (
         RESET_N: in std_logic;
         CLK: in std_logic;
-        N_LED: in positive;
+        N_LED: in natural;
         LEDS: out std_logic_vector(0 to 15)-- := (others=>'0')
     ); 
 end Display_LED;
@@ -48,7 +48,11 @@ begin
         if RESET_N = '0' then
             s_leds <= (others=> '0');
         elsif rising_edge(CLK) then 
-            s_leds (0 to N_LED-1) <= (others => '1');
+            if N_LED > 0 then 
+                s_leds (0 to N_LED-1) <= (others => '1');
+            else
+                s_leds <= (others => '0');
+            end if;
         end if;     
     end process;
     LEDS <= s_leds;
