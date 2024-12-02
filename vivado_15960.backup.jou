@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Nov 29 16:40:10 2024
-# Process ID: 25816
+# Start of session at: Mon Dec  2 19:32:23 2024
+# Process ID: 15960
 # Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28416 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8208 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
 # Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/vivado.log
 # Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
 # Running On        :DESKTOP-A7KB9SN
@@ -17,13 +17,10 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8373 MB
-# Swap memory       :7441 MB
-# Total Virtual     :15815 MB
-# Available Virtual :6019 MB
+# Swap memory       :6979 MB
+# Total Virtual     :15352 MB
+# Available Virtual :5336 MB
 #-----------------------------------------------------------
 start_gui
 open_project {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr}
 update_compile_order -fileset sources_1
-launch_simulation
-source Progreso_LED_TB.tcl
-close_sim
