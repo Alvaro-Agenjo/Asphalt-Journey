@@ -2,9 +2,9 @@
 2020.2
 May 22 2024
 19:03:11
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd,1733177792,vhdl,,,,display_led_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd,1733178435,vhdl,,,,logic_led_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd,1733179078,vhdl,,,,progreso_led_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd,1733177813,vhdl,,,,display_led,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd,1733178366,vhdl,,,,logic_led,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd,1733175853,vhdl,,,,progreso_led,,,,,,,,
+C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_JUEGO_tb.vhd,1733252005,vhdl,,,,dec_juego_tb,,,,,,,,
+C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_NUM_tb.vhd,1733251932,vhdl,,,,dec_num_tb,,,,,,,,
+C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd,1733251960,vhdl,,,,dec_txt_tb,,,,,,,,
+C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd,1733251801,vhdl,,,,dec_juego,,,,,,,,
+C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd,1733251783,vhdl,,,,dec_num,,,,,,,,
+C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd,1733251759,vhdl,,,,dec_txt,,,,,,,,
