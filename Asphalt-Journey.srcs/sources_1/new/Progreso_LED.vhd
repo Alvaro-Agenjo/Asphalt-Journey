@@ -38,6 +38,8 @@ entity Progreso_LED is
     port(
         RESET_N: in std_logic;
         CLK: in std_logic;
+        CE_1: in std_logic;
+        CE_200: in std_logic;
         ENABLE: in std_logic;
         PULSO: in std_logic;
         LEDS: out std_logic_vector (0 to 15);
@@ -51,9 +53,10 @@ architecture Structural of Progreso_LED is
     component Display_LED is
     
     port(
-        RESET_N: in std_logic;                    -- Asincrono y activo a nivel alto
+        RESET_N: in std_logic;                  -- Asincrono y activo a nivel alto
         CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        N_LED: in positive;                    -- Numero de leds a iluminar
+        CE: in std_logic;                       -- Clock enable (200 Hz)
+        N_LED: in natural;                     -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     );
     end component Display_LED;
@@ -65,7 +68,9 @@ architecture Structural of Progreso_LED is
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
         ENABLE: in std_logic;           --Habilitacion del Módulo
-        CLK: in std_logic;              --Reloj (activo solo en cambio de fase)
+        CLK: in std_logic;              --Reloj ()
+        CE: in std_logic;                --Clock enable (1 Hz);
+        PULSO: in std_logic;
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
     );
@@ -82,7 +87,9 @@ begin
     port map(
         RESET_N => RESET_N,
         ENABLE => ENABLE,
-        CLK => PULSO,
+        CLK => CLK,
+        CE => CE_1,
+        PULSO => CE_1,
         N_LED => s_n_led,
         FIN_OK => FIN_OK
     );
@@ -91,6 +98,7 @@ begin
     port map(
         RESET_N => RESET_N,
         CLK => CLK,
+        CE => CE_200,
         N_LED => s_n_led,
         LEDS => LEDS
     );
