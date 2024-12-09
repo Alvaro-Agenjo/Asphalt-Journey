@@ -33,13 +33,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity TIMER is
     generic (
-        FREQ_D: positive;
-        FREQ_CLK: positive := 100_000_000
+        FREQ_D: positive;                       --Frecuencia deseada 
+        FREQ_CLK: positive := 100_000_000       --Frecuencia del reloj
     );
     port(
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        STROBE: out std_logic 
+        RESET_N: in std_logic;                  --Reset asynchronus (active low).
+        CLK: in std_logic;                      --Clock
+        STROBE: out std_logic                   --new frec output.
     );
 end TIMER;
 
