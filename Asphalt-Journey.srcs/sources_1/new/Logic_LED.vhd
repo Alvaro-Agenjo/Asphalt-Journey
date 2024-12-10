@@ -54,31 +54,22 @@ begin
 
     process(RESET_N, CLK, SEÑAL)
         variable fase: natural :=1;    --Fase actual del escenario
-        variable flag: std_logic := '0';
     begin
         if RESET_N = '0' then
             N_LED <= 0;
             fase := 0;
             FIN_OK <= '0';
-        else
-        --solucion spageti, en teoria el pulso deberia ser igual o menor a la frec del dispositivo
-        --debo conocer la duracion del pulso que envia el contador de manuel. 
-            if rising_edge(SEÑAL) then
-                flag := '1';
-            end if; 
-            if rising_edge(CLK) then
-                if CE = '1' then
-                    if fase >= TOTAL_LENGTH then
-                        N_LED <= 16;
-                        FIN_OK <= '1';
-                    else
-                        N_LED <= 16 * FASE / TOTAL_LENGTH;
-                    end if;
-                    if flag = '1' then
-                        fase := fase +1;
-                        flag := '0';
-                    end if;
-                end if; 
+        elsif rising_edge(CLK) then
+            if CE = '1' then
+                if fase >= TOTAL_LENGTH then
+                    N_LED <= 16;
+                    FIN_OK <= '1';
+                else
+                    N_LED <= 16 * FASE / TOTAL_LENGTH;
+                end if;
+                if SEÑAL = '1' then 
+                    fase := fase +1;
+                end if;
             end if;
         end if;      
     end process;
