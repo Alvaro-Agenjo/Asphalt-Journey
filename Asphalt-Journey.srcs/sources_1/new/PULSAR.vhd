@@ -26,7 +26,7 @@ use IEEE.STD_LOGIC_TEXTIO.ALL;
 entity PULSAR is
     port (
         HABILITADO : in std_logic_vector(4 downto 0); --Botones habilitados para pulsar
-        PULSADO    : in std_logic_vector(4 downto 0); --Botón pulsado
+        PULSADO    : in std_logic_vector(4 downto 0); --Botón pulsado  
         BOTON      : out std_logic_vector(4 downto 0) --Boton habilitado ha sido pulsado
     );
     -- arriba    = 4
