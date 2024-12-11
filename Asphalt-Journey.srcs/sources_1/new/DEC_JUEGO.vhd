@@ -34,12 +34,12 @@ end DEC_JUEGO;
 architecture Behavioral of DEC_JUEGO is    
 begin
     with CODE select
-        LEDS <= "10011111" when 0, --carretera derecha
-                "11110011" when 1, --carretera izquierda
-                "11101111" when 2, --coche
+        LEDS <= "10011111" when 2, --limite derecha
+                "11110011" when 1, --limite izquierda
+                "11111111" when 0, --no road
                 "11111101" when 3, --obstáculo
-                "01001000" when 4, --S.
-                "11010100" when 5, --N.
+                "11111111" when 4, --carretera centro
+                --"11010100" when 5, --N.
                 
                 "11111111" when others;
                 

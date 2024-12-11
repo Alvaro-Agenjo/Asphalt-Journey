@@ -21,10 +21,10 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use work.MyPackage.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -33,19 +33,37 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity CRASH_DTCTR is
     port(
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        CE: in std_logic;
-        ROAD_AC: in integer;
-        ROAD_FT: in integer;
-        CAR_POS: in std_logic_vector;
-        FIN_NOK: out std_logic
+        RESET_N: in std_logic;                  -- Reset asincrono activo a nivel bajo
+        CLK: in std_logic;                      -- Reloj del sistema.
+        CE: in std_logic;                       -- CE ? quiza no.
+        SENAL: in std_logic;                    -- Pulso para cambio de escenario.
+        ROAD_AC: in integer_array (1 to 7);     -- Input codificada caretera actual
+        ROAD_FT: in integer_array (1 to 7);     -- Input codificada caretera futura
+        CAR_POS: in positive;                    -- Carril actual del coche
+        FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
     );
 end CRASH_DTCTR;
 
 architecture Behavioral of CRASH_DTCTR is
 
 begin
-
-
+    process(RESET_N, CLK)
+        
+    begin 
+        if RESET_N = '0' then
+            FIN_NOK <= '0';
+        elsif rising_edge(CLK) then
+            if CE = '1' then
+                if CAR_POS > ROAD_AC'high or CAR_POS < ROAD_AC'low then 
+                    FIN_NOK <= '1';
+                elsif SENAL = '1'then
+                    if ROAD_FT(CAR_POS) = 3 then 
+                        FIN_NOK <= '1';
+                    end if;   
+                elsif ROAD_AC(CAR_POS) = 0 then
+                    FIN_NOK <= '1';
+                end if;
+            end if;
+        end if;
+    end process;
 end Behavioral;

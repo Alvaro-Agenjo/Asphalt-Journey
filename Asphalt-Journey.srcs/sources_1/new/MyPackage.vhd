@@ -38,6 +38,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 package MyPackage is
     -- Definir un tipo de array para vectores de números positivos
     type positive_array is array (natural range <>) of positive;
+    type integer_array is array (natural range <>) of integer;
 end MyPackage;
 
 -- Cuerpo del paquete (en este caso, no es necesario porque solo defines tipos)

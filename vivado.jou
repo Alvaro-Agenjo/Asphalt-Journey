@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 11 09:23:54 2024
-# Process ID: 16840
+# Start of session at: Wed Dec 11 11:34:40 2024
+# Process ID: 15284
 # Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23120 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1076 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
 # Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/vivado.log
 # Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
 # Running On        :DESKTOP-A7KB9SN
@@ -17,29 +17,55 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8373 MB
-# Swap memory       :8189 MB
-# Total Virtual     :16563 MB
-# Available Virtual :8836 MB
+# Swap memory       :7989 MB
+# Total Virtual     :16363 MB
+# Available Virtual :8561 MB
 #-----------------------------------------------------------
 start_gui
 open_project {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr}
-update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd} w ]
+add_files -fileset sim_1 {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd}}
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top Progreso_LED [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Progreso_LED_TB [get_filesets sim_1]
+set_property top CRASH_DTCTR_TB [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
+set_property source_mgmt_mode DisplayOnly [current_project]
 launch_simulation
-source Progreso_LED_TB.tcl
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source CRASH_DTCTR_TB.tcl
 run all
-remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd} -line 96
-remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd} -line 101
+run all
+close_sim
+launch_simulation
+source CRASH_DTCTR_TB.tcl
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd} 116
+close_sim
+launch_simulation
+source CRASH_DTCTR_TB.tcl
+relaunch_sim
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd} -line 116
+run all
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd} 171
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+run all
 close_sim
