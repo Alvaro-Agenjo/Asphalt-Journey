@@ -40,13 +40,12 @@ architecture Behavioral of CLK_MANAGER_TB is
     component CLK_MANAGER is
     generic(
         FREQ_CLK: positive:= 100_000_000;
-        FREQS: positive_array;
-        SALIDAS: positive 
+        FREQS: positive_array 
     );
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (0 to SALIDAS-1)
+        CLK_SUB: out std_logic_vector (FREQS'range)
     );
     end component CLK_MANAGER;
     
@@ -67,8 +66,7 @@ begin
     UUT: CLK_MANAGER
         generic map (
             FREQ_CLK => CLK_FREQ, 
-            FREQS => FREQS,
-            SALIDAS => FREQS'length
+            FREQS => FREQS
         )
         port map (
             RESET_N => s_reset_n,
