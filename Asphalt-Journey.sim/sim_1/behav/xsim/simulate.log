@@ -1,17 +1,12 @@
 Time resolution is 1 ps
 Note: ***** Test RESET *****
-Time: 0 ps  Iteration: 0  Process: /CRASH_DTCTR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd
+Time: 0 ps  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
 Note: ***** Test Enable *****
-Time: 4 ns  Iteration: 0  Process: /CRASH_DTCTR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd
-Note: ***** Test Out of bounds *****
-Time: 70 ns  Iteration: 0  Process: /CRASH_DTCTR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd
-Note: ***** Test No obstacle *****
-Time: 98 ns  Iteration: 0  Process: /CRASH_DTCTR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd
-Note: ***** Test obstacle before new phase *****
-Time: 154 ns  Iteration: 0  Process: /CRASH_DTCTR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd
-Note: ***** Test obstacle crash *****
-Time: 174 ns  Iteration: 0  Process: /CRASH_DTCTR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd
-Stopped at time : 174 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd" Line 171
+Time: 4 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
+Note: ***** Test PLUS to limit *****
+Time: 70 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
+Note: ***** Test MINUS to limit *****
+Time: 134 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
 Failure: [PASSED] Test passed successfully
-Time: 338 ns  Iteration: 0  Process: /CRASH_DTCTR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd
-$finish called at time : 338 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd" Line 184
+Time: 198 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
+$finish called at time : 198 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd" Line 169
