@@ -36,7 +36,7 @@ entity Display_LED is
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel alto
         CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
         CE: in std_logic;                       -- Clock enable (200 Hz)
-        N_LED: in natural;                     -- Numero de leds a iluminar
+        N_LED: in natural;                      -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     ); 
 end Display_LED;

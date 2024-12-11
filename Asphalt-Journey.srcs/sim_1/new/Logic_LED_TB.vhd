@@ -45,7 +45,7 @@ architecture Behavioral of Logic_LED_TB is
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
         CLK: in std_logic;              --Reloj 
         CE: in std_logic;               --Habilita el funcionamiento del modulo
-        SEÑAL: in std_logic;            --Ha habido cambio de fase
+        SENAL: in std_logic;            --Ha habido cambio de fase
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
     );
@@ -63,11 +63,6 @@ architecture Behavioral of Logic_LED_TB is
     constant CLK_PERIOD: time := 20 ns;
     constant TAM: natural := 16;
     
-    --Vectores de test
-    
-
-
-    
 begin
     
     UUT: Logic_LED 
@@ -78,13 +73,27 @@ begin
         RESET_N => s_reset_n,
         CLK => s_clk,
         CE => s_ce,
-        SEÑAL => s_pulso,
+        SENAL => s_pulso,
         N_LED => s_n_led,
         FIN_OK => s_fin_ok
     );
     
     clk_gen: s_clk <= not s_clk after 0.5 * CLK_PERIOD;
     
+    pulse_gen: process
+    begin 
+        while true loop
+            for i in 0 to 2 loop
+                wait until s_clk = '1';
+            end loop;         
+            
+            s_pulso <= '1';
+            wait until s_clk = '1';
+            s_pulso <= '0';
+        end loop;
+    end process;
+    
+            
     test:process
     begin
     
@@ -124,9 +133,11 @@ begin
         s_ce <= '1';
         
         for i in 1 to TAM loop
-            wait until s_pulso = '1';     
-            wait until s_clk = '1';
-            
+            wait until s_pulso = '1';
+-----------------------------------------------------
+-- Posible error por tiempos ver en implementación --
+-----------------------------------------------------     
+            wait until s_clk = '1'; 
             wait for  0.1*CLK_PERIOD;
             -- Comprobar la salida de LIGHT
             assert (s_n_led = 16 * i / TAM)

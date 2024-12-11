@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Dec 10 23:09:57 2024
+# Process ID: 19344
+# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/impl_1
+# Command line: vivado.exe -log Logic_LED.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Logic_LED.tcl -notrace
+# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/impl_1/Logic_LED.vdi
+# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-A7KB9SN
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8373 MB
+# Swap memory       :7892 MB
+# Total Virtual     :16266 MB
+# Available Virtual :3194 MB
+#-----------------------------------------------------------
+source Logic_LED.tcl -notrace

@@ -33,17 +33,16 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Progreso_LED is
     generic (
-        TOTAL_LENGTH: natural := 5
+        TOTAL_LENGTH: natural := 5                  --Numero de fases del escenario
     );
     port(
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        CE_1: in std_logic;
-        CE_200: in std_logic;
-        ENABLE: in std_logic;
-        PULSO: in std_logic;
-        LEDS: out std_logic_vector (0 to 15);
-        FIN_OK: out std_logic
+        RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
+        CLK: in std_logic;                      -- Reloj del sistema.
+        CE_200: in std_logic;                   -- Clock enable (200Hz)
+        ENABLE: in std_logic;                   -- Habilitacion del módulo (se asociará a un estado de la máquina de estados)
+        PULSO: in std_logic;                    -- Pulso para indicar el cambio de fase
+        LEDS: out std_logic_vector (0 to 15);   -- Barra de progreso  (--> directa a constrains)
+        FIN_OK: out std_logic                   -- Flag fin correcto.
     );
 end Progreso_LED;
 
@@ -53,10 +52,10 @@ architecture Structural of Progreso_LED is
     component Display_LED is
     
     port(
-        RESET_N: in std_logic;                  -- Asincrono y activo a nivel alto
+        RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
         CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
         CE: in std_logic;                       -- Clock enable (200 Hz)
-        N_LED: in natural;                     -- Numero de leds a iluminar
+        N_LED: in natural;                      -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     );
     end component Display_LED;
@@ -67,10 +66,9 @@ architecture Structural of Progreso_LED is
     );
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
-        ENABLE: in std_logic;           --Habilitacion del Módulo
-        CLK: in std_logic;              --Reloj ()
-        CE: in std_logic;                --Clock enable (1 Hz);
-        PULSO: in std_logic;
+        CLK: in std_logic;              --Reloj 
+        CE: in std_logic;               --Habilita el funcionamiento del modulo
+        SENAL: in std_logic;            --Ha habido cambio de fase
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
     );
@@ -78,18 +76,19 @@ architecture Structural of Progreso_LED is
     
     --señales intermedias
     signal s_n_led: positive;
-   
+    signal s_ce_enable: std_logic;
 begin
+    s_ce_enable <= ENABLE and CE_200;
+    
     Unidad_logica: Logic_LED 
     generic map(
         TOTAL_LENGTH => TOTAL_LENGTH     
     )
     port map(
         RESET_N => RESET_N,
-        ENABLE => ENABLE,
         CLK => CLK,
-        CE => CE_1,
-        PULSO => CE_1,
+        CE => ENABLE,
+        SENAL => PULSO,
         N_LED => s_n_led,
         FIN_OK => FIN_OK
     );
@@ -98,7 +97,7 @@ begin
     port map(
         RESET_N => RESET_N,
         CLK => CLK,
-        CE => CE_200,
+        CE => s_ce_enable,
         N_LED => s_n_led,
         LEDS => LEDS
     );
