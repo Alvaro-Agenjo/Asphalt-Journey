@@ -46,7 +46,7 @@ architecture Behavioral of CRASH_DTCTR_TB is
             SENAL: in std_logic;                    -- Pulso para cambio de escenario.
             ROAD_AC: in integer_array (1 to 7);     -- Input codificada caretera actual
             ROAD_FT: in integer_array (1 to 7);     -- Input codificada caretera futura
-            CAR_POS: in positive;                    -- Carril actual del coche
+            CAR_POS: in positive;                   -- Carril actual del coche
             FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
         );
     end component CRASH_DTCTR;

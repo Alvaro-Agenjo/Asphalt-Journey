@@ -35,11 +35,11 @@ entity CRASH_DTCTR is
     port(
         RESET_N: in std_logic;                  -- Reset asincrono activo a nivel bajo
         CLK: in std_logic;                      -- Reloj del sistema.
-        CE: in std_logic;                       -- CE ? quiza no.
+        CE: in std_logic;                       -- CE (Habilitacion de modulo).
         SENAL: in std_logic;                    -- Pulso para cambio de escenario.
         ROAD_AC: in integer_array (1 to 7);     -- Input codificada caretera actual
         ROAD_FT: in integer_array (1 to 7);     -- Input codificada caretera futura
-        CAR_POS: in positive;                    -- Carril actual del coche
+        CAR_POS: in positive;                   -- Carril actual del coche
         FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
     );
 end CRASH_DTCTR;
