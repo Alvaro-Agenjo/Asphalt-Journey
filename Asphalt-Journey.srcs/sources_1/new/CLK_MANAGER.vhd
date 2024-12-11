@@ -34,14 +34,13 @@ use work.MyPackage.all;
 entity CLK_MANAGER is
     generic(
         FREQ_CLK: positive:= 100_000_000;
-        SALIDAS: positive;
         FREQS: positive_array
        
     );
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (0 to SALIDAS-1)
+        CLK_SUB: out std_logic_vector (FREQS'range)
     );
 end CLK_MANAGER;
 
@@ -61,7 +60,7 @@ architecture Behavioral of CLK_MANAGER is
     end component TIMER;
     
 begin
-    timer_gen: for i in 0 to SALIDAS -1 generate  
+    timer_gen: for i in FREQS'range generate  
         tx: TIMER 
             generic map (
                 FREQ_D => FREQS(i),

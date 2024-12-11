@@ -11,6 +11,10 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.SELECTOR [\SELECTOR(max=3)\]
-Compiling architecture behavioral of entity xil_defaultlib.selector_tb
-Built simulation snapshot SELECTOR_TB_behav
+Compiling package xil_defaultlib.mypackage
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.TIMER [\TIMER(freq_d=200,freq_clk=1000)...]
+Compiling architecture behavioral of entity xil_defaultlib.TIMER [\TIMER(freq_d=1,freq_clk=1000)\]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_MANAGER [\CLK_MANAGER(freq_clk=1000,freqs...]
+Compiling architecture behavioral of entity xil_defaultlib.clk_manager_tb
+Built simulation snapshot CLK_MANAGER_TB_behav

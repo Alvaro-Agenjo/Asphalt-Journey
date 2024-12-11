@@ -1,12 +1,8 @@
 Time resolution is 1 ps
-Note: ***** Test RESET *****
-Time: 0 ps  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
-Note: ***** Test Enable *****
-Time: 4 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
-Note: ***** Test PLUS to limit *****
-Time: 70 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
-Note: ***** Test MINUS to limit *****
-Time: 134 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
-Failure: [PASSED] Test passed successfully
-Time: 198 ns  Iteration: 0  Process: /SELECTOR_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd
-$finish called at time : 198 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd" Line 169
+Note: ****** Test RESET *******
+Time: 0 ps  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
+Note: ****** Test STROBE *******
+Time: 200 us  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
+Failure: [PASSED] Test finished
+Time: 1999700 us  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
+$finish called at time : 1999700 us : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd" Line 109
