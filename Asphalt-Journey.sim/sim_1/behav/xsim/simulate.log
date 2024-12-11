@@ -1,4 +1,5 @@
 Time resolution is 1 ps
+<<<<<<< HEAD
 Note: ****** Test RESET *******
 Time: 0 ps  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
 Note: ****** Test STROBE *******
@@ -9,3 +10,16 @@ Stopped at time : 1999500 us : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuat
 Failure: [PASSED] Test finished
 Time: 1999700 us  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
 $finish called at time : 1999700 us : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd" Line 111
+=======
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Note: ***** Test Enable *****
+Time: 4 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Note: ***** Test Count *****
+Time: 70 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Note: ***** Test Overflow *****
+Time: 340750 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Failure: [PASSED] Test passed successfully
+Time: 340754 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+$finish called at time : 340754 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd" Line 209
+>>>>>>> Barra_LED

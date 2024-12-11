@@ -43,8 +43,9 @@ architecture Behavioral of Logic_LED_TB is
     );
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
-        ENABLE: in std_logic;           --Habilitacion del Módulo
-        CLK: in std_logic;              --Reloj (activo solo en cambio de fase)
+        CLK: in std_logic;              --Reloj 
+        CE: in std_logic;               --Habilita el funcionamiento del modulo
+        SENAL: in std_logic;            --Ha habido cambio de fase
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
     );
@@ -52,19 +53,15 @@ architecture Behavioral of Logic_LED_TB is
     
     --señales
     signal s_reset_n: std_logic;
-    signal s_enable: std_logic;
     signal s_clk: std_logic := '0';
+    signal s_ce: std_logic;
+    signal s_pulso: std_logic;
     signal s_n_led: natural;
     signal s_fin_ok: std_logic;
        
     --Constantes 
     constant CLK_PERIOD: time := 20 ns;
     constant TAM: natural := 16;
-    
-    --Vectores de test
-    
-
-
     
 begin
     
@@ -74,20 +71,35 @@ begin
     )
     port map(
         RESET_N => s_reset_n,
-        ENABLE => s_enable,
         CLK => s_clk,
+        CE => s_ce,
+        SENAL => s_pulso,
         N_LED => s_n_led,
         FIN_OK => s_fin_ok
     );
     
     clk_gen: s_clk <= not s_clk after 0.5 * CLK_PERIOD;
     
+    pulse_gen: process
+    begin 
+        while true loop
+            for i in 0 to 2 loop
+                wait until s_clk = '1';
+            end loop;         
+            
+            s_pulso <= '1';
+            wait until s_clk = '1';
+            s_pulso <= '0';
+        end loop;
+    end process;
+    
+            
     test:process
     begin
     
         report "***** Test RESET *****";
         s_reset_n <= '0';
-        s_enable <= '0';
+        s_ce <= '0';
         
         wait for 0.2* CLK_PERIOD;
         assert s_n_led = 0
@@ -102,7 +114,7 @@ begin
         
         report "***** Test Enable *****";
         s_reset_n <= '1';
-        s_enable <= '0';
+        s_ce <= '0';
         
         for i in 0 to 3 loop
             wait until s_clk = '1';
@@ -118,11 +130,14 @@ begin
         
         report "***** Test Count *****";
         s_reset_n <= '1';
-        s_enable <= '1';
+        s_ce <= '1';
         
         for i in 1 to TAM loop
-            wait until s_clk = '1';     
-            
+            wait until s_pulso = '1';
+-----------------------------------------------------
+-- Posible error por tiempos ver en implementación --
+-----------------------------------------------------     
+            wait until s_clk = '1'; 
             wait for  0.1*CLK_PERIOD;
             -- Comprobar la salida de LIGHT
             assert (s_n_led = 16 * i / TAM)
