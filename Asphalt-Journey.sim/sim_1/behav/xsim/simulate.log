@@ -1,4 +1,4 @@
 Time resolution is 1 ps
-Failure: [FIN SIMULACION]
-Time: 360 ns  Iteration: 0  Process: /DEC_TXT_tb/sr  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd
-$finish called at time : 360 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd" Line 116
+Failure: [ERROR]: BUT_ASYNC= '1' BUT_SYNC= '0'
+Time: 200 ns  Iteration: 0  Process: /BUTTON_SYNC_tb/line__44  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/BUTTON_SYNC_tb.vhd
+$finish called at time : 200 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/BUTTON_SYNC_tb.vhd" Line 53
