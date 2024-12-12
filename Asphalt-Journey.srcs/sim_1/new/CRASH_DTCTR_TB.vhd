@@ -44,8 +44,8 @@ architecture Behavioral of CRASH_DTCTR_TB is
             CLK: in std_logic;                      -- Reloj del sistema.
             CE: in std_logic;                       -- CE ? quiza no.
             SENAL: in std_logic;                    -- Pulso para cambio de escenario.
-            ROAD_AC: in integer_array (1 to 7);     -- Input codificada caretera actual
-            ROAD_FT: in integer_array (1 to 7);     -- Input codificada caretera futura
+            ROAD_AC: in road_tile_array;     -- Input codificada caretera actual
+            ROAD_FT: in road_tile_array;     -- Input codificada caretera futura
             CAR_POS: in positive;                   -- Carril actual del coche
             FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
         );
@@ -53,7 +53,7 @@ architecture Behavioral of CRASH_DTCTR_TB is
 
 --constantes
     constant CLK_PERIOD: time := 20 ns;
-    constant ROAD: integer_array (1 to 7) := (0, 1, 4, 4, 3, 4, 2);
+    constant ROAD: road_tile_array := (no_road, left_limit, road, road, obstacle, road, right_limit);
 
 
 --señales
@@ -61,8 +61,8 @@ architecture Behavioral of CRASH_DTCTR_TB is
     signal s_clk: std_logic:='0';
     signal s_ce: std_logic;
     signal s_senal: std_logic;
-    signal s_road_ac: integer_array (1 to 7) := (0, 1, 4, 4, 3, 4, 2);
-    signal s_road_ft: integer_array (1 to 7) := ROAD;
+    signal s_road_ac: road_tile_array := ROAD;
+    signal s_road_ft: road_tile_array := ROAD;
     signal s_car_pos: positive := 1;
     signal s_fin_nok: std_logic := '1';
 
