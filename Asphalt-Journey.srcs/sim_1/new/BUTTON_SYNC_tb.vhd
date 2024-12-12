@@ -45,8 +45,12 @@ begin
     begin
         bucle: for i in n_but-1 downto 0 loop
             s_but_async <= (i => '1', others => '0');
-            wait for 20*period;
             
+            --wait for 20*period;
+            for j in 0 to 20 loop
+                wait until s_clk='1';
+            end loop;
+        
             assert s_but_sync(i) = s_but_async(i)
                 report "[ERROR]: BUT_ASYNC= " & std_logic'image(s_but_async(i)) &
                                " BUT_SYNC= " & std_logic'image(s_but_sync(i))

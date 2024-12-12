@@ -1,8 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/EDGE_DETECTOR.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'EDGEDTCTR'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNCHRONIZER.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'SYNCHRNZR'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/BUTTON_SYNC.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'BUTTON_SYNC'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/BUTTON_SYNC_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'BUTTON_SYNC_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNC_EDGE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SYNC_EDGE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SYNC_EDGE_tb'

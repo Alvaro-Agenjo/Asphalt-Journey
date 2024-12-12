@@ -28,3 +28,8 @@ begin
                 '0' when others;
 
 end BEHAVIORAL;
+
+--Breve explicación:
+--la señal EDGE pasará a valer '1' durnate un ciclo de reloj,
+--cuando hayan pasado dos flancos de reloj desde que se
+--dejó de pulsar 

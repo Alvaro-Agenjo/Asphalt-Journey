@@ -24,17 +24,6 @@ architecture Behavioral of BUTTON_SYNC is
         ); 
     end component;
     
-    component EDGEDTCTR is 
-        port(
-            CLK : in std_logic;
-            SYNC_IN : in std_logic;
-            EDGE : out std_logic
-        ); 
-    end component;
-    
---Señal intermedia
-    signal s_interm : std_logic_vector(NUM_BUT-1 downto 0); 
-
 begin
     for_generate: for i in NUM_BUT-1 downto 0 generate
         sync: SYNCHRNZR

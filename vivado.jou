@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Dec 12 10:07:04 2024
-# Process ID: 15624
+# Start of session at: Thu Dec 12 16:52:42 2024
+# Process ID: 14116
 # Current directory: C:/Users/cesar/Documents/GitHub/Asphalt-Journey
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5976 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6112 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
 # Log file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/vivado.log
 # Journal file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey\vivado.jou
 # Running On        :DESKTOP-1HN8B7K
@@ -19,23 +19,11 @@
 # Host memory       :16969 MB
 # Swap memory       :18253 MB
 # Total Virtual     :35223 MB
-# Available Virtual :28292 MB
+# Available Virtual :26502 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr
 launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-source BUTTON_SYNC_tb.tcl
-close_sim
-launch_simulation
-source BUTTON_SYNC_tb.tcl
-close_sim
-launch_simulation
-source BUTTON_SYNC_tb.tcl
-close_sim
-launch_simulation
 source BUTTON_SYNC_tb.tcl
 close_sim
 launch_simulation
@@ -44,25 +32,386 @@ source BUTTON_SYNC_tb.tcl
 close_sim
 launch_simulation
 launch_simulation
-launch_simulation
-launch_simulation
 source BUTTON_SYNC_tb.tcl
 close_sim
+close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNC_EDGE.vhd w ]
+add_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNC_EDGE.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd
+set_property top SYNC_EDGE_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
 launch_simulation
-source BUTTON_SYNC_tb.tcl
+launch_simulation
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/BUTTON_SYNC.vhd]
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/BUTTON_SYNC_tb.vhd]
+launch_simulation
+launch_simulation
+source SYNC_EDGE_tb.tcl
 close_sim
 launch_simulation
-source BUTTON_SYNC_tb.tcl
+source SYNC_EDGE_tb.tcl
 close_sim
 launch_simulation
-source BUTTON_SYNC_tb.tcl
+source SYNC_EDGE_tb.tcl
 close_sim
 launch_simulation
-source BUTTON_SYNC_tb.tcl
+source SYNC_EDGE_tb.tcl
 close_sim
 launch_simulation
-source BUTTON_SYNC_tb.tcl
+source SYNC_EDGE_tb.tcl
 close_sim
 launch_simulation
-source BUTTON_SYNC_tb.tcl
+source SYNC_EDGE_tb.tcl
 close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNCHRNZR_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNCHRNZR_tb.vhd
+set_property top SYNCHRNZR_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+source SYNCHRNZR_tb.tcl
+close_sim
+launch_simulation
+source SYNCHRNZR_tb.tcl
+close_sim
+launch_simulation
+source SYNCHRNZR_tb.tcl
+close_sim
+launch_simulation
+source SYNCHRNZR_tb.tcl
+close_sim
+launch_simulation
+source SYNCHRNZR_tb.tcl
+close_sim
+launch_simulation
+source SYNCHRNZR_tb.tcl
+close_sim
+launch_simulation
+source SYNCHRNZR_tb.tcl
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/EDGE_DETECTOR_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/EDGE_DETECTOR_tb.vhd
+launch_simulation
+set_property top EDGEDTCTR_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+set_property top EDGE_DETECTOR_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+source EDGE_DETECTOR_tb.tcl
+close_sim
+launch_simulation
+source EDGE_DETECTOR_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source EDGE_DETECTOR_tb.tcl
+close_sim
+close_project
+open_project C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr
+launch_simulation
+source EDGE_DETECTOR_tb.tcl
+close_sim
+launch_simulation
+source EDGE_DETECTOR_tb.tcl
+set_property top SYNC_EDGE_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+add_bp {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd} 71
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+step
+step
+step
+step
+step
+add_bp {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd} 67
+remove_bps -file {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd} -line 71
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+remove_bps -file {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd} -line 67
+close_sim
+launch_simulation
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl
+close_sim
+launch_simulation
+source SYNC_EDGE_tb.tcl

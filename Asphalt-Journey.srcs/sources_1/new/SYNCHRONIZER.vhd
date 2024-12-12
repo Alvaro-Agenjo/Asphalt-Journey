@@ -3,6 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use ieee.std_logic_textio.all;
 
+
 entity SYNCHRNZR is
     port (
         CLK : in std_logic;
@@ -24,3 +25,8 @@ begin
         end if;
     end process;
 end BEHAVIORAL;
+
+--Breve explicación:
+--si el pulso es alto, '1', cuando se produce un flanco de reloj
+--espera dos flancos de reloj más para poner a uno la salida
+--cuando se produzca el flanco
