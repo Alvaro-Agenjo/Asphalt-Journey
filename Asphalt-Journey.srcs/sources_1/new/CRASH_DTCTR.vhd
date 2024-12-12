@@ -37,8 +37,8 @@ entity CRASH_DTCTR is
         CLK: in std_logic;                      -- Reloj del sistema.
         CE: in std_logic;                       -- CE (Habilitacion de modulo).
         SENAL: in std_logic;                    -- Pulso para cambio de escenario.
-        ROAD_AC: in integer_array (1 to 7);     -- Input codificada caretera actual
-        ROAD_FT: in integer_array (1 to 7);     -- Input codificada caretera futura
+        ROAD_AC: in road_tile_array;            -- Input codificada caretera actual
+        ROAD_FT: in road_tile_array;            -- Input codificada caretera futura
         CAR_POS: in positive;                   -- Carril actual del coche
         FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
     );
@@ -57,10 +57,10 @@ begin
                 if CAR_POS > ROAD_AC'high or CAR_POS < ROAD_AC'low then 
                     FIN_NOK <= '1';
                 elsif SENAL = '1'then
-                    if ROAD_FT(CAR_POS) = 3 then 
+                    if ROAD_FT(CAR_POS) = obstacle then 
                         FIN_NOK <= '1';
                     end if;   
-                elsif ROAD_AC(CAR_POS) = 0 then
+                elsif ROAD_AC(CAR_POS) = no_road then
                     FIN_NOK <= '1';
                 end if;
             end if;
