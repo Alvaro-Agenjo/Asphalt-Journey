@@ -34,13 +34,13 @@ use work.MyPackage.all;
 entity CLK_MANAGER is
     generic(
         FREQ_CLK: positive:= 100_000_000;
-        FREQS: positive_array
+        FREQS: positive_array 
        
     );
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (FREQS'range)
+        CLK_SUB: out std_logic_vector (0 to FREQS'high +1)
     );
 end CLK_MANAGER;
 
@@ -69,7 +69,9 @@ begin
             port map(
                 RESET_N => RESET_N,
                 CLK => CLK_MAIN,
-                STROBE => CLK_SUB(i)
+                STROBE => CLK_SUB(i+1)
             );
         end generate;
+    
+    CLK_SUB(0) <= CLK_MAIN;
 end Behavioral;
