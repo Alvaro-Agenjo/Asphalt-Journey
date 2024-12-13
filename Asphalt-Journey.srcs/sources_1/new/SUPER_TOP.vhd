@@ -53,8 +53,9 @@ architecture Behavioral of SUPER_TOP is
     constant FREQS: positive_array := (200, 1);
     constant CLK_FREQ: positive := 1_000;
     constant CLK_PERIOD: time := 1 sec/ CLK_FREQ;
- --Componentes
-    
+    constant MAX_DIFF: positive := 3;
+    constant MAX_CAR: positive := 2;
+ --Componentes  
     --CLK_MANAGER
     component CLK_MANAGER is
     generic(
@@ -82,18 +83,60 @@ architecture Behavioral of SUPER_TOP is
         FIN_OK: out std_logic                   -- Flag fin correcto.
     );
     end component Progreso_LED;
+    --Selector 
+    component SELECTOR is
+    generic(
+        MAX: positive:= 1
+    );
+    port(
+        RESET_N: in std_logic;      --Reset asincrono, activo a nivel bajo
+        CLK: in std_logic;          --Reloj del sistema
+        CE: in std_logic;           --CE (Habilitación del módulo)
+        PLUS: in std_logic;         -- entrada que simboliza el incremento de la dificultad seleccionada
+        MINUS: in std_logic;        -- entrada que simboliza el decremento de la dificultad seleccionada
+        VAL: out positive          --Dificultad seleccionada
+    );
+    end component SELECTOR;
     
+    component CRASH_DTCTR is
+        port(
+            RESET_N: in std_logic;                  -- Reset asincrono activo a nivel bajo
+            CLK: in std_logic;                      -- Reloj del sistema.
+            CE: in std_logic;                       -- CE ? quiza no.
+            SENAL: in std_logic;                    -- Pulso para cambio de escenario.
+            ROAD_AC: in road_tile_array;     -- Input codificada caretera actual
+            ROAD_FT: in road_tile_array;     -- Input codificada caretera futura
+            CAR_POS: in positive;                   -- Carril actual del coche
+            FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
+        );
+    end component CRASH_DTCTR;
 --señales
     
     signal relojes: std_logic_vector (0 to FREQS'high +1);
     signal State: std_logic_vector(1 to 8);     -- Estados (mirar wiki)     
-    signal dificultad: positive;
+    
+    signal dificultad: positive; --seleccion diff
+    signal car: positive; --seleccion car
+    
+    --Botones tratados
+    signal BC: std_logic;
+    signal BI: std_logic;
+    signal BD: std_logic;
+    signal BH: std_logic;
+    signal BL: std_logic;
+        
     
     signal fin_fase: std_logic;     --Sale del temporizador de manu
+    signal road_ft: road_tile_array;
+    signal road_ac: road_tile_array;
+    
+    signal car_pos: positive;
     
     signal s_fin_ok: std_logic;
+    signal s_fin_nok: std_logic;
     --Combinaciones de estados 
     signal SJ_SP: std_logic;        --Activo si State_Juego o State_Pausa activado;
+
 begin
     
     SJ_SP <= State(4) or State(5) or State(6);
@@ -123,4 +166,42 @@ begin
         LEDS => LEDS,
         FIN_OK => s_fin_ok
     );    
+    
+    SEL_DIF: SELECTOR
+        generic map(
+            MAX => MAX_DIFF
+        )
+        port map(
+            RESET_N =>State(0),
+            CLK =>CLK,
+            CE=>State(1),
+            PLUS => BH,
+            MINUS => BL,
+            VAL => dificultad
+        );
+     
+    SEL_CAR: SELECTOR
+        generic map(
+            MAX => MAX_CAR
+        )
+        port map(
+            RESET_N =>State(0),
+            CLK =>CLK,
+            CE=>State(2),
+            PLUS => BH,
+            MINUS => BL,
+            VAL => car
+        );
+
+    DetectorColision: CRASH_DTCTR
+        port map(
+            RESET_N =>State(0),
+            CLK =>CLK,
+            CE=> State(4),
+            SENAL =>fin_fase,
+            ROAD_AC =>road_ac,
+            ROAD_FT =>road_ft,
+            CAR_POS =>car_pos, 
+            FIN_NOK =>s_fin_nok
+        );
 end Behavioral;
