@@ -40,13 +40,16 @@ architecture Behavioral of CLK_MANAGER_TB is
     component CLK_MANAGER is
     generic(
         FREQ_CLK: positive:= 100_000_000;
-        FREQS: positive_array;
-        SALIDAS: positive 
+        FREQS: positive_array 
     );
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (0 to SALIDAS-1)
+<<<<<<< HEAD
+        CLK_SUB: out std_logic_vector (0 to FREQS'high+1)
+=======
+        CLK_SUB: out std_logic_vector (0 to FREQS'high +1)
+>>>>>>> CLK_Control
     );
     end component CLK_MANAGER;
     
@@ -59,7 +62,11 @@ architecture Behavioral of CLK_MANAGER_TB is
 --señales
     signal s_reset_n: std_logic;
     signal s_clk: std_logic := '0';
-    signal s_strobe: std_logic_vector(0 to 1);
+<<<<<<< HEAD
+    signal s_strobe: std_logic_vector(0 to FREQS'high +1);
+=======
+    signal s_strobe: std_logic_vector(0 to FREQS'high+1);
+>>>>>>> CLK_Control
     
 
 begin
@@ -67,8 +74,7 @@ begin
     UUT: CLK_MANAGER
         generic map (
             FREQ_CLK => CLK_FREQ, 
-            FREQS => FREQS,
-            SALIDAS => FREQS'length
+            FREQS => FREQS
         )
         port map (
             RESET_N => s_reset_n,
@@ -93,19 +99,43 @@ begin
         report "****** Test STROBE *******";
         s_reset_n <= '1';
             
-        for i in 0 to s_strobe'length-1 loop
-            wait until s_strobe(i) = '1';
+        for i in FREQS'range loop
+            wait until s_strobe(i+1) = '1';
             tref := now;
+            wait for 0.2*CLK_PERIOD;
             
-            wait until s_strobe(i) = '1';
+            wait until s_strobe(i+1) = '1';
             p := (now-tref);
             
-            assert p = 1 sec / FREQS(i)
-                report "[FAILURE]: Expected: " & integer'image(1/FREQS(i)) & " , Obtained: " & time'image(p) 
+            assert p = 1 sec / FREQS(i-1)
+                report "[FAILURE]: Expected: " & integer'image(1/FREQS(i-1)) & " , Obtained: " & time'image(p) 
             severity failure;
         
         end loop;
+<<<<<<< HEAD
+
+
+=======
+        
+        report "****** Test out main clk *******";
+        s_reset_n <= '1';
+            
+        for i in 0 to 5 loop
+            wait until s_strobe(0) = '1';
+            tref := now;
+            
+            wait until s_strobe(0) = '1';
+            p := (now-tref);
+            
+            assert p = 1 sec / CLK_FREQ
+                report "[FAILURE]: Expected: " & integer'image(1/CLK_FREQ) & " , Obtained: " & time'image(p) 
+            severity failure;
+        
+        end loop;
+        
+>>>>>>> CLK_Control
         wait for CLK_PERIOD * 0.2;   
+        
         assert false
             report "[PASSED] Test finished"
         severity failure;

@@ -39,22 +39,24 @@ architecture Structural of Progreso_LED_TB is
 
     --Componente
     component Progreso_LED is
-    generic(
-        TOTAL_LENGTH: natural := 5
+    generic (
+        TOTAL_LENGTH: natural := 5              --Numero de fases del escenario
     );
     port(
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        ENABLE: in std_logic;
-        PULSO: in std_logic;
-        LEDS: out std_logic_vector (0 to 15);
-        FIN_OK: out std_logic
-     );
+        RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
+        CLK: in std_logic;                      -- Reloj del sistema.
+        CE_200: in std_logic;                   -- Clock enable (200Hz)
+        ENABLE: in std_logic;                   -- Habilitacion del módulo (se asociará a un estado de la máquina de estados)
+        PULSO: in std_logic;                    -- Pulso para indicar el cambio de fase
+        LEDS: out std_logic_vector (0 to 15);   -- Barra de progreso  (--> directa a constrains)
+        FIN_OK: out std_logic                   -- Flag fin correcto.
+    );
     end component Progreso_LED;
     
      --señales
     signal s_reset_n: std_logic;
     signal s_clk: std_logic := '0';
+    signal s_ce_200: std_logic;
     signal s_enable: std_logic;
     signal s_pulso: std_logic := '0';
     signal s_leds: std_logic_vector (0 to 15);
@@ -66,30 +68,29 @@ architecture Structural of Progreso_LED_TB is
     
     --Vectores de test
    type led_test is record
-        t_n_led: natural;
         t_led: std_logic_vector( 0 to 15);
     end record;
 
     type vec_test is array (natural range <>) of led_test;
     -- Vector de pruebas
     constant value: vec_test := (
-    (t_n_led => 0,  t_led => "0000000000000000"),
-    (t_n_led => 1,  t_led => "1000000000000000"),
-    (t_n_led => 2,  t_led => "1100000000000000"),
-    (t_n_led => 3,  t_led => "1110000000000000"),
-    (t_n_led => 4,  t_led => "1111000000000000"),
-    (t_n_led => 5,  t_led => "1111100000000000"),
-    (t_n_led => 6,  t_led => "1111110000000000"),
-    (t_n_led => 7,  t_led => "1111111000000000"),
-    (t_n_led => 8,  t_led => "1111111100000000"),
-    (t_n_led => 9,  t_led => "1111111110000000"),
-    (t_n_led => 10, t_led => "1111111111000000"),
-    (t_n_led => 11, t_led => "1111111111100000"),
-    (t_n_led => 12, t_led => "1111111111110000"),
-    (t_n_led => 13, t_led => "1111111111111000"),
-    (t_n_led => 14, t_led => "1111111111111100"),
-    (t_n_led => 15, t_led => "1111111111111110"),
-    (t_n_led => 16, t_led => "1111111111111111")
+    (t_led => "0000000000000000"),
+    (t_led => "1000000000000000"),
+    (t_led => "1100000000000000"),
+    (t_led => "1110000000000000"),
+    (t_led => "1111000000000000"),
+    (t_led => "1111100000000000"),
+    (t_led => "1111110000000000"),
+    (t_led => "1111111000000000"),
+    (t_led => "1111111100000000"),
+    (t_led => "1111111110000000"),
+    (t_led => "1111111111000000"),
+    (t_led => "1111111111100000"),
+    (t_led => "1111111111110000"),
+    (t_led => "1111111111111000"),
+    (t_led => "1111111111111100"),
+    (t_led => "1111111111111110"),
+    (t_led => "1111111111111111")
 );
 
 begin
@@ -101,6 +102,7 @@ begin
     port map(
         RESET_N => s_reset_n,
         CLK => s_clk,
+        CE_200 => s_ce_200,
         ENABLE => s_enable,
         PULSO => s_pulso,
         LEDS => s_leds,
@@ -108,9 +110,34 @@ begin
     );
     
     clk_gen: s_clk <= not s_clk after 0.5 * CLK_PERIOD;
-    puslo_gen: s_pulso <= not s_pulso after 1.25 * CLK_PERIOD;
+    ce_gen: process
+    begin 
+        while true loop
+            for i in 0 to 5 loop
+                wait until s_clk = '1';
+            end loop;         
+            
+            s_ce_200 <= '1';
+            wait until s_clk = '1';
+            s_ce_200 <= '0';
+        end loop;
+    end process;
     
-     test:process
+    pulse_gen: process
+    begin 
+        while true loop
+            for i in 0 to 1000 loop
+                wait until s_clk = '1';
+            end loop;         
+            
+            s_pulso <= '1';
+            wait until s_clk = '1';
+            s_pulso <= '0';
+        end loop;
+    end process;
+    
+    
+    test:process
     begin
     
         report "***** Test RESET *****";
@@ -154,6 +181,7 @@ begin
         s_enable <= '1';
         
         for i in 0 to TAM loop
+            
             wait for  0.1*CLK_PERIOD;
             -- Comprobar la salida de LIGHT
             assert (s_leds =value(16 * i / TAM).t_led)
@@ -162,7 +190,8 @@ begin
             severity failure;
             
             wait until s_pulso = '1';
-            wait until s_clk = '1';
+            wait until s_ce_200 = '1';
+            wait until s_clk = '1'; 
         
         end loop;
         

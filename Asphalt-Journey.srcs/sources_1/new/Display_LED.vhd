@@ -33,10 +33,11 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Display_LED is
     port (
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        N_LED: in natural;
-        LEDS: out std_logic_vector(0 to 15)-- := (others=>'0')
+        RESET_N: in std_logic;                  -- Asincrono y activo a nivel alto
+        CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
+        CE: in std_logic;                       -- Clock enable (200 Hz)
+        N_LED: in natural;                      -- Numero de leds a iluminar
+        LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     ); 
 end Display_LED;
 
@@ -47,11 +48,13 @@ begin
     begin
         if RESET_N = '0' then
             s_leds <= (others=> '0');
-        elsif rising_edge(CLK) then 
-            if N_LED > 0 then 
-                s_leds (0 to N_LED-1) <= (others => '1');
-            else
-                s_leds <= (others => '0');
+        elsif rising_edge(CLK) then
+            if CE = '1' then  
+                if N_LED > 0 then 
+                    s_leds (0 to N_LED-1) <= (others => '1');
+                else
+                    s_leds <= (others => '0');
+                end if;
             end if;
         end if;     
     end process;

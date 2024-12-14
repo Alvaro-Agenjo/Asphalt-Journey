@@ -40,9 +40,10 @@ architecture Behavioral of Display_LED_TB is
     component Display_LED is
     
     port(
-        RESET_N: in std_logic;                    -- Asincrono y activo a nivel alto
+        RESET_N: in std_logic;                  -- Asincrono y activo a nivel alto
         CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        N_LED: in natural;                    -- Numero de leds a iluminar
+        CE: in std_logic;                       -- Clock enable (200 Hz)
+        N_LED: in natural;                     -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     );
     end component Display_LED;
@@ -50,6 +51,7 @@ architecture Behavioral of Display_LED_TB is
     --señales
     signal s_reset_n: std_logic;
     signal s_clk: std_logic := '0';
+    signal s_ce: std_logic := '0';
     signal s_n_led: natural := 0;
     signal s_leds: std_logic_vector (0 to 15);
        
@@ -91,6 +93,7 @@ begin
     port map(
         RESET_N => s_reset_n,
         CLK => s_clk,
+        CE => s_ce,
         N_LED => s_n_led,
         LEDS => s_leds
     );
@@ -109,9 +112,26 @@ begin
                    " Obtained: " & integer'image(TO_INTEGER(unsigned (s_leds)))
             severity failure;
         
+        
+        report "***** Test CE *****";
+        s_reset_n <= '1';
+        s_ce <= '0';
+
+        for i in 0 to 2 loop
+            wait until s_clk = '1';
+            
+            wait for 0.2* CLK_PERIOD;
+            assert s_leds = std_logic_vector(to_unsigned(0, s_leds'length))
+                report "[ERROR] Expected value: " & integer'image(0) &
+                       " Obtained: " & integer'image(TO_INTEGER(unsigned (s_leds)))
+                severity failure;
+        end loop;
+
+
         report "***** Test light *****";
         s_reset_n <= '1';
-        
+        s_ce <= '1';
+
         for i in 0 to value'length - 1 loop
             s_n_led <= value(i).t_n_led;
             wait until s_clk = '1';     
