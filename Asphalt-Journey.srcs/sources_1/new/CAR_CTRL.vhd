@@ -44,8 +44,8 @@ entity CAR_CTRL is
         CENTER: in std_logic;
         CAR: in positive := 1;
         CAR_POS: out positive;
-        HAB_RACE: out std_logic := '1';
-        HAB_TANK: out std_logic := '1'  
+        HAB_RACE: out std_logic := '0'; -- 0 --> no se activó la habilidad
+        HAB_TANK: out std_logic := '0'  
     );
 end CAR_CTRL;
 
@@ -74,13 +74,13 @@ architecture Behavioral of CAR_CTRL is
         CLK: in std_logic;
         CE: in std_logic;
         CENTER: in std_logic;
-        COOLDOWN_FLAG: out std_logic
+        HABILITY_FLAG: out std_logic
     );
     end component Cooldown; 
     
     
     --señales
-    signal s_cooldown_flag: std_logic; 
+    signal s_hability_flag: std_logic; 
       
 begin
     
@@ -105,19 +105,18 @@ begin
         CLK => CLK,
         CE => CE,
         CENTER => CENTER,
-        COOLDOWN_FLAG => s_cooldown_flag
+        HABILITY_FLAG => s_hability_flag
     );
     
     habilidad: process (CLK)
     begin 
         if rising_edge(CLK) then
             if CE = '1' then
-                if s_cooldown_flag = '0' then
-                    if CAR = 1 then    -- coche de carreras
-                       HAB_RACE <= '1'; 
-                    elsif CAR = 2 then  --tanque
-                        HAB_TANK <= '1';
-                    end if;
+                if s_hability_flag = '1' then
+                    case CAR is
+                        when 1 => HAB_RACE <= '1'; --Coche de carreras 
+                        when others => HAB_TANK <= '1'; --tanque
+                    end case;
                 else 
                     HAB_RACE <= '0';
                     HAB_TANK <= '0';

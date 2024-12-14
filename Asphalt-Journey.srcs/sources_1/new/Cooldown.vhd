@@ -40,36 +40,39 @@ entity Cooldown is
         CLK: in std_logic;
         CE: in std_logic;
         CENTER: in std_logic;
-        COOLDOWN_FLAG: out std_logic
+        HABILITY_FLAG: out std_logic
     );
 end Cooldown;
 
 architecture Behavioral of Cooldown is
-    signal s_twait: std_logic;
+    signal hability: std_logic;
 begin
     
     process(RESET_N, CLK)
+        variable twait: std_logic;
         variable base_t: time :=0 sec;
         variable actual_t: time :=0 sec; 
     begin
         if RESET_N = '0' then 
-            s_twait <= '1';
+            twait := '1';
         elsif rising_edge(CLK) then
             if CE = '1' then 
+                hability <= '0';
                 actual_t := now;
                 if CENTER = '1' then 
-                    if s_twait = '0' then
-                        s_twait <= '1';
-                        base_t := now;                   
+                    if twait = '0' then
+                        twait := '1';
+                        base_t := now;
+                        hability <= '1';                   
                     end if;
                 end if;
                 if actual_t -base_t >= WAIT_TIME then
-                    s_twait <= '0';
+                    twait := '0';
                 end if;
             else 
                 base_t := now;
             end if;     
         end if;
     end process; 
-    COOLDOWN_FLAG <= s_twait;
+    HABILITY_FLAG <= hability ;
 end Behavioral;

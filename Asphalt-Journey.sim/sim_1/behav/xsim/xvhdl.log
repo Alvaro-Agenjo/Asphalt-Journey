@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CAR_CTRL.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CAR_CTRL'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CAR_CTRL_TB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'CAR_CTRL_TB'

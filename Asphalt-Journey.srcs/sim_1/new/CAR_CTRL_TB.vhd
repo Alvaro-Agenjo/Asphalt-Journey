@@ -104,12 +104,12 @@ begin
             report "[ERROR] Expected value 1, posicion inicial a la izquierda"
         severity failure;
         
-        assert s_hab_race = '1'
-            report "[ERROR] Expected value 1, habilidad no activada"
+        assert s_hab_race = '0'
+            report "[ERROR] Expected value 0, habilidad no activada"
         severity failure;
         
-        assert s_hab_tank = '1'
-            report "[ERROR] Expected value 1,  habilidad no activada"
+        assert s_hab_tank = '0'
+            report "[ERROR] Expected value 0,  habilidad no activada"
         severity failure;
         
         
@@ -125,12 +125,12 @@ begin
                 report "[ERROR] Expected value 1, posicion inicial a la izquierda"
             severity failure;
         
-            assert s_hab_race = '1'
-                report "[ERROR] Expected value 1, habilidad no activada"
+            assert s_hab_race = '0'
+                report "[ERROR] Expected value 0, habilidad no activada"
             severity failure;
         
-            assert s_hab_tank = '1'
-                report "[ERROR] Expected value 1,  habilidad no activada"
+            assert s_hab_tank = '0'
+                report "[ERROR] Expected value 0,  habilidad no activada"
             severity failure;
         end loop;             
         
@@ -144,8 +144,9 @@ begin
         s_center <= '1';
         wait until s_clk = '1';
         s_center <= '0';
-        
         wait until s_clk = '1';
+        
+        wait for 0.2* CLK_PERIOD;
         assert s_hab_race = '1'
             report "[ERROR] Expected value 1, habilidad activada"
         severity failure;
@@ -162,6 +163,65 @@ begin
         severity failure;
 
 
+       report "***** Test TANK hability cooldown *****";
+        s_reset_n <= '1';
+        s_ce <= '1';
+        s_car <= 2;
+        wait for COOLDOWN_TEST_TIME;
+        
+        
+        s_center <= '1';
+        wait until s_clk = '1';
+        s_center <= '0';
+        wait until s_clk = '1';
+        
+        wait for 0.2* CLK_PERIOD;
+        assert s_hab_tank = '1'
+            report "[ERROR] Expected value 1, habilidad activada"
+        severity failure;
+        
+        report "***** Second push before cooldown *****";
+        
+        s_center <= '1';
+        wait until s_clk = '1';
+        s_center <= '0';
+        
+        wait until s_clk = '1';
+        assert s_hab_tank = '0'
+            report "[ERROR] Expected value 0, habilidad en cooldown"
+        severity failure;
+
+
+        report "***** Test car movement (right) *****";
+        
+        for i in 1 to 7 loop 
+            
+            wait for 0.2*CLK_PERIOD;
+            assert s_car_pos = i
+                report "[ERROR] Expected position: " & integer'image(i) & ", Obtained: " & integer'image(s_car_pos)
+            severity failure;
+            
+            s_right <= '1';
+            wait until s_clk = '1';
+            s_right <= '0';
+            
+        end loop;
+        
+        report "***** Test car movement (left) *****";
+        
+        for i in 7 downto 1 loop 
+            
+            wait for 0.2*CLK_PERIOD;
+            assert s_car_pos = i
+                report "[ERROR] Expected position: " & integer'image(i) & ", Obtained: " & integer'image(s_car_pos)
+            severity failure;
+            
+            s_left <= '1';
+            wait until s_clk = '1';
+            s_left <= '0';
+            
+        end loop;
+        
         --Fin de simulacion
         wait for 0.2* CLK_PERIOD;
         assert false
