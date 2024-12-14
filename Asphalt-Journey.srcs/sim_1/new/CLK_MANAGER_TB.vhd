@@ -45,11 +45,8 @@ architecture Behavioral of CLK_MANAGER_TB is
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-<<<<<<< HEAD
         CLK_SUB: out std_logic_vector (0 to FREQS'high+1)
-=======
-        CLK_SUB: out std_logic_vector (0 to FREQS'high +1)
->>>>>>> CLK_Control
+
     );
     end component CLK_MANAGER;
     
@@ -62,12 +59,8 @@ architecture Behavioral of CLK_MANAGER_TB is
 --señales
     signal s_reset_n: std_logic;
     signal s_clk: std_logic := '0';
-<<<<<<< HEAD
     signal s_strobe: std_logic_vector(0 to FREQS'high +1);
-=======
-    signal s_strobe: std_logic_vector(0 to FREQS'high+1);
->>>>>>> CLK_Control
-    
+
 
 begin
     
@@ -112,10 +105,6 @@ begin
             severity failure;
         
         end loop;
-<<<<<<< HEAD
-
-
-=======
         
         report "****** Test out main clk *******";
         s_reset_n <= '1';
@@ -133,9 +122,7 @@ begin
         
         end loop;
         
->>>>>>> CLK_Control
         wait for CLK_PERIOD * 0.2;   
-        
         assert false
             report "[PASSED] Test finished"
         severity failure;

@@ -172,9 +172,9 @@ begin
             MAX => MAX_DIFF
         )
         port map(
-            RESET_N =>State(0),
+            RESET_N =>State(1),
             CLK =>CLK,
-            CE=>State(1),
+            CE=>State(2),
             PLUS => BH,
             MINUS => BL,
             VAL => dificultad
@@ -185,9 +185,9 @@ begin
             MAX => MAX_CAR
         )
         port map(
-            RESET_N =>State(0),
+            RESET_N =>State(1),
             CLK =>CLK,
-            CE=>State(2),
+            CE=>State(3),
             PLUS => BH,
             MINUS => BL,
             VAL => car
@@ -195,7 +195,7 @@ begin
 
     DetectorColision: CRASH_DTCTR
         port map(
-            RESET_N =>State(0),
+            RESET_N =>State(1),
             CLK =>CLK,
             CE=> State(4),
             SENAL =>fin_fase,
