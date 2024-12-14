@@ -32,7 +32,7 @@ entity SYNC_EDGE is
 end SYNC_EDGE;
 
 architecture Behavioral of SYNC_EDGE is
---Declaración de componentes: Synchronyzer y Edge Detector
+--Declaración de componentes: SYNCHRNZR y EDGEDTCTR
     component SYNCHRNZR is 
         port(
             CLK : in std_logic;

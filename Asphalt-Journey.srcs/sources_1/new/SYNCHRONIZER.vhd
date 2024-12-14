@@ -27,6 +27,6 @@ begin
 end BEHAVIORAL;
 
 --Breve explicación:
---si el pulso es alto, '1', cuando se produce un flanco de reloj
+--si el pulso es alto, '1', cuando se produce un flanco de reloj positivo,
 --espera dos flancos de reloj más para poner a uno la salida
 --cuando se produzca el flanco

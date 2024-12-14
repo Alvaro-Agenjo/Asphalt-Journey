@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Note: ***** TEST SYNC_BUTTONS *****
+Time: 0 ps  Iteration: 0  Process: /SYNC_BUTTONS_tb/line__68  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_BUTTONS_tb.vhd
+Failure: [FIN SIMULACION]
+Time: 830 ns  Iteration: 0  Process: /SYNC_BUTTONS_tb/line__68  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_BUTTONS_tb.vhd
+$finish called at time : 830 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_BUTTONS_tb.vhd" Line 106

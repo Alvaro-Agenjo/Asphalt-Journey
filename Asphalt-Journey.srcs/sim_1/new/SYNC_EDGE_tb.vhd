@@ -45,17 +45,14 @@ begin
         
         wait for 0.6*period; --pulsación asíncrona arbitraria
         s_but_async <= '1';
-        wait for 1*period;
+        wait for 4.3*period;
         s_but_async <= '0';
-        --for i in 0 to 8 loop  --espero a que se produzca el desplamiento de bits en SYNC y EDGE
-        --    wait until s_clk <= '1';
-        --end loop;
         
-        wait until s_but_sync <= '1';
+        wait until s_but_sync <= '1'; --espero desplazamiento de bits
         
         wait for 0.5*period;
         
-        assert s_but_sync = '1'            
+        assert s_but_sync = '1' --compruebo señal síncronizada           
             report "TEST PULSE BUTTON END NOT OK"
             severity failure; 
             
