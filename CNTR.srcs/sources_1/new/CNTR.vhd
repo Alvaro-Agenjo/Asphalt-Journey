@@ -31,6 +31,12 @@ begin
     if RST='0' then
         LOAD_AUX<='1';
     end if;
+    if r_count="0000" then
+            	LOAD_AUX<='1';
+    end if;
+     if LOAD_N ='1' OR LOAD_AUX = '1' then
+        	r_count<=unsigned(DIN);
+     end if;
     if CE = '1' then
        	if rising_edge(STROBE) then
            	r_count<=r_count-1;
@@ -39,9 +45,6 @@ begin
         	end if;
    		end if;
     	COUNT <= std_logic_vector(r_count);
-    if LOAD_N ='1' OR LOAD_AUX = '1' then
-        	r_count<=unsigned(DIN);
-    end if;
     end if;
     end process;
     	--Check clock enable
