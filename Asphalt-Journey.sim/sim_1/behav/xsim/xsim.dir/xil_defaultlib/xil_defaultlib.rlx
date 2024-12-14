@@ -2,14 +2,14 @@
 2020.2
 May 22 2024
 19:03:11
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd,1733348918,vhdl,,,,clk_manager_tb,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd,1734173019,vhdl,,,,clk_manager_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_JUEGO_tb.vhd,1733905829,vhdl,,,,dec_juego_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_NUM_tb.vhd,1733905829,vhdl,,,,dec_num_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd,1733905829,vhdl,,,,dec_txt_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd,1733955696,vhdl,,,,display_led_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd,1733955696,vhdl,,,,logic_led_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd,1733955697,vhdl,,,,progreso_led_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TIMER_TB.vhd,1733955697,vhdl,,,,timer_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd,1733955827,vhdl,,,,clk_manager,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/MyPackage.vhd,1733955697,vhdl,C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd;C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd,,,mypackage,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/TIMER.vhd,1733955697,vhdl,,,,timer,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd,1734172304,vhdl,,,,display_led_tb,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd,1734172304,vhdl,,,,logic_led_tb,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd,1734172304,vhdl,,,,progreso_led_tb,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TIMER_TB.vhd,1734172304,vhdl,,,,timer_tb,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd,1734172806,vhdl,,,,clk_manager,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/MyPackage.vhd,1734172304,vhdl,C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd,,,mypackage,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/TIMER.vhd,1734172304,vhdl,,,,timer,,,,,,,,

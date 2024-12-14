@@ -45,7 +45,7 @@ architecture Behavioral of CLK_MANAGER_TB is
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (FREQS'range)
+        CLK_SUB: out std_logic_vector (0 to FREQS'high +1)
     );
     end component CLK_MANAGER;
     
@@ -58,7 +58,7 @@ architecture Behavioral of CLK_MANAGER_TB is
 --señales
     signal s_reset_n: std_logic;
     signal s_clk: std_logic := '0';
-    signal s_strobe: std_logic_vector(0 to 1);
+    signal s_strobe: std_logic_vector(0 to FREQS'high+1);
     
 
 begin
@@ -91,18 +91,35 @@ begin
         report "****** Test STROBE *******";
         s_reset_n <= '1';
             
-        for i in 0 to s_strobe'length-1 loop
+        for i in 1 to s_strobe'length-1 loop
             wait until s_strobe(i) = '1';
             tref := now;
             
             wait until s_strobe(i) = '1';
             p := (now-tref);
             
-            assert p = 1 sec / FREQS(i)
-                report "[FAILURE]: Expected: " & integer'image(1/FREQS(i)) & " , Obtained: " & time'image(p) 
+            assert p = 1 sec / FREQS(i-1)
+                report "[FAILURE]: Expected: " & integer'image(1/FREQS(i-1)) & " , Obtained: " & time'image(p) 
             severity failure;
         
         end loop;
+        
+        report "****** Test out main clk *******";
+        s_reset_n <= '1';
+            
+        for i in 0 to 5 loop
+            wait until s_strobe(0) = '1';
+            tref := now;
+            
+            wait until s_strobe(0) = '1';
+            p := (now-tref);
+            
+            assert p = 1 sec / CLK_FREQ
+                report "[FAILURE]: Expected: " & integer'image(1/CLK_FREQ) & " , Obtained: " & time'image(p) 
+            severity failure;
+        
+        end loop;
+        
         wait for CLK_PERIOD * 0.2;   
         assert false
             report "[PASSED] Test finished"

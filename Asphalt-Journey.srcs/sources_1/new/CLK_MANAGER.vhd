@@ -40,7 +40,7 @@ entity CLK_MANAGER is
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (FREQS'range)
+        CLK_SUB: out std_logic_vector (0 to FREQS'high+1)
     );
 end CLK_MANAGER;
 
@@ -62,14 +62,15 @@ architecture Behavioral of CLK_MANAGER is
 begin
     timer_gen: for i in FREQS'range generate  
         tx: TIMER 
-            generic map (
-                FREQ_D => FREQS(i),
-                FREQ_CLK => FREQ_CLK
-            )
-            port map(
-                RESET_N => RESET_N,
-                CLK => CLK_MAIN,
-                STROBE => CLK_SUB(i)
-            );
-        end generate;
+        generic map (
+            FREQ_D => FREQS(i),
+            FREQ_CLK => FREQ_CLK
+        )
+        port map(
+            RESET_N => RESET_N,
+            CLK => CLK_MAIN,
+            STROBE => CLK_SUB(i+1)
+        );
+    end generate;
+    CLK_SUB(0) <= CLK_MAIN;
 end Behavioral;

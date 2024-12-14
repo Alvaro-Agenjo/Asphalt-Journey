@@ -3,6 +3,8 @@ Note: ****** Test RESET *******
 Time: 0 ps  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
 Note: ****** Test STROBE *******
 Time: 200 us  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
+Note: ****** Test out main clk *******
+Time: 1999500 us  Iteration: 1  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
 Failure: [PASSED] Test finished
-Time: 1999700 us  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
-$finish called at time : 1999700 us : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd" Line 109
+Time: 2011700 us  Iteration: 0  Process: /CLK_MANAGER_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd
+$finish called at time : 2011700 us : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd" Line 126
