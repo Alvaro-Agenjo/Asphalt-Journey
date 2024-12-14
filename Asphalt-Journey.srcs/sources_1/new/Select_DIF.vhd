@@ -41,7 +41,7 @@ entity SELECTOR is
         CE: in std_logic;           --CE (Habilitación del módulo)
         PLUS: in std_logic;         -- entrada que simboliza el incremento de la dificultad seleccionada
         MINUS: in std_logic;        -- entrada que simboliza el decremento de la dificultad seleccionada
-        VAL: out positive          --Dificultad seleccionada
+        VAL: out positive           --Dificultad seleccionada
     );
 end SELECTOR;
 
@@ -54,7 +54,7 @@ begin
             valor <= 1;
         elsif rising_edge (CLK) then
             if CE = '1' then 
-                if PLUS = '1' and valor < 3 then 
+                if PLUS = '1' and valor < MAX then 
                     valor <= valor + 1;
                 elsif MINUS = '1' and valor > 1 then 
                     valor <= valor - 1; 
