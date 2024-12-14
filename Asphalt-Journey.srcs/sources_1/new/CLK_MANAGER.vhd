@@ -40,11 +40,7 @@ entity CLK_MANAGER is
     port(
         RESET_N: in std_logic;
         CLK_MAIN: in std_logic;
-<<<<<<< HEAD
         CLK_SUB: out std_logic_vector (0 to FREQS'high +1)
-=======
-        CLK_SUB: out std_logic_vector (0 to FREQS'high+1)
->>>>>>> CLK_Control
     );
 end CLK_MANAGER;
 

@@ -54,7 +54,7 @@ begin
             valor <= 1;
         elsif rising_edge (CLK) then
             if CE = '1' then 
-                if PLUS = '1' and valor < 3 then 
+                if PLUS = '1' and valor < MAX then 
                     valor <= valor + 1;
                 elsif MINUS = '1' and valor > 1 then 
                     valor <= valor - 1; 
