@@ -39,19 +39,19 @@ architecture Behavioral of CAR_CTRL_TB is
 --componente
     component CAR_CTRL is
     generic(
-        COOLDOWN_TIME: time := 10 sec
+        COOLDOWN_TIME: time := 10 sec       --Tiempo de enfriamiento de habilidad
     );
     port(
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        CE: in std_logic;
-        LEFT: in std_logic;
-        RIGHT: in std_logic;
-        CENTER: in std_logic;
-        CAR: in positive := 1;
-        CAR_POS: out positive;
-        HAB_RACE: out std_logic;
-        HAB_TANK: out std_logic
+        RESET_N: in std_logic;              --Reset asincrono, activo a nivel bajo
+        CLK: in std_logic;                  --Reloj del sistema
+        CE: in std_logic;                   --CE (Habilitación del módulo)
+        LEFT: in std_logic;                 --Boton izquierdo tratado
+        RIGHT: in std_logic;                --Boton derecho tratado
+        CENTER: in std_logic;               --Boton central tratado 
+        CAR: in positive := 1;              --Tipo de coche
+        CAR_POS: out positive;              --Posicion actual del coche
+        HAB_RACE: out std_logic := '0';     --Flag que indica que se ha activado la habilidad del coche tipo 1
+        HAB_TANK: out std_logic := '0'      --Flag que indica que se ha activado la habilidad del coche tipo 2  
     );
     end component CAR_CTRL;    
 

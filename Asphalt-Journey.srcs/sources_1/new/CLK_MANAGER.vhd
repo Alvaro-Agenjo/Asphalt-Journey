@@ -33,14 +33,14 @@ use work.MyPackage.all;
 
 entity CLK_MANAGER is
     generic(
-        FREQ_CLK: positive:= 100_000_000;
-        FREQS: positive_array 
+        FREQ_CLK: positive:= 100_000_000;       --frecuencia de reloj del sistema (principal)
+        FREQS: positive_array                   --vector con las frecuencias a generar
        
     );
     port(
-        RESET_N: in std_logic;
-        CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (0 to FREQS'high +1)
+        RESET_N: in std_logic;                              --Reset asincrono, activo a nivel bajo 
+        CLK_MAIN: in std_logic;                             --Reloj del sistema
+        CLK_SUB: out std_logic_vector (0 to FREQS'high +1)  --Salida de relojes, (principal, deseadas)
     );
 end CLK_MANAGER;
 
@@ -48,14 +48,14 @@ architecture Behavioral of CLK_MANAGER is
 
 --componentes
     component TIMER is
-        generic (
-            FREQ_D: positive;
-            FREQ_CLK: positive := 100_000_000
-        );
-        port(
-            RESET_N: in std_logic;
-            CLK: in std_logic;
-            STROBE: out std_logic 
+    generic (
+        FREQ_D: positive;                       --Frecuencia deseada 
+        FREQ_CLK: positive := 100_000_000       --Frecuencia del reloj
+    );
+    port(
+        RESET_N: in std_logic;                  --Reset asynchronus (active low).
+        CLK: in std_logic;                      --Clock
+        STROBE: out std_logic                   --new frec output.
     );
     end component TIMER;
     

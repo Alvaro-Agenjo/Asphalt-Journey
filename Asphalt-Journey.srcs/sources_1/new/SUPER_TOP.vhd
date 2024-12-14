@@ -59,15 +59,17 @@ architecture Behavioral of SUPER_TOP is
     --CLK_MANAGER
     component CLK_MANAGER is
     generic(
-        FREQ_CLK: positive:= 100_000_000;
-        FREQS: positive_array 
+        FREQ_CLK: positive:= 100_000_000;       --frecuencia de reloj del sistema (principal)
+        FREQS: positive_array                   --vector con las frecuencias a generar
+       
     );
     port(
-        RESET_N: in std_logic;
-        CLK_MAIN: in std_logic;
-        CLK_SUB: out std_logic_vector (0 to FREQS'high+1)
+        RESET_N: in std_logic;                              --Reset asincrono, activo a nivel bajo 
+        CLK_MAIN: in std_logic;                             --Reloj del sistema
+        CLK_SUB: out std_logic_vector (0 to FREQS'high +1)  --Salida de relojes, (principal, deseadas)
     );
     end component CLK_MANAGER;  
+
     --Barra de progreso
     component Progreso_LED is
     generic (
@@ -83,6 +85,7 @@ architecture Behavioral of SUPER_TOP is
         FIN_OK: out std_logic                   -- Flag fin correcto.
     );
     end component Progreso_LED;
+
     --Selector 
     component SELECTOR is
     generic(
@@ -98,16 +101,17 @@ architecture Behavioral of SUPER_TOP is
     );
     end component SELECTOR;
     
+    --detector de colisiones
     component CRASH_DTCTR is
         port(
-            RESET_N: in std_logic;                  -- Reset asincrono activo a nivel bajo
-            CLK: in std_logic;                      -- Reloj del sistema.
-            CE: in std_logic;                       -- CE ? quiza no.
-            SENAL: in std_logic;                    -- Pulso para cambio de escenario.
-            ROAD_AC: in road_tile_array;     -- Input codificada caretera actual
-            ROAD_FT: in road_tile_array;     -- Input codificada caretera futura
-            CAR_POS: in positive;                   -- Carril actual del coche
-            FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
+            RESET_N: in std_logic;              -- Reset asincrono activo a nivel bajo
+            CLK: in std_logic;                  -- Reloj del sistema.
+            CE: in std_logic;                   -- CE (habilitación de módulo)
+            SENAL: in std_logic;                -- Pulso para cambio de escenario.
+            ROAD_AC: in road_tile_array;        -- Input codificada caretera actual
+            ROAD_FT: in road_tile_array;        -- Input codificada caretera futura
+            CAR_POS: in positive;               -- Carril actual del coche
+            FIN_NOK: out std_logic              -- Flag termina el juego si hay colision o salida de carretera
         );
     end component CRASH_DTCTR;
 --señales

@@ -33,14 +33,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Cooldown is
     generic(
-        WAIT_TIME: time := 10 sec
+        WAIT_TIME: time := 10 sec           --tiempo de enfriamiento de la habilidad
     );
     port(
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        CE: in std_logic;
-        CENTER: in std_logic;
-        HABILITY_FLAG: out std_logic
+        RESET_N: in std_logic;              --Reset asincrono, activo a nivel bajo 
+        CLK: in std_logic;                  --Reloj del sistema
+        CE: in std_logic;                   --CE (Habilitación de módulo)
+        CENTER: in std_logic;               --Boton central tratado
+        HABILITY_FLAG: out std_logic        --Flag que indica la activación de la habilidad
     );
 end Cooldown;
 

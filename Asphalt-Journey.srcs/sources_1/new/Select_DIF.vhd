@@ -41,7 +41,7 @@ entity SELECTOR is
         CE: in std_logic;           --CE (Habilitación del módulo)
         PLUS: in std_logic;         -- entrada que simboliza el incremento de la dificultad seleccionada
         MINUS: in std_logic;        -- entrada que simboliza el decremento de la dificultad seleccionada
-        VAL: out positive          --Dificultad seleccionada
+        VAL: out positive           --Dificultad seleccionada
     );
 end SELECTOR;
 

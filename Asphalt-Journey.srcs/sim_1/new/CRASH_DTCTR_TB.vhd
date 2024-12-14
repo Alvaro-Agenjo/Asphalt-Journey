@@ -40,14 +40,14 @@ architecture Behavioral of CRASH_DTCTR_TB is
 --componente 
     component CRASH_DTCTR is
         port(
-            RESET_N: in std_logic;                  -- Reset asincrono activo a nivel bajo
-            CLK: in std_logic;                      -- Reloj del sistema.
-            CE: in std_logic;                       -- CE ? quiza no.
-            SENAL: in std_logic;                    -- Pulso para cambio de escenario.
+            RESET_N: in std_logic;           -- Reset asincrono activo a nivel bajo
+            CLK: in std_logic;               -- Reloj del sistema.
+            CE: in std_logic;                -- CE ? quiza no.
+            SENAL: in std_logic;             -- Pulso para cambio de escenario.
             ROAD_AC: in road_tile_array;     -- Input codificada caretera actual
             ROAD_FT: in road_tile_array;     -- Input codificada caretera futura
-            CAR_POS: in positive;                   -- Carril actual del coche
-            FIN_NOK: out std_logic                  -- Flag termina el juego si hay colision o salida de carretera
+            CAR_POS: in positive;            -- Carril actual del coche
+            FIN_NOK: out std_logic           -- Flag termina el juego si hay colision o salida de carretera
         );
     end component CRASH_DTCTR;
 
