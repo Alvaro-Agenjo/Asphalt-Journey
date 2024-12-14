@@ -38,7 +38,7 @@ end Cooldown_TB;
 architecture Behavioral of Cooldown_TB is
 --componente
     component Cooldown is
-        generic(
+    generic(
         WAIT_TIME: time := 10 sec           --tiempo de enfriamiento de la habilidad
     );
     port(
@@ -48,7 +48,6 @@ architecture Behavioral of Cooldown_TB is
         CENTER: in std_logic;               --Boton central tratado
         HABILITY_FLAG: out std_logic        --Flag que indica la activación de la habilidad
     );
-
     end component Cooldown;    
 
 --señales
@@ -72,7 +71,7 @@ begin
         CLK => s_clk,
         CE => s_ce,
         CENTER => s_center,
-        COOLDOWN_FLAG => s_cooldown_flag
+        HABILITY_FLAG => s_cooldown_flag
     );
 
     clk_gen: s_clk <= not s_clk after 0.5* CLK_PERIOD;

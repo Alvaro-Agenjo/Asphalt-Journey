@@ -1,7 +1,7 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SYNC_BUTTONS_tb_behav xil_defaultlib.SYNC_BUTTONS_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CAR_CTRL_TB_behav xil_defaultlib.CAR_CTRL_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,10 +11,8 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package xil_defaultlib.mypackage
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.TIMER [\TIMER(freq_d=200,freq_clk=1000)...]
-Compiling architecture behavioral of entity xil_defaultlib.TIMER [\TIMER(freq_d=1,freq_clk=1000)\]
-Compiling architecture behavioral of entity xil_defaultlib.CLK_MANAGER [\CLK_MANAGER(freq_clk=1000,freqs...]
-Compiling architecture behavioral of entity xil_defaultlib.clk_manager_tb
-Built simulation snapshot CLK_MANAGER_TB_behav
+Compiling architecture behavioral of entity xil_defaultlib.SELECTOR [\SELECTOR(max=7)\]
+Compiling architecture behavioral of entity xil_defaultlib.Cooldown [\Cooldown(wait_time=40000)\]
+Compiling architecture behavioral of entity xil_defaultlib.CAR_CTRL [\CAR_CTRL(cooldown_time=40000)\]
+Compiling architecture behavioral of entity xil_defaultlib.car_ctrl_tb
+Built simulation snapshot CAR_CTRL_TB_behav

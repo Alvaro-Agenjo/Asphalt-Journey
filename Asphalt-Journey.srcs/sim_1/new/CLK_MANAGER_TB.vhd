@@ -65,14 +65,14 @@ architecture Behavioral of CLK_MANAGER_TB is
 begin
     
     UUT: CLK_MANAGER
-    generic (
-        FREQ_D: positive;                       --Frecuencia deseada 
-        FREQ_CLK: positive := 100_000_000       --Frecuencia del reloj
-    );
-    port(
-        RESET_N: in std_logic;                  --Reset asynchronus (active low).
-        CLK: in std_logic;                      --Clock
-        STROBE: out std_logic                   --new frec output.
+    generic map(
+        FREQS => FREQS,                     --Frecuencia deseada 
+        FREQ_CLK => CLK_FREQ                --Frecuencia del reloj
+    )
+    port map(
+        RESET_N => s_reset_n,               --Reset asynchronus (active low).
+        CLK_MAIN => s_clk,                  --Clock
+        CLK_SUB => s_strobe                 --new frec output.
     );
 
     clk_gen: s_clk <= not s_clk after 0.5 * CLK_PERIOD; 
