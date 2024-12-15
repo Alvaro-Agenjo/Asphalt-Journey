@@ -9,7 +9,8 @@ entity MUX_TXT is
     port(
         CLK : in std_logic; --Reloj
         TXT : in char_array (7 downto 0); --Texto a imprimir en BCDs
-        SALIDA : out character --Caracter a imprimir en cada BCD
+        CARACTER : out character; --Caracter a imprimir en cada BCD
+        DISPLAY : out std_logic_vector(7 downto 0)
     );
 end MUX_TXT;
 
@@ -20,7 +21,9 @@ begin
         variable i : integer := 7;
     begin
         if rising_edge(CLK) then
-            SALIDA <= TXT(i);
+            CARACTER <= TXT(i);
+            DISPLAY <= std_logic_vector(to_unsigned(i, DISPLAY'length)) ;
+            
             i := i-1; --Recorrer vector de caracteres
             
             if i < 0 then --Cuando termino de recorrer el vector de caracteres

@@ -14,7 +14,8 @@ architecture Behavioral of MUX_TXT_tb is
         port(
             CLK : in std_logic; 
             TXT : in char_array (7 downto 0); 
-            SALIDA : out character 
+            CARACTER : out character;
+            DISPLAY : out std_logic_vector(7 downto 0) 
         );
     end component;
 
@@ -24,7 +25,8 @@ architecture Behavioral of MUX_TXT_tb is
 --Señales
     signal s_clk : std_logic := '0';
     signal s_txt : char_array (7 downto 0);
-    signal s_salida : character;
+    signal s_caracter : character;
+    signal s_display : std_logic_vector(7 downto 0);
     
 --Vector para test
     type vector_test is array (natural range <>) of char_array(7 downto 0);
@@ -54,7 +56,8 @@ begin
     port map(
          CLK => s_clk, 
          TXT => s_txt,
-         SALIDA => s_salida 
+         CARACTER => s_caracter,
+         DISPLAY => s_display 
     );
 
 --Test
