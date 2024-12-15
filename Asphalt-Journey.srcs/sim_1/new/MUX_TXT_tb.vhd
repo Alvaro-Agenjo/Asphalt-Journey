@@ -15,7 +15,7 @@ architecture Behavioral of MUX_TXT_tb is
             CLK : in std_logic; 
             TXT : in char_array (7 downto 0); 
             CARACTER : out character;
-            DISPLAY : out std_logic_vector(7 downto 0) 
+            DISPLAY : out integer 
         );
     end component;
 
@@ -26,7 +26,7 @@ architecture Behavioral of MUX_TXT_tb is
     signal s_clk : std_logic := '0';
     signal s_txt : char_array (7 downto 0);
     signal s_caracter : character;
-    signal s_display : std_logic_vector(7 downto 0);
+    signal s_display : integer;
     
 --Vector para test
     type vector_test is array (natural range <>) of char_array(7 downto 0);

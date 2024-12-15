@@ -10,7 +10,7 @@ entity MUX_TXT is
         CLK : in std_logic; --Reloj
         TXT : in char_array (7 downto 0); --Texto a imprimir en BCDs
         CARACTER : out character; --Caracter a imprimir en cada BCD
-        DISPLAY : out std_logic_vector(7 downto 0)
+        DISPLAY : out integer
     );
 end MUX_TXT;
 
@@ -22,7 +22,7 @@ begin
     begin
         if rising_edge(CLK) then
             CARACTER <= TXT(i);
-            DISPLAY <= std_logic_vector(to_unsigned(i, DISPLAY'length)) ;
+            DISPLAY <= i ;
             
             i := i-1; --Recorrer vector de caracteres
             
@@ -37,7 +37,8 @@ end Behavioral;
 --Breve explicaión:
 --le llega el texto a imprimir en cada uno de los Displays,
 --lo que hace es sacar en cada flanco positivo de reloj
---un caracter del texto. De esta manera solo necesitamos un
+--un caracter del texto y el Display que se debe enceder. 
+--De esta manera solo necesitamos un
 --decodificador, que comparten todos los displays,
 --de otra manera hubiésemos necesitado tantos decodificadores
 --como dislpays hubiese

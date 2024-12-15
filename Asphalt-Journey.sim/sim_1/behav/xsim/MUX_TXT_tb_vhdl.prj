@@ -18,6 +18,7 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sources_1/new/EDGE_DETECTOR.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/CONTROL_IMPRESION.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/MUX_TXT.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCDs.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_JUEGO_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_NUM_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd" \
