@@ -1,4 +1,1 @@
 Time resolution is 1 ps
-Failure: [FIN SIMULACION]
-Time: 250 ns  Iteration: 0  Process: /CONTROL_IMPRESION_tb/line__44  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CONTROL_IMPRESION_tb.vhd
-$finish called at time : 250 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CONTROL_IMPRESION_tb.vhd" Line 69

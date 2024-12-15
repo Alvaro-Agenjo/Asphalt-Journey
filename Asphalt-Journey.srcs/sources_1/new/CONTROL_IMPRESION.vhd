@@ -39,7 +39,7 @@ begin
                 end if;
         --Estado = JUEGO
             when "00010000" =>
-                TXT <= ('J','U','E','G','O', others => ' ');
+                TXT <= (others => ' ');
         --Estado = PAUSA
             when "00001000" =>
                 TXT <= ('P','A','U','S','E', others => ' ');
