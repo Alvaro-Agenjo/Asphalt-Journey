@@ -1,13 +1,8 @@
--- Nuevo tipo: array de caracteres
-package char_package is
-    type char_array is array (natural range <>) of character;
-end package char_package;
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use ieee.std_logic_textio.all;
-use work.char_package.all;
+use work.MyPackage.all;
 
 entity CONTROL_IMPRESION is
     generic (NUM_ESTADOS : positive := 8);

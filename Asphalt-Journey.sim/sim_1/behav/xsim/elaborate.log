@@ -13,7 +13,7 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_textio
-Compiling package xil_defaultlib.char_package
+Compiling package xil_defaultlib.mypackage
 Compiling architecture behavioral of entity xil_defaultlib.CONTROL_IMPRESION [control_impresion_default]
 Compiling architecture behavioral of entity xil_defaultlib.control_impresion_tb
 Built simulation snapshot CONTROL_IMPRESION_tb_behav
