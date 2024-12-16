@@ -32,7 +32,7 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sim_1/new/MUX_TXT_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCD_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_TXT_tb.vhd" \
-"../../../../Asphalt-Journey.srcs/sim_1/imports/new/TANK_HAB_TB.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd" \
 
 # Do not sort compile order
 nosort

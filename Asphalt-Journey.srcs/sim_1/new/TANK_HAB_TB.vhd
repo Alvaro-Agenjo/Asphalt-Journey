@@ -66,7 +66,6 @@ architecture Behavioral of TANK_HAB_TB is
         t_new_road: road_tile;
     end record;
 
-
     type vec_test is array (positive range <>) of road_test;
     -- Vector de pruebas
     constant value: vec_test := (
