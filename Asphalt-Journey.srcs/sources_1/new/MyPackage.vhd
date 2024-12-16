@@ -40,6 +40,9 @@ package MyPackage is
     type positive_array is array (natural range <>) of positive;
     type road_tile is (no_road, left_limit, right_limit, obstacle, road);
     type road_tile_array is array (1 to 7) of road_tile;
+    
+    -- Vector de caracteres 
+     type char_array is array (natural range <>) of character;
 end MyPackage;
 
 -- Cuerpo del paquete (en este caso, no es necesario porque solo defines tipos)

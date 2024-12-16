@@ -44,7 +44,18 @@ begin
     --Asignación de ascii a std_logic_vector (Displays BCD)
     with s_ascii select
         
-        LEDS <= "00010001" when 65, --A 
+        LEDS <= "00000011" when 48, --0 --Numeros
+                "10011111" when 49, --1
+                "00100101" when 50, --2
+                "00001101" when 51, --3
+                "10011001" when 52, --4
+                "01001001" when 53, --5    
+                "01000001" when 54, --6
+                "00011111" when 55, --7
+                "00000001" when 56, --8
+                "00001001" when 57, --9     
+                  
+                "00010001" when 65, --A --Letras
                 "11000001" when 66, --B 
                 "01100011" when 67, --C 
                 "10000101" when 68, --D 
