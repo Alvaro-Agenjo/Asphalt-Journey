@@ -37,6 +37,7 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sim_1/imports/new/SYNCHRNZR_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/CONTROL_IMPRESION_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/MUX_TXT_tb.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCD_tb.vhd" \
 
 # Do not sort compile order
 nosort
