@@ -65,7 +65,7 @@ architecture Behavioral of TANK_HAB_TB is
         t_tank_pos: positive;
         t_new_road: road_tile;
     end record;
-
+--beloooooo
 
     type vec_test is array (positive range <>) of road_test;
     -- Vector de pruebas
