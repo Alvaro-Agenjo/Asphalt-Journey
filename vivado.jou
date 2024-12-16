@@ -11,9 +11,9 @@
 # Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
 # Running On        :DESKTOP-A7KB9SN
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :19045
-# Processor Detail  :Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
-# CPU Frequency     :2496 MHz
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :2803 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8373 MB
@@ -35,3 +35,5 @@ set_property top TANK_HAB [current_fileset]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode DisplayOnly [current_project]
 launch_simulation
+source IMPRIMIR_TXT_tb.tcl
+close_sim

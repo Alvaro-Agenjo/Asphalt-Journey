@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: [FIN SIMULACION]
+Time: 1120 ns  Iteration: 0  Process: /IMPRIMIR_TXT_tb/line__56  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_TXT_tb.vhd
+$finish called at time : 1120 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_TXT_tb.vhd" Line 92
