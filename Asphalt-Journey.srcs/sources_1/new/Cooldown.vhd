@@ -49,25 +49,25 @@ architecture Behavioral of Cooldown is
 begin
     
     process(RESET_N, CLK)
-        variable twait: std_logic;
+        variable espera: std_logic;
         variable base_t: time :=0 sec;
         variable actual_t: time :=0 sec; 
     begin
         if RESET_N = '0' then 
-            twait := '1';
+            espera := '1';
         elsif rising_edge(CLK) then
             if CE = '1' then 
                 hability <= '0';
                 actual_t := now;
                 if CENTER = '1' then 
-                    if twait = '0' then
-                        twait := '1';
+                    if espera = '0' then
+                        espera := '1';
                         base_t := now;
                         hability <= '1';                   
                     end if;
                 end if;
                 if actual_t -base_t >= WAIT_TIME then
-                    twait := '0';
+                    espera := '0';
                 end if;
             else 
                 base_t := now;
