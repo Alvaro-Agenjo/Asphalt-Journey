@@ -38,7 +38,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 package MyPackage is
     -- Definir un tipo de array para vectores de números positivos
     type positive_array is array (natural range <>) of positive;
-    type road_tile is (no_road, left_limit, right_limit, obstacle, road);
+    type road_tile is (no_road, left_limit, left_obstacle, right_limit, right_obstacle, obstacle, road);
     type road_tile_array is array (1 to 7) of road_tile;
 end MyPackage;
 

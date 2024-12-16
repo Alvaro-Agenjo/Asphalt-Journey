@@ -65,7 +65,7 @@ architecture Behavioral of CLK_MANAGER_TB is
 begin
     
     UUT: CLK_MANAGER
-    generic (
+    generic map(
         FREQ_D: positive;                       --Frecuencia deseada 
         FREQ_CLK: positive := 100_000_000       --Frecuencia del reloj
     );
