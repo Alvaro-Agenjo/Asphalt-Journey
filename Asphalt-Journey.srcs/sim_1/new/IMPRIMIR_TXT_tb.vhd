@@ -11,14 +11,16 @@ end IMPRIMIR_TXT_tb;
 architecture Behavioral of IMPRIMIR_TXT_tb is
 --Componente
     component IMPRIMIR_TXT is
-    generic( NUM_ESTADOS : positive := 8 );
-        port(
-            CLK : in std_logic; 
-            ESTADO : in std_logic_vector(NUM_ESTADOS-1 downto 0); 
-            DIF : in positive; 
-            COCHE : in positive; 
-            DIGSEL : out std_logic_vector(7 downto 0); 
-            SEGMENT : out std_logic_vector(7 downto 0) 
+    generic( 
+        NUM_ESTADOS : positive := 8
+     );
+    port(
+        CLK : in std_logic; 
+        ESTADO : in std_logic_vector(NUM_ESTADOS-1 downto 0); 
+        DIF : in positive; 
+        COCHE : in positive; 
+        DIGSEL : out std_logic_vector(7 downto 0); 
+        SEGMENT : out std_logic_vector(7 downto 0) 
         );
     end component;    
  
@@ -42,7 +44,9 @@ begin
 
 --Unit Under Test
     uut: IMPRIMIR_TXT
-        generic map( NUM_ESTADOS => n_estados )
+        generic map(
+            NUM_ESTADOS => n_estados 
+        )
         port map (
             CLK => s_clk, 
             ESTADO => s_estado, 
