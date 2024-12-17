@@ -39,12 +39,12 @@ architecture Behavioral of TANK_HAB_TB is
 --componente
     component TANK_HAB is
     port(
-        CLK: in std_logic;
-        CE: in std_logic; 
-        RAW_ROAD_AC: in road_tile_array;
-        TANK_POS: in positive;
-        HAB_TANK: in std_logic;
-        ROAD_AC: out road_tile_array    
+        CLK: in std_logic;                  --Reloj del sistema
+        CE: in std_logic;                   --CE (Habilitación de móduo)
+        TANK_POS: in positive;              --Posicion del vehículo.
+        HAB_TANK: in std_logic;             -- Señal que indica la activación de habilidad
+        RAW_ROAD_AC: in road_tile_array;    --Carretera antes de habilidad
+        ROAD_AC: out road_tile_array        --Carretera tras la habilidad
     );
     end component TANK_HAB;  
 
