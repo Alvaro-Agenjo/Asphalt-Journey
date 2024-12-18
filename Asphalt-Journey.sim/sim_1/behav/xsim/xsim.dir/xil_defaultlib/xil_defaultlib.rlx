@@ -2,6 +2,7 @@
 2020.2
 May 22 2024
 19:03:11
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CNTR_tb.vhd,1734554238,vhdl,,,,cntr_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/EDGE_DETECTOR_tb.vhd,1734538326,vhdl,,,,edge_detector_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/SYNCHRNZR_tb.vhd,1734538326,vhdl,,,,synchrnzr_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/SYNC_BUTTONS_tb.vhd,1734538326,vhdl,,,,sync_buttons_tb,,,,,,,,
@@ -15,7 +16,7 @@ C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3.
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_NUM_tb.vhd,1734538326,vhdl,,,,dec_num_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd,1734538326,vhdl,,,,dec_txt_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd,1734538326,vhdl,,,,display_led_tb,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd,1734554128,vhdl,,,,fms_tb,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd,1734554208,vhdl,,,,fms_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCD_tb.vhd,1734538326,vhdl,,,,impresion_bcd_tb,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCDs.vhd,1734538326,vhdl,,,,impresion_bcd,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_TXT_tb.vhd,1734538326,vhdl,,,,imprimir_txt_tb,,,,,,,,
@@ -36,7 +37,7 @@ C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3.
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd,1734538326,vhdl,,,,dec_txt,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd,1734538326,vhdl,,,,display_led,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/EDGE_DETECTOR.vhd,1734538326,vhdl,,,,edgedtctr,,,,,,,,
-C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/FSM.vhd,1734553311,vhdl,,,,fsm,,,,,,,,
+C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/FSM.vhd,1734554208,vhdl,,,,fsm,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/IMPRIMIR_TXT.vhd,1734538326,vhdl,,,,imprimir_txt,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd,1734538326,vhdl,,,,logic_led,,,,,,,,
 C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/MUX_TXT.vhd,1734538326,vhdl,,,,mux_txt,,,,,,,,

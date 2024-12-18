@@ -46,6 +46,7 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_TXT_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/SUPER_TOP_TB.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/imports/new/CNTR_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd" \
 
 # Do not sort compile order

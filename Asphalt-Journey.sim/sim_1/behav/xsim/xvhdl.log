@@ -1,2 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CNTR_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CNTR_tb'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'FMS_TB'
