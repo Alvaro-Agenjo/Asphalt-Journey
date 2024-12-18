@@ -4,6 +4,9 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/TIMER.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/CRASH_DTCTR.vhd" \
@@ -11,7 +14,16 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sources_1/new/SUPER_TOP.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/CAR_CTRL.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/Cooldown.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/SYNC_EDGE.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/SYNC_BUTTONS.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/SYNCHRONIZER.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/EDGE_DETECTOR.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/CONTROL_IMPRESION.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/MUX_TXT.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCDs.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/IMPRIMIR_TXT.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/TANK_HAB.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/FSM.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_JUEGO_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_NUM_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd" \
@@ -33,6 +45,8 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCD_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_TXT_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/new/SUPER_TOP_TB.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd" \
 
 # Do not sort compile order
 nosort
