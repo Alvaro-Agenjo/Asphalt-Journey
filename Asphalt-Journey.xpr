@@ -430,7 +430,6 @@
       </File>
       <File Path="$PSRCDIR/sim_1/new/FMS_TB.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

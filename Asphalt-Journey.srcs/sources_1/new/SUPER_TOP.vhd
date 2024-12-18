@@ -174,10 +174,32 @@ architecture Behavioral of SUPER_TOP is
             BUTTONS_SYNC : out std_logic_vector(NUM_BUTTONS-1 downto 0) 
         ); 
     end component;
+
+    --FSM
+    --componente
+    component FSM is
+	port(
+    	--Control inputs
+        RESET_N: in std_logic;		--Reset asincrono active low (max. priority)
+        CLK: in std_logic;		-- Clock
+        
+        --Sensor inputs
+        CONFIRM: in std_logic;
+        JUEGO2MENU: in std_logic;
+        MENU2JUEGO: in std_logic;
+        ANY: in std_logic;
+        FIN_OK: in std_logic;
+        FIN_NOK: in std_logic;
+        
+        --output
+        STATES: out std_logic_vector(1 to 8)
+    );  
+    end component FSM;
 --señales
     
     signal relojes: std_logic_vector (0 to FREQS'high +1);
     signal State: std_logic_vector(1 to 8);     -- Estados (mirar wiki)     
+    signal Menu_n: std_logic;
     
     signal dificultad: positive; --seleccion diff
     signal car: positive; --seleccion car
@@ -185,7 +207,7 @@ architecture Behavioral of SUPER_TOP is
     --Botones
     signal s_raw_bt: std_logic_vector(NUM_BUT-1 downto 0) := (B_UP, B_DOWN, B_LEFT, B_RIGHT, B_CENTER);
     signal s_bt: std_logic_vector(NUM_BUT-1 downto 0);
-        
+    signal s_any: std_logic;    
     
     signal fin_fase: std_logic;     --Sale del temporizador de manu
     
@@ -212,9 +234,24 @@ architecture Behavioral of SUPER_TOP is
 
 begin
     
+    Menu_n <= not State(1);
     SJ_SP <= State(4) or State(5) or State(6);
     SEGMENT <= s_segment_gm and s_segment_txt;  --desactivado = 1 --> 1 and x = x
     DIGSEL <= not s_digsel_txt; --??
+    s_any <= s_bt(4) or s_bt(3) or s_bt(2) or s_bt(1) or s_bt(0);
+    
+    Maquina_estados: FSM
+        port map (
+            RESET_N => RESET_N,
+            CLK => relojes(0),
+            CONFIRM => s_bt(0),
+            JUEGO2MENU => s_bt(4),
+            MENU2JUEGO => s_bt(3),
+            ANY => s_any,
+            FIN_OK => s_fin_ok,
+            FIN_NOK => s_fin_nok,
+            STATES => State
+    );
     
     gen_clk:  CLK_MANAGER
         generic map (
@@ -232,7 +269,7 @@ begin
         TOTAL_LENGTH => 6               --Seis fases por nivel?
     )
     port map(
-        RESET_N => State(1),
+        RESET_N => Menu_n,
         CLK => relojes(0),
         CE_200 => relojes(1),
         ENABLE => SJ_SP,
@@ -246,7 +283,7 @@ begin
             MAX => MAX_DIFF
         )
         port map(
-            RESET_N =>State(1),
+            RESET_N =>Menu_n,
             CLK =>relojes(0),
             CE=>State(2),
             PLUS => s_bt(4),
@@ -259,7 +296,7 @@ begin
             MAX => MAX_CAR
         )
         port map(
-            RESET_N =>State(1),
+            RESET_N =>Menu_n,
             CLK =>relojes(0),
             CE=>State(3),
             PLUS => s_bt(4),
@@ -269,7 +306,7 @@ begin
 
     DetectorColision: CRASH_DTCTR
         port map(
-            RESET_N =>State(1),
+            RESET_N =>Menu_n,
             CLK =>relojes(0),
             CE=> State(4),
             SENAL =>fin_fase,
@@ -284,7 +321,7 @@ begin
         COOLDOWN_TIME => COOLDOWN_TIME
     )
     port map(
-        RESET_N => State(1),
+        RESET_N => Menu_n,
         CLK => relojes(0),
         CE => State(4),
         LEFT => s_bt(2),
@@ -295,7 +332,7 @@ begin
         HAB_RACE => s_hab_race,
         HAB_TANK => s_hab_tank
     );
-    
+      
     Habilidad_tanque: TANK_HAB 
     port map(
         CLK => relojes(0),
@@ -307,18 +344,18 @@ begin
     );
     
     Impresion_texto: IMPRIMIR_TXT
-        generic map( 
-            NUM_ESTADOS => State'length 
-        )
-        port map (
-            CLK => relojes(0),          --faltaría un CE en algun lado para que vaya a ~200Hz
-            ESTADO => State, 
-            DIF => dificultad,
-            COCHE => car,
-            DIGSEL => s_digsel_txt,     -- siempre cuenta usar el txt como referencia???
-            SEGMENT => s_segment_txt  
-        );
-    
+    generic map( 
+        NUM_ESTADOS => State'length 
+    )
+    port map (
+        CLK => relojes(0),          --faltaría un CE en algun lado para que vaya a ~200Hz
+        ESTADO => State, 
+        DIF => dificultad,
+        COCHE => car,
+        DIGSEL => s_digsel_txt,     -- siempre cuenta usar el txt como referencia???
+        SEGMENT => s_segment_txt  
+    );
+
     Tratamiento_Botones: SYNC_BUTTONS
         generic map(
             NUM_BUTTONS => NUM_BUT 
@@ -328,4 +365,6 @@ begin
             BUTTONS_ASYNC => s_raw_bt, 
             BUTTONS_SYNC => s_bt  
         );
+
+    
 end Behavioral;
