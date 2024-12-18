@@ -18,6 +18,8 @@ REM ****************************************************************************
 REM compile VHDL design sources
 echo "xvhdl --incr --relax -prj TANK_HAB_TB_vhdl.prj"
 call xvhdl  --incr --relax -prj TANK_HAB_TB_vhdl.prj -log xvhdl.log
+echo "xvhdl --incr --relax -prj CNTR_tb_vhdl.prj"
+call xvhdl  --incr --relax -prj CNTR_tb_vhdl.prj -log xvhdl.log
 call type xvhdl.log > compile.log
 if "%errorlevel%"=="1" goto END
 if "%errorlevel%"=="0" goto SUCCESS
