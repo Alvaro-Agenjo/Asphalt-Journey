@@ -7,6 +7,7 @@ entity CNTR is
 	generic(
     	WIDTH	 : positive := 4 -- Counter width
     );
+    -- sd
     port(
      RST : in std_logic; -- Synchronous active low reset (max. priority)
      CLK : in std_logic; -- Clock
