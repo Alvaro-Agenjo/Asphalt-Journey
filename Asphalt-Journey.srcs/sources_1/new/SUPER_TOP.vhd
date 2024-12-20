@@ -262,8 +262,8 @@ begin
             -- Para testbench CLK ->1kHz
             --FREQ_CLK => CLK_FREQ, 
             
-            Para implementacion CLK ->100MHz
-            FREQ_CLK,
+            --Para implementacion CLK ->100MHz
+            --vacio--
             
             FREQS => FREQS
         )
