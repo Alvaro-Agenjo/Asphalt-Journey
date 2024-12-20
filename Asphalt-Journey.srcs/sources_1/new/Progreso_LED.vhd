@@ -33,13 +33,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Progreso_LED is
     generic (
-        TOTAL_LENGTH: natural := 5                  --Numero de fases del escenario
+        BASE_LENGTH: natural := 5                  --Numero de fases del escenario
     );
     port(
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
         CLK: in std_logic;                      -- Reloj del sistema.
         CE_200: in std_logic;                   -- Clock enable (200Hz)
         ENABLE: in std_logic;                   -- Habilitacion del módulo (se asociará a un estado de la máquina de estados)
+        DIFF: in positive;                      -- Señal de dificultad (longitud variable)
         PULSO: in std_logic;                    -- Pulso para indicar el cambio de fase
         LEDS: out std_logic_vector (0 to 15);   -- Barra de progreso  (--> directa a constrains)
         FIN_OK: out std_logic                   -- Flag fin correcto.
@@ -62,12 +63,13 @@ architecture Structural of Progreso_LED is
     
     component Logic_LED is
     generic (
-        TOTAL_LENGTH: positive := 5     --Numero de fases del escenario
+        BASE_LENGTH: positive := 5     --Numero de fases del escenario
     );
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
         CLK: in std_logic;              --Reloj 
         CE: in std_logic;               --Habilita el funcionamiento del modulo
+        DIFF: in positive;              -- Señal de dificultad (longitud variable)
         SENAL: in std_logic;            --Ha habido cambio de fase
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
@@ -82,12 +84,13 @@ begin
     
     Unidad_logica: Logic_LED 
     generic map(
-        TOTAL_LENGTH => TOTAL_LENGTH     
+        BASE_LENGTH => BASE_LENGTH     
     )
     port map(
         RESET_N => RESET_N,
         CLK => CLK,
         CE => ENABLE,
+        DIFF => DIFF,
         SENAL => PULSO,
         N_LED => s_n_led,
         FIN_OK => FIN_OK

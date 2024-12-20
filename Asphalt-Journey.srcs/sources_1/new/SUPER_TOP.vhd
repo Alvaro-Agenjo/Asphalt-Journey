@@ -77,13 +77,14 @@ architecture Behavioral of SUPER_TOP is
     --Barra de progreso
     component Progreso_LED is
     generic (
-        TOTAL_LENGTH: natural := 5              --Numero de fases del escenario
+        BASE_LENGTH: natural := 5                  --Numero de fases del escenario
     );
     port(
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
         CLK: in std_logic;                      -- Reloj del sistema.
         CE_200: in std_logic;                   -- Clock enable (200Hz)
         ENABLE: in std_logic;                   -- Habilitacion del módulo (se asociará a un estado de la máquina de estados)
+        DIFF: in positive;                      -- Señal de dificultad (longitud variable)
         PULSO: in std_logic;                    -- Pulso para indicar el cambio de fase
         LEDS: out std_logic_vector (0 to 15);   -- Barra de progreso  (--> directa a constrains)
         FIN_OK: out std_logic                   -- Flag fin correcto.
@@ -275,13 +276,14 @@ begin
         
     Barra_LED: Progreso_LED 
     generic map(
-        TOTAL_LENGTH => 6               --Seis fases por nivel?
+        BASE_LENGTH => 5               --Seis fases por nivel?
     )
     port map(
         RESET_N => Menu_n,
         CLK => relojes(0),
         CE_200 => relojes(1),
         ENABLE => SJ_SP,
+        DIFF => dificultad,
         PULSO => fin_fase,      --Salida del temporizador manuel
         LEDS => LED,
         FIN_OK => s_fin_ok

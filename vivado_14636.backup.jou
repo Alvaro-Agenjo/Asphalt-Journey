@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+<<<<<<< HEAD
+# Start of session at: Fri Dec 20 09:41:24 2024
+# Process ID: 14636
+# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6740 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
+=======
+# Start of session at: Fri Dec 20 11:03:05 2024
+# Process ID: 17756
+# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21432 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
+>>>>>>> efb96c34bc8d1a3483f99e0e27041d2e362bb02b
+# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/vivado.log
+# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
+# Running On        :DESKTOP-A7KB9SN
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8373 MB
+# Swap memory       :9372 MB
+# Total Virtual     :17745 MB
+<<<<<<< HEAD
+# Available Virtual :8725 MB
+=======
+# Available Virtual :8487 MB
+>>>>>>> efb96c34bc8d1a3483f99e0e27041d2e362bb02b
+#-----------------------------------------------------------
+start_gui
+open_project {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr}
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
+synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
