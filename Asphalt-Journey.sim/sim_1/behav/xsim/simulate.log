@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Note: ***** Test Enable *****
+Time: 4 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Note: ***** Test Count *****
+Time: 70 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Note: ***** Test Overflow *****
+Time: 320730 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+Failure: [PASSED] Test passed successfully
+Time: 320734 ns  Iteration: 0  Process: /Progreso_LED_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd
+$finish called at time : 320734 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd" Line 215

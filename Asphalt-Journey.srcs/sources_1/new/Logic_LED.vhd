@@ -37,12 +37,13 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Logic_LED is
     generic (
-        TOTAL_LENGTH: positive := 5     --Numero de fases del escenario
+        BASE_LENGTH: positive := 5     --Numero de fases del escenario
     );
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
         CLK: in std_logic;              --Reloj 
         CE: in std_logic;               --Habilita el funcionamiento del modulo
+        DIFF: in positive;              -- Señal de dificultad (longitud variable)
         SENAL: in std_logic;            --Ha habido cambio de fase
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
@@ -54,7 +55,9 @@ begin
 
     process(RESET_N, CLK, SENAL)
         variable fase: natural :=1;    --Fase actual del escenario
+        variable TOTAL_LENGTH: positive:= 1;
     begin
+        TOTAL_LENGTH := DIFF * BASE_LENGTH;
         if RESET_N = '0' then
             N_LED <= 0;
             fase := 0;
