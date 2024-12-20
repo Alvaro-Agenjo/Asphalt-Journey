@@ -36,12 +36,14 @@ entity SUPER_TOP is
         RESET_N: in std_logic;                  --Reset asincrono a nivel bajo.
         CLK: in std_logic;                      --Reloj del sistema.
         B_UP: in std_logic;                     --Señal sin procesar boton arriba   (4)
-        B_DOWN: in std_logic;                   --Señal sin procesar boton abajo    (3)
-        B_LEFT: in std_logic;                   --Señal sin procesar boton izquierda(2)
+        B_DOWN: in std_logic;                   --Señal sin procesar boton abajo    (0)
+        B_LEFT: in std_logic;                   --Señal sin procesar boton izquierda(3)
         B_RIGHT: in std_logic;                  --Señal sin procesar boton derecha  (1)
-        B_CENTER: in std_logic;                 --Señal sin procesar boton central  (0)
+        B_CENTER: in std_logic;                 --Señal sin procesar boton central  (2)
         
-        LEDS: out std_logic_vector(0 to 15);        --Vector para encender los leds (Barra de progreso)
+        SW_FASE: in std_logic;
+
+        LED: out std_logic_vector(0 to 15);        --Vector para encender los leds (Barra de progreso)
         DIGSEL: out std_logic_vector(7 downto 0);   --Vector que controla que display está encendido.
         SEGMENT: out std_logic_vector(7 downto 0)   --Vector que controla que segmentos estan encendidos en el display seleccionado
     );
@@ -205,14 +207,14 @@ architecture Behavioral of SUPER_TOP is
     signal car: positive; --seleccion car
     
     --Botones
-    signal s_raw_bt: std_logic_vector(NUM_BUT-1 downto 0) := (B_UP, B_DOWN, B_LEFT, B_RIGHT, B_CENTER);
+    signal s_raw_bt: std_logic_vector(NUM_BUT-1 downto 0) := (B_UP, B_LEFT, B_CENTER, B_RIGHT , B_DOWN);
     signal s_bt: std_logic_vector(NUM_BUT-1 downto 0);
     signal s_any: std_logic;    
     
     signal fin_fase: std_logic;     --Sale del temporizador de manu
     
-    signal road_ft: road_tile_array;
-    signal raw_road_ac: road_tile_array;
+    signal road_ft: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
+    signal raw_road_ac: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
     signal road_ac: road_tile_array;
     
     signal car_pos: positive;
@@ -224,7 +226,7 @@ architecture Behavioral of SUPER_TOP is
     signal s_segment_txt: std_logic_vector(7 downto 0);
 
     signal s_digsel_gm: std_logic_vector(7 downto 0);
-    signal s_segment_gm: std_logic_vector(7 downto 0);
+    signal s_segment_gm: std_logic_vector(7 downto 0) := (others => '1');
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     signal s_fin_ok: std_logic;
     signal s_fin_nok: std_logic;
@@ -232,8 +234,10 @@ architecture Behavioral of SUPER_TOP is
     --Combinaciones de estados 
     signal SJ_SP: std_logic;        --Activo si State_Juego o State_Pausa activado;
 
+   
 begin
     
+    fin_fase <= SW_FASE;
     Menu_n <= not State(1);
     SJ_SP <= State(4) or State(5) or State(6);
     SEGMENT <= s_segment_gm and s_segment_txt;  --desactivado = 1 --> 1 and x = x
@@ -244,9 +248,9 @@ begin
         port map (
             RESET_N => RESET_N,
             CLK => relojes(0),
-            CONFIRM => s_bt(0),
-            JUEGO2MENU => s_bt(4),
-            MENU2JUEGO => s_bt(3),
+            CONFIRM => s_bt(2),
+            JUEGO2MENU => s_bt(0),
+            MENU2JUEGO => s_bt(1),
             ANY => s_any,
             FIN_OK => s_fin_ok,
             FIN_NOK => s_fin_nok,
@@ -255,7 +259,12 @@ begin
     
     gen_clk:  CLK_MANAGER
         generic map (
-            FREQ_CLK => CLK_FREQ, 
+            -- Para testbench CLK ->1kHz
+            --FREQ_CLK => CLK_FREQ, 
+            
+            Para implementacion CLK ->100MHz
+            FREQ_CLK,
+            
             FREQS => FREQS
         )
         port map (
@@ -274,7 +283,7 @@ begin
         CE_200 => relojes(1),
         ENABLE => SJ_SP,
         PULSO => fin_fase,      --Salida del temporizador manuel
-        LEDS => LEDS,
+        LEDS => LED,
         FIN_OK => s_fin_ok
     );    
     
@@ -287,7 +296,7 @@ begin
             CLK =>relojes(0),
             CE=>State(2),
             PLUS => s_bt(4),
-            MINUS => s_bt(3),
+            MINUS => s_bt(0),
             VAL => dificultad
         );
      
@@ -300,7 +309,7 @@ begin
             CLK =>relojes(0),
             CE=>State(3),
             PLUS => s_bt(4),
-            MINUS => s_bt(3),
+            MINUS => s_bt(0),
             VAL => car
         );
 
@@ -324,9 +333,9 @@ begin
         RESET_N => Menu_n,
         CLK => relojes(0),
         CE => State(4),
-        LEFT => s_bt(2),
+        LEFT => s_bt(3),
         RIGHT => s_bt(1), 
-        CENTER => s_bt(0),
+        CENTER => s_bt(2),
         CAR => car,
         CAR_POS => car_pos,
         HAB_RACE => s_hab_race,
@@ -348,7 +357,7 @@ begin
         NUM_ESTADOS => State'length 
     )
     port map (
-        CLK => relojes(0),          --faltaría un CE en algun lado para que vaya a ~200Hz
+        CLK => relojes(2),          --faltaría un CE en algun lado para que vaya a ~200Hz
         ESTADO => State, 
         DIF => dificultad,
         COCHE => car,
