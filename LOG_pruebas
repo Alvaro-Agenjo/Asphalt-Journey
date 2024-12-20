@@ -1,0 +1,7 @@
+CLK_MANAGER:
+ falló porque le pusimos un relog de 100MHz pero la frecuencia utilizada para calcular las reducciones 
+ era de 1kHz. Por tanto cuando calculaba la freq de 1 Hz el contador tomava el valor 1kHz/1Hz = 1_000 
+ y como el reloj de entrada era de 100MHz la frecuencia resultante fue de 100kHz.
+
+Cambio de fase:
+ no llego a funcionar porque lo puse en el sw 1 y me puse a mover cual retrasado el sw 15
