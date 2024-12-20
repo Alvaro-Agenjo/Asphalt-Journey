@@ -40,13 +40,14 @@ architecture Structural of Progreso_LED_TB is
     --Componente
     component Progreso_LED is
     generic (
-        TOTAL_LENGTH: natural := 5              --Numero de fases del escenario
+        BASE_LENGTH: natural := 5                  --Numero de fases del escenario
     );
     port(
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
         CLK: in std_logic;                      -- Reloj del sistema.
         CE_200: in std_logic;                   -- Clock enable (200Hz)
         ENABLE: in std_logic;                   -- Habilitacion del módulo (se asociará a un estado de la máquina de estados)
+        DIFF: in positive;                      -- Señal de dificultad (longitud variable)
         PULSO: in std_logic;                    -- Pulso para indicar el cambio de fase
         LEDS: out std_logic_vector (0 to 15);   -- Barra de progreso  (--> directa a constrains)
         FIN_OK: out std_logic                   -- Flag fin correcto.
@@ -58,13 +59,14 @@ architecture Structural of Progreso_LED_TB is
     signal s_clk: std_logic := '0';
     signal s_ce_200: std_logic;
     signal s_enable: std_logic;
+    signal s_diff: positive := 3;
     signal s_pulso: std_logic := '0';
     signal s_leds: std_logic_vector (0 to 15);
     signal s_fin_ok: std_logic;
        
     --Constantes 
     constant CLK_PERIOD: time := 20 ns;
-    constant TAM: natural := 16;
+    constant TAM: natural := 5;
     
     --Vectores de test
    type led_test is record
@@ -97,13 +99,14 @@ begin
     
     UUT: Progreso_LED 
     generic map(
-        TOTAL_LENGTH => TAM
+        BASE_LENGTH => TAM
     )
     port map(
         RESET_N => s_reset_n,
         CLK => s_clk,
         CE_200 => s_ce_200,
         ENABLE => s_enable,
+        DIFF => s_diff,
         PULSO => s_pulso,
         LEDS => s_leds,
         FIN_OK => s_fin_ok
@@ -138,8 +141,10 @@ begin
     
     
     test:process
+        variable tamano: positive;
     begin
-    
+        
+        tamano := s_diff * TAM;
         report "***** Test RESET *****";
         s_reset_n <= '0';
         s_enable <= '0';
@@ -180,12 +185,13 @@ begin
         s_reset_n <= '1';
         s_enable <= '1';
         
-        for i in 0 to TAM loop
+        
+        for i in 0 to tamano loop
             
             wait for  0.1*CLK_PERIOD;
             -- Comprobar la salida de LIGHT
-            assert (s_leds =value(16 * i / TAM).t_led)
-            report "[ERROR] Expected value: " & integer'image(TO_INTEGER (unsigned(value(16 * i / TAM).t_led) )) &
+            assert (s_leds =value(16 * i / tamano).t_led)
+            report "[ERROR] Expected value: " & integer'image(TO_INTEGER (unsigned(value(16 * i / tamano).t_led) )) &
                    " Obtained: " & integer'image(TO_INTEGER(unsigned(s_leds)))
             severity failure;
             

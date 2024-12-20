@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1733868589">
-  <File Type="ROUTE-PWR" Name="Logic_LED_power_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="Progreso_LED_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Logic_LED.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="Logic_LED_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="Progreso_LED_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Logic_LED_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="Logic_LED.msk"/>
-  <File Type="ROUTE-CLK" Name="Logic_LED_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Progreso_LED_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="Logic_LED.vdi"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Logic_LED_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Progreso_LED_bus_skew_routed.rpt"/>
   <File Type="PA-DCP" Name="Logic_LED.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Logic_LED_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Progreso_LED_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Logic_LED.bit"/>
   <File Type="BG-DRC" Name="Logic_LED.drc"/>
   <File Type="BG-BGN" Name="Logic_LED.bgn"/>
@@ -18,31 +18,35 @@
   <File Type="BITSTR-NKY" Name="Logic_LED.nky"/>
   <File Type="BITSTR-BMM" Name="Logic_LED_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="Logic_LED.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Progreso_LED_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="Logic_LED.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Progreso_LED_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Logic_LED.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="Logic_LED_boot.pdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="Logic_LED_drc_opted.rpt"/>
+  <File Type="NPI_FILE" Name="Logic_LED.npi"/>
+  <File Type="OPT-DRC" Name="Progreso_LED_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Logic_LED.hwdef"/>
-  <File Type="PLACE-IO" Name="Logic_LED_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="Logic_LED_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Logic_LED_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="Logic_LED_control_sets_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Progreso_LED_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Progreso_LED_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Progreso_LED_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Progreso_LED_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Logic_LED_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="Logic_LED_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Logic_LED_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Logic_LED_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="Logic_LED_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Logic_LED_route_status.pb"/>
+  <File Type="ROUTE-DRC" Name="Progreso_LED_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Progreso_LED_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Progreso_LED_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Progreso_LED_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Progreso_LED_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="Logic_LED_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="Logic_LED_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Logic_LED_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Logic_LED_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Progreso_LED_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Logic_LED_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Logic_LED_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Logic_LED_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Logic_LED_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Logic_LED_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Progreso_LED_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Progreso_LED_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Progreso_LED_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Progreso_LED_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="Logic_LED_opt.dcp"/>
   <File Type="PLACE-DCP" Name="Logic_LED_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="Logic_LED_pwropt.dcp"/>
@@ -50,22 +54,18 @@
   <File Type="PHYSOPT-DCP" Name="Logic_LED_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Logic_LED_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Logic_LED_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Logic_LED_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Logic_LED_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Logic_LED_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Logic_LED_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Logic_LED_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Logic_LED_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Logic_LED_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Logic_LED_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Logic_LED_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Progreso_LED_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Progreso_LED_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Progreso_LED_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Progreso_LED_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Progreso_LED_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Progreso_LED_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Progreso_LED_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="Logic_LED.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="Logic_LED_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="Logic_LED_pld.pdi"/>
   <File Type="RCFI_FILE" Name="Logic_LED.rcfi"/>
   <File Type="CFI_FILE" Name="Logic_LED.cfi"/>
   <File Type="RNPI_FILE" Name="Logic_LED.rnpi"/>
-  <File Type="NPI_FILE" Name="Logic_LED.npi"/>
   <File Type="RBD_FILE" Name="Logic_LED.rbd"/>
   <File Type="ROUTE-RQS" Name="Logic_LED_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="Logic_LED_postroute_physopted.rqs"/>
