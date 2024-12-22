@@ -5,7 +5,6 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd" \
-"../../../../Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/TIMER.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd" \
@@ -25,6 +24,7 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sources_1/new/TANK_HAB.vhd" \
 "../../../../Asphalt-Journey.srcs/sources_1/new/MUX_JUEGO.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO.vhd" \
+"../../../../Asphalt-Journey.srcs/sources_1/new/MUX_AND_IMP_JUEGO.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_JUEGO_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_NUM_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd" \
@@ -49,6 +49,7 @@ vhdl xil_defaultlib  \
 "../../../../Asphalt-Journey.srcs/sim_1/new/SUPER_TOP_TB.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/MUX_JUEGO_tb.vhd" \
 "../../../../Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO_tb.vhd" \
+"../../../../Asphalt-Journey.srcs/sim_1/new/MUX_AND_IMP_JUEGO_tb.vhd" \
 
 # Do not sort compile order
 nosort

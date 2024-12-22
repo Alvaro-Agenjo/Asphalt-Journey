@@ -25,6 +25,7 @@ architecture Behavioral of IMPRESION_JUEGO is
     end component;
     
 begin
+    --Instancia de DEC_JUEGO
     decoder_juego: DEC_JUEGO
     port map(
         CARRETERA => CARRETERA,

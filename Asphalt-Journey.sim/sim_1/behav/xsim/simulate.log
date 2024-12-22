@@ -1,4 +1,4 @@
 Time resolution is 1 ps
 Failure: [FIN SIMULACION]
-Time: 140 ns  Iteration: 0  Process: /IMPRESION_JUEGO_tb/line__66  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO_tb.vhd
-$finish called at time : 140 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO_tb.vhd" Line 78
+Time: 210 ns  Iteration: 0  Process: /MUX_AND_IMP_JUEGO_tb/line__55  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_AND_IMP_JUEGO_tb.vhd
+$finish called at time : 210 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_AND_IMP_JUEGO_tb.vhd" Line 70
