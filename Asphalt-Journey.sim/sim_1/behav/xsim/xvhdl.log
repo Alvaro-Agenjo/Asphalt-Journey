@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/TANK_HAB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TANK_HAB'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TANK_HAB_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MUX_JUEGO_tb'
