@@ -22,25 +22,31 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use IEEE.STD_LOGIC_TEXTIO.ALL;
+use ieee.std_logic_textio.all;
+use work.MyPackage.all;
 
 entity DEC_JUEGO is
     port ( 
-        CODE : in integer; --Código de carretera, coche, obstaculo, S./N.
-        LEDS : out std_logic_vector(7 downto 0) --Salida Displays BCD a.b.c.d.e.f.g.DP
+        CARRETERA : in road_tile ; --Carretera a imprimir
+        LEDS : out std_logic_vector(2 downto 0) --Salida 3 leds del display 
+        --Para carretera futura: f.g.b
+        --Para carretera actual: e.d.c
+        --Led 'a' siempre apagado
+        
     );
 end DEC_JUEGO;
 
 architecture Behavioral of DEC_JUEGO is    
 begin
-    with CODE select
-        LEDS <= "10011111" when 2, --limite derecha
-                "11110011" when 1, --limite izquierda
-                "11111111" when 0, --no road
-                "11111101" when 3, --obstáculo
-                "11111111" when 4, --carretera centro
-                --"11010100" when 5, --N.
-                
-                "11111111" when others;
+    with CARRETERA select
+        LEDS <= "111" when no_road, --fuera de carretera
+                "011" when left_limit, --limite izquierda
+                "001" when left_obstacle, --limite izquierda con obstaculo
+                "110" when right_limit, --limite derecha
+                "100" when right_obstacle, --limite derecha con obstaculo
+                "101" when obstacle, --carretera con obstaculo
+                "111" when road, --carretera sin obstaculo
+    
+                "111" when others;
                 
 end Behavioral;
