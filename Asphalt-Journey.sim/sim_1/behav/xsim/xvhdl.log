@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_AND_IMP_JUEGO_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'MUX_AND_IMP_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/GESTION_IMPRESION_JUEGO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GESTION_IMPRESION_JUEGO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/GESTION_IMPRESION_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GESTION_IMPRESION_JUEGO_tb'
