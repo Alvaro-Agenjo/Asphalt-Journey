@@ -9,9 +9,9 @@ entity DEC_JUEGO is
     port ( 
         CARRETERA : in road_tile ; --Carretera a imprimir
         LEDS : out std_logic_vector(2 downto 0) --Salida 3 leds del display 
-        --Para carretera futura: f.g.b
-        --Para carretera actual: e.d.c
-        --Led 'a' siempre apagado
+        --Para carretera futura: f.a.b
+        --Para carretera actual: e.g.c
+        --Led 'd' y 'DP' reservados para coche
         
     );
 end DEC_JUEGO;

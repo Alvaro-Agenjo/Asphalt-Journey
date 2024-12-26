@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec 23 16:53:52 2024
-# Process ID: 10580
+# Start of session at: Thu Dec 26 17:58:00 2024
+# Process ID: 13812
 # Current directory: C:/Users/cesar/Documents/GitHub/Asphalt-Journey
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20516 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8964 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
 # Log file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/vivado.log
 # Journal file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey\vivado.jou
 # Running On        :DESKTOP-1HN8B7K
@@ -19,26 +19,452 @@
 # Host memory       :16969 MB
 # Swap memory       :18253 MB
 # Total Virtual     :35223 MB
-# Available Virtual :27567 MB
+# Available Virtual :26368 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr
-launch_simulation
-source MUX_AND_IMP_JUEGO_tb.tcl
-close_sim
-close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/GESTION_IMPRESION_JUEGO.vhd w ]
-add_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/GESTION_IMPRESION_JUEGO.vhd
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/GESTION_IMPRESION_JUEGO_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/GESTION_IMPRESION_JUEGO_tb.vhd
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top GESTION_IMPRESION_JUEGO_tb [get_filesets sim_1]
+set_property top ORDEN_IMPRESION_JUEGO_tb [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode DisplayOnly [current_project]
-set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO_tb.vhd]
-set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_AND_IMP_JUEGO_tb.vhd]
 launch_simulation
-source GESTION_IMPRESION_JUEGO_tb.tcl
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+add_bp {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/ORDEN_IMPRESION_JUEGO.vhd} 31
+close_sim
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+remove_bps -file {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/ORDEN_IMPRESION_JUEGO.vhd} -line 31
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+add_bp {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd} 170
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+remove_bps -file {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd} -line 170
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
 close_sim

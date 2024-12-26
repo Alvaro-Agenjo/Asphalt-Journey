@@ -1,6 +1,10 @@
 Time resolution is 1 ps
-ERROR: Index 6 out of bound 0 to 5
-Time: 350 ns  Iteration: 0  Process: /GESTION_IMPRESION_JUEGO_tb/line__66
-  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/GESTION_IMPRESION_JUEGO_tb.vhd
-
-HDL Line: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/GESTION_IMPRESION_JUEGO_tb.vhd:70
+Note: *****TEST DIGSEL DISTINTOS*****
+Time: 0 ps  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
+Note: *****TEST SIN COCHE*****
+Time: 100 ns  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
+Note: *****TEST CON COCHE*****
+Time: 3 us  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
+Failure: [FIN SIMULACION]
+Time: 5800 ns  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
+$finish called at time : 5800 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd" Line 196
