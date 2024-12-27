@@ -179,7 +179,6 @@ architecture Behavioral of SUPER_TOP is
     end component;
 
     --FSM
-    --componente
     component FSM is
 	port(
     	--Control inputs
@@ -198,6 +197,18 @@ architecture Behavioral of SUPER_TOP is
         STATES: out std_logic_vector(1 to 8)
     );  
     end component FSM;
+    
+    --impresion juego
+    component IMPRIMIR_JUEGO is
+        port(
+            CLK : in std_logic; --Reloj
+            CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
+            CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
+            POS_CAR : in positive; --Posición del coche: en qué Display está
+            DIGSEL : out std_logic_vector(7 downto 1); --Selección de Display a encender
+            SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
+        );        
+    end component;
 --señales
     
     signal relojes: std_logic_vector (0 to FREQS'high +1);
@@ -376,6 +387,15 @@ begin
             BUTTONS_ASYNC => s_raw_bt, 
             BUTTONS_SYNC => s_bt  
         );
-
+    
+    Ctrl_impresion:IMPRIMIR_JUEGO
+        port map(
+            CLK => relojes(0),
+            CARR_ACTUAL => road_ac,
+            CARR_FUTURA => road_ft,
+            POS_CAR => car_pos, 
+            DIGSEL => s_digsel_gm,
+            SEGMENT => s_segment_gm 
+        );
     
 end Behavioral;
