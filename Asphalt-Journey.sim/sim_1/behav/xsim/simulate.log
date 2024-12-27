@@ -1,10 +1,4 @@
 Time resolution is 1 ps
-Note: *****TEST DIGSEL DISTINTOS*****
-Time: 0 ps  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
-Note: *****TEST SIN COCHE*****
-Time: 100 ns  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
-Note: *****TEST CON COCHE*****
-Time: 3 us  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
 Failure: [FIN SIMULACION]
-Time: 5800 ns  Iteration: 0  Process: /ORDEN_IMPRESION_JUEGO_tb/line__115  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd
-$finish called at time : 5800 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd" Line 196
+Time: 140 ns  Iteration: 0  Process: /IMPRIMIR_JUEGO_tb/line__71  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_JUEGO_tb.vhd
+$finish called at time : 140 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_JUEGO_tb.vhd" Line 84

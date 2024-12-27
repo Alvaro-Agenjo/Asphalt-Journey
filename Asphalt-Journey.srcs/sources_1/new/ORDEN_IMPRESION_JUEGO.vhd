@@ -13,18 +13,18 @@ entity ORDEN_IMPRESION_JUEGO is
         SEGMENT_FUTURO : in std_logic_vector(2 downto 0); --Segmentos del estado futuro a encender
         POS_CAR : positive; --Posición del coche
         DIGSEL : out std_logic_vector(1 to 7); --Displays a encender
-        SEGMENT : out std_logic_vector(0 to 7) --Segementos del display a encender 
+        SEGMENT : out std_logic_vector(0 to 7) --Segmentos del display a encender 
     );
 end ORDEN_IMPRESION_JUEGO;
 
 architecture Behavioral of ORDEN_IMPRESION_JUEGO is
 begin
 
-    --Compruebo que estoy en el mismo display en ambos tiempos
     process(DIGSEL_ACTUAL, DIGSEL_FUTURO, POS_CAR)
           variable v_digsel_posit : positive; 
     begin
-        if DIGSEL_ACTUAL = DIGSEL_FUTURO then
+        --Compruebo que estoy en el mismo display en ambos tiempos
+        if DIGSEL_ACTUAL = DIGSEL_FUTURO then 
             v_digsel_posit := to_integer(unsigned(DIGSEL_ACTUAL));
             DIGSEL <= DIGSEL_ACTUAL;
             
@@ -43,9 +43,8 @@ begin
                 when 2 =>
                     v_digsel_posit := 6;
                 when 1 =>
-                    v_digsel_posit := 7; 
-                --Error    
-                when others =>
+                    v_digsel_posit := 7;     
+                when others => --Error: ningún display
                     v_digsel_posit := 10;
             end case;
             
@@ -74,6 +73,5 @@ begin
             DIGSEL <= (others => 'U');      
         end if;
     end process;
-    
-       
+          
 end Behavioral;
