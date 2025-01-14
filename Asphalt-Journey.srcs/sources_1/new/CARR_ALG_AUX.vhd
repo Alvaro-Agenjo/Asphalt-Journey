@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.MyPackage.all;
 use IEEE.NUMERIC_STD.ALL;
-use MyPackage.all;
+
 entity CARR_ALG_AUX is
     Generic(
         WIDTH   :POSITIVE :=3
@@ -21,8 +22,6 @@ architecture Behavioral of CARR_ALG_AUX is
 signal dcha_ver           : std_logic_vector(WIDTH-1 DOWNTO 0):="101";
 signal izq_ver            : std_logic_vector(WIDTH-1 DOWNTO 0):="000";
 signal obs_ver            : std_logic_vector(WIDTH-1 DOWNTO 0):="111";
-type road_tile is (no_road, left_limit, left_obstacle, right_limit, right_obstacle, obstacle, road);
-type road_tile_array is array (1 to 7) of road_tile;
 signal aux                : road_tile_array:=(no_road,no_road,no_road,no_road,no_road,no_road,no_road);
 --signal aux : std_logic_vector(WIDTH*3-1 downto 0);
 --signal ver1 : std_logic:='0';
@@ -77,12 +76,12 @@ begin
                 izq_ver<=izq;
                 obs_ver<=obs;
                 ver1:='0';
-                salida_d(unsigned(dcha_ver)+1)<=right_limit;
+                salida_d(TO_INTEGER(unsigned(dcha_ver)+1))<=right_limit; 
                 salida_d(unsigned(izq_ver)+1)<=left_limit;
                 if unsigned(izq_ver)=unsigned(obs_ver) then
                     salida_d(unsigned(obs_ver)+1)<=left_obstacle;
                 elsif unsigned(dcha_ver)=unsigned(obs_ver)
-                    salida_d(unsigned(obs_ver)+1)<=right_obstacle;
+                    salida_d(unsigned(obs_ver)+1)<=right_obstacle; 
                 elsif unsigned(obs_ver)<unsigned(dcha_ver) and unsigned(obs_ver)>unsigned(izq_ver) then
                     salida_d(unsigned(obs_ver)+1)<=obstacle;
                 else

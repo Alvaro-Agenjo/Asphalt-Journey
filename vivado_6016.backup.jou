@@ -3,21 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-<<<<<<<< HEAD:Asphalt-Journey.runs/impl_1/vivado_10920.backup.jou
 # Start of session at: Thu Dec 19 16:34:34 2024
 # Process ID: 10920
 # Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/impl_1
 # Command line: vivado.exe -log SUPER_TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SUPER_TOP.tcl -notrace
 # Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.vdi
 # Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/impl_1\vivado.jou
-========
-# Start of session at: Tue Dec  3 15:28:57 2024
-# Process ID: 6016
-# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8304 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
-# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/vivado.log
-# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
->>>>>>>> Generar_Road:vivado_6016.backup.jou
 # Running On        :DESKTOP-A7KB9SN
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
@@ -26,14 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8373 MB
-<<<<<<<< HEAD:Asphalt-Journey.runs/impl_1/vivado_10920.backup.jou
 # Swap memory       :9372 MB
 # Total Virtual     :17745 MB
 # Available Virtual :8825 MB
-========
-# Swap memory       :6979 MB
-# Total Virtual     :15352 MB
-# Available Virtual :10031 MB
->>>>>>>> Generar_Road:vivado_6016.backup.jou
 #-----------------------------------------------------------
 source SUPER_TOP.tcl -notrace
