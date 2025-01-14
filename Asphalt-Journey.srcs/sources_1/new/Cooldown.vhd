@@ -59,20 +59,20 @@ begin
             if CE = '1' then 
                 hability <= '0';
                 actual_t := now;
-                if CENTER = '1' then 
-                    if espera = '0' then
-                        espera := '1';
+                if CENTER = '1' then        --se detecta la pulsación del botón
+                    if espera = '0' then    -- ha pasado el tiempo de recarga
+                        espera := '1';      --inicia el tiempo de recarga
                         base_t := now;
-                        hability <= '1';                   
+                        hability <= '1';   --notifica la activación de la habilidad
                     end if;
                 end if;
-                if actual_t -base_t >= WAIT_TIME then
-                    espera := '0';
+                if actual_t -base_t >= WAIT_TIME then   --si la diferencia entre el tiempo actual y el momento donde se activo la habilidad es superior al tiempo de recarga
+                    espera := '0';      --termino la espera
                 end if;
             else 
-                base_t := now;
+                base_t := now;      --modulo deshabilitado refresca tiempo de inicio
             end if;     
         end if;
     end process; 
-    HABILITY_FLAG <= hability ;
+    HABILITY_FLAG <= hability;
 end Behavioral;

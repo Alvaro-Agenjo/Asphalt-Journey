@@ -67,7 +67,7 @@ begin
                 if SENAL = '1' then 
                     fase := fase +1;
                 end if;
-                if fase >= TOTAL_LENGTH then
+                if fase >= TOTAL_LENGTH then        --Límite a 16 LEDs
                     N_LED <= 16;
                     FIN_OK <= '1';
                 else
