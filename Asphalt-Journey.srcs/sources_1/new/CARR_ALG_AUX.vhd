@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.MyPackage.all;
 use IEEE.NUMERIC_STD.ALL;
-use MyPackage.all;
+
 entity CARR_ALG_AUX is
     Generic(
         WIDTH   :POSITIVE :=3
@@ -21,8 +22,6 @@ architecture Behavioral of CARR_ALG_AUX is
 signal dcha_ver           : std_logic_vector(WIDTH-1 DOWNTO 0):="101";
 signal izq_ver            : std_logic_vector(WIDTH-1 DOWNTO 0):="000";
 signal obs_ver            : std_logic_vector(WIDTH-1 DOWNTO 0):="111";
-type road_tile is (no_road, left_limit, left_obstacle, right_limit, right_obstacle, obstacle, road);
-type road_tile_array is array (1 to 7) of road_tile;
 signal aux                : road_tile_array:=(no_road,no_road,no_road,no_road,no_road,no_road,no_road);
 --signal aux : std_logic_vector(WIDTH*3-1 downto 0);
 --signal ver1 : std_logic:='0';
