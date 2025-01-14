@@ -32,9 +32,6 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Progreso_LED is
-    generic (
-        BASE_LENGTH: natural := 5                  --Numero de fases del escenario
-    );
     port(
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
         CLK: in std_logic;                      -- Reloj del sistema.
@@ -62,9 +59,6 @@ architecture Structural of Progreso_LED is
     end component Display_LED;
     
     component Logic_LED is
-    generic (
-        BASE_LENGTH: positive := 5     --Numero de fases del escenario
-    );
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
         CLK: in std_logic;              --Reloj 
@@ -83,9 +77,6 @@ begin
     s_ce_enable <= ENABLE and CE_200;
     
     Unidad_logica: Logic_LED 
-    generic map(
-        BASE_LENGTH => BASE_LENGTH     
-    )
     port map(
         RESET_N => RESET_N,
         CLK => CLK,

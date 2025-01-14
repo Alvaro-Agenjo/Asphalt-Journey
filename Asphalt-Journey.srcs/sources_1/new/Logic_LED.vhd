@@ -36,9 +36,6 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Logic_LED is
-    generic (
-        BASE_LENGTH: positive := 5     --Numero de fases del escenario
-    );
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
         CLK: in std_logic;              --Reloj 
@@ -48,6 +45,8 @@ entity Logic_LED is
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
     );
+
+    constant BASE_LENGTH : POSITIVE := 5;       -- número de fases por cada nivel de dificultad
 end Logic_LED;
 
 architecture Behavioral of Logic_LED is
