@@ -38,9 +38,6 @@ end Logic_LED_TB;
 architecture Behavioral of Logic_LED_TB is
  --Componente
     component Logic_LED is
-    generic (
-        BASE_LENGTH: positive := 5     --Numero de fases del escenario
-    );
     port(
         RESET_N: in std_logic;          --Reinicio, activo a nivel bajo
         CLK: in std_logic;              --Reloj 
@@ -68,9 +65,6 @@ architecture Behavioral of Logic_LED_TB is
 begin
     
     UUT: Logic_LED 
-    generic map(
-        BASE_LENGTH => TAM     
-    )
     port map(
         RESET_N => s_reset_n,
         CLK => s_clk,

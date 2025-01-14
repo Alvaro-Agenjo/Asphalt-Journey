@@ -39,9 +39,6 @@ architecture Structural of Progreso_LED_TB is
 
     --Componente
     component Progreso_LED is
-    generic (
-        BASE_LENGTH: natural := 5                  --Numero de fases del escenario
-    );
     port(
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
         CLK: in std_logic;                      -- Reloj del sistema.
@@ -98,9 +95,6 @@ architecture Structural of Progreso_LED_TB is
 begin
     
     UUT: Progreso_LED 
-    generic map(
-        BASE_LENGTH => TAM
-    )
     port map(
         RESET_N => s_reset_n,
         CLK => s_clk,
