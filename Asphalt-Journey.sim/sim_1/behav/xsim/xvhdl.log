@@ -1,4 +1,66 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/TANK_HAB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TANK_HAB'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DEC_NUM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_MANAGER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CRASH_DTCTR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CRASH_DTCTR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DEC_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_NUM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DEC_NUM_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_TXT_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DEC_TXT_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/Progreso_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Progreso_LED_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/Logic_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Logic_LED_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/Display_LED_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display_LED_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/TIMER_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TIMER_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CLK_MANAGER_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_MANAGER_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CRASH_DTCTR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CRASH_DTCTR_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/Select_DIFF_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SELECTOR_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/Cooldown_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cooldown_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CAR_CTRL_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CONTROL_IMPRESION_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CONTROL_IMPRESION_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/MUX_TXT_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MUX_TXT_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRESION_BCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IMPRESION_BCD_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRIMIR_TXT_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IMPRIMIR_TXT_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/TANK_HAB_TB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'TANK_HAB_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/SUPER_TOP_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SUPER_TOP_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNCHRNZR_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SYNCHRNZR_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/MUX_AND_IMP_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MUX_AND_IMP_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CNTR_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CNTR_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FMS_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IMPRIMIR_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRESION_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IMPRESION_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/BUTTON_SYNC_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BUTTON_SYNC_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/MUX_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MUX_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_BUTTONS_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SYNC_BUTTONS_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/ORDEN_IMPRESION_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ORDEN_IMPRESION_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/GESTION_IMPRESION_JUEGO_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GESTION_IMPRESION_JUEGO_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SYNC_EDGE_tb'

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "GESTION_IMPRESION_JUEGO_tb_behav" "xil_defaultlib.GESTION_IMPRESION_JUEGO_tb" -log "elaborate.log" 

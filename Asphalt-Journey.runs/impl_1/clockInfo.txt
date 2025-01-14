@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Tue Dec 10 23:10:35 2024
+| Date         : Thu Dec 19 17:11:04 2024
 | Host         : DESKTOP-A7KB9SN
-| Design       : checkpoint_Logic_LED
+| Design       : design_1
 | Device       : xc7a100t-csg324-1--
 -------------------------------------
 
