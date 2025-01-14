@@ -39,6 +39,7 @@ begin
         variable ver2 : std_logic:='0';
         variable sec : std_logic:='0';
         variable salida :  std_logic_vector(WIDTH*3-1 downto 0);
+        variable salida_aux : road_tile_array;
     begin
         -- Convertir tiempo a entero (en nanosegundos)
         tiempo_int := integer(tiempo/ 1 ns); 
@@ -76,16 +77,16 @@ begin
                 izq_ver<=izq;
                 obs_ver<=obs;
                 ver1:='0';
-                salida_d(TO_INTEGER(unsigned(dcha_ver)+1))<=right_limit; 
-                salida_d(TO_INTEGER(unsigned(izq_ver)+1))<=left_limit;
+                salida_aux(to_integer(unsigned(dcha_ver)+1)):=right_limit;
+                salida_aux(to_integer(unsigned(izq_ver)+1)):=left_limit;
                 if unsigned(izq_ver)=unsigned(obs_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=left_obstacle;
-                elsif unsigned(dcha_ver)=unsigned(obs_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=right_obstacle; 
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=left_obstacle;
+                elsif unsigned(dcha_ver)=unsigned(obs_ver)
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=right_obstacle;
                 elsif unsigned(obs_ver)<unsigned(dcha_ver) and unsigned(obs_ver)>unsigned(izq_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=obstacle;
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=obstacle;
                 else
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=no_road;
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=no_road;
                 end if;
 --                salida(WIDTH-1 downto 0)<=dcha_ver;
 --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
@@ -96,46 +97,49 @@ begin
                 izq_ver<=izq;
                 obs_ver<=(others=>'1');
                 ver2:='0';
-                salida_d(TO_INTEGER(unsigned(dcha_ver)+1))<=right_limit;
-                salida_d(TO_INTEGER(unsigned(izq_ver)+1))<=left_limit;
+                salida_aux(to_integer(unsigned(dcha_ver)+1)):=right_limit;
+                salida_aux(to_integer(unsigned(izq_ver)+1)):=left_limit;
                 if unsigned(izq_ver)=unsigned(obs_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=left_obstacle;
-                elsif unsigned(dcha_ver)=unsigned(obs_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=right_obstacle;
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=left_obstacle;
+                elsif unsigned(dcha_ver)=unsigned(obs_ver)
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=right_obstacle;
                 elsif unsigned(obs_ver)<unsigned(dcha_ver) and unsigned(obs_ver)>unsigned(izq_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=obstacle;
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=obstacle;
                 else
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=no_road;
+                    salida_aux(to_integer(unsigned(obs_ver)+1)):=no_road;
                 end if;
-                for i in 1 to (TO_INTEGER(unsigned(izq_ver)+1)) loop
-                salida_d(i)<=no_road;
+                for i in 1 to unsigned(izq_ver)+1 loop
+                salida_aux(i)<=no_road;
                 end loop;
-                for i in (TO_INTEGER(unsigned(dcha_ver)+1)) to 7 loop
-                salida_d(i)<=no_road;
+                for i in unsigned(dcha_ver)+1 to 7 loop
+                salida_aux(i)<=no_road;
                 end loop;
-                for i in (TO_INTEGER(unsigned(izq_ver)+1)) to (TO_INTEGER(unsigned(izq_ver)+1)) loop
-                    if salida_d(i)/=obstacle or salida(i)/=right_obstacle or salida(i)/=left_obstacle then
-                        salida_d(i)<=road;
+                for i in unsigned(izq_ver)+1 to unsigned(dcha_ver)+1 loop
+                    if salida_aux(i)/=obstacle and salida_aux(i)/=right_obstacle and salida_aux(i)/=left_obstacle then
+                        salida_aux(i)<=road;
                     end if;
                 end loop;
 --                salida(WIDTH-1 downto 0)<=dcha_ver;
 --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
 --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
             else
-                salida_d(TO_INTEGER(unsigned(dcha_ver)+1))<=right_limit;
-                salida_d(TO_INTEGER(unsigned(izq_ver)+1))<=left_limit;
+                salida_aux(unsigned(dcha_ver)+1)<=right_limit;
+                salida_aux(unsigned(izq_ver)+1)<=left_limit;
                 if unsigned(izq_ver)=unsigned(obs_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=left_obstacle;
-                elsif unsigned(dcha_ver)=unsigned(obs_ver)then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=right_obstacle;
+                    salida_aux(unsigned(obs_ver)+1)<=left_obstacle;
+                elsif unsigned(dcha_ver)=unsigned(obs_ver)
+                    salida_aux(unsigned(obs_ver)+1)<=right_obstacle;
                 elsif unsigned(obs_ver)<unsigned(dcha_ver) and unsigned(obs_ver)>unsigned(izq_ver) then
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=obstacle;
+                    salida_aux(unsigned(obs_ver)+1)<=obstacle;
                 else
-                    salida_d(TO_INTEGER(unsigned(obs_ver)+1))<=no_road;
+                    salida_aux(unsigned(obs_ver)+1)<=no_road;
                 end if;
 --                salida(WIDTH-1 downto 0)<=dcha_ver;
 --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
 --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
             end if;
+            for i in 1 to 7 loop
+                salida_d(i)<=salida_aux(i);
+            end loop;
     end process;
 end Behavioral;
