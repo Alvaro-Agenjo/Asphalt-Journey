@@ -1,33 +1,55 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 15.01.2025 14:37:59
+-- Design Name: 
+-- Module Name: DECODER_CNTR_TB - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
 entity DECODER_CNTR is
     port(
-        CLK : in  std_logic;
-        CE  : in  std_logic;
-        VAL : in  std_logic_vector(3 downto 0);
-        SEG : out std_logic_vector(6 downto 0)
+        NUM : in  natural;
+        SEG : out std_logic_vector(7 downto 0)
     );
 end DECODER_CNTR;
 
 architecture Behavioral of DECODER_CNTR is
 begin
-   process(VAL)
-   begin
-        if CE='1' then
-            case VAL is
-                when "0000" => SEG <= "1000000"; -- 0
-                when "0001" => SEG <= "1111001"; -- 1
-                when "0010" => SEG <= "0100100"; -- 2
-                when "0011" => SEG <= "0110000"; -- 3
-                when "0100" => SEG <= "0011001"; -- 4
-                when "0101" => SEG <= "0010010"; -- 5
-                when "0110" => SEG <= "0000010"; -- 6
-                when "0111" => SEG <= "1111000"; -- 7
-                when "1000" => SEG <= "0000000"; -- 8
-                when "1001" => SEG <= "0010000"; -- 9
-                when others => SEG <= "1111111"; -- N/a
-            end case;
-        end if;
-    end process;
+   with NUM select 
+        SEG <= "00000011" when 0, --0
+               "10011111" when 1, --1
+               "00100101" when 2, --2
+               "00001101" when 3, --3
+               "10011001" when 4, --4
+               "01001001" when 5, --5
+               "01000001" when 6, --6
+               "00011111" when 7, --7
+               "00000001" when 8, --8
+               "00001001" when 9, --9
+               "11111111" when others;
 end Behavioral;

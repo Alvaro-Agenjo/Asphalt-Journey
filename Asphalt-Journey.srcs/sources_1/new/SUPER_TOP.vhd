@@ -209,12 +209,31 @@ architecture Behavioral of SUPER_TOP is
             SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
         );        
     end component;
+    
+    --Contador descencente
+    component CNTR is
+    port(
+        RESET: in std_logic;                    -- Reset asynchronus (active low).
+        CLK: in std_logic;                      -- Clock
+        CE: in std_logic;                       -- CE (Habilitción de modulo)
+        PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
+        LOAD: in std_logic;                     -- Control de carga sincrono y activo a nivel alto
+        DIFF: in positive;                      -- dificultad pra ajustar el tiempo añadido             
+        ZERO: out std_logic;                    -- flag activo a nivel bajo (fin de cuenta).
+        SEG : out std_logic_vector(7 downto 0)  -- vector con los segmentos a iluminar
+    );
+    end component CNTR;
+     
 --señales
     
     signal relojes: std_logic_vector (0 to FREQS'high +1);
+    
+    --FSM 
     signal State: std_logic_vector(1 to 8);     -- Estados (mirar wiki)     
+    signal SJ_SP: std_logic;        --Activo si State_Juego o State_Pausa activado;
     signal Menu_n: std_logic;
     
+    --Selector
     signal dificultad: positive; --seleccion diff
     signal car: positive; --seleccion car
     
@@ -223,38 +242,48 @@ architecture Behavioral of SUPER_TOP is
     signal s_bt: std_logic_vector(NUM_BUT-1 downto 0);
     signal s_any: std_logic;    
     
+    --temporizador
     signal fin_fase: std_logic;     --Sale del temporizador de manu
+    signal numero: std_logic_vector (7 downto 0);
     
+    --Carreteras
     signal road_ft: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
     signal raw_road_ac: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
     signal road_ac: road_tile_array;
     
+    --Coche y habilidades
     signal car_pos: positive;
     
     signal s_hab_race: std_logic;
     signal s_hab_tank: std_logic;
     
+    --Display
     signal s_digsel_txt: std_logic_vector(7 downto 0);
     signal s_segment_txt: std_logic_vector(7 downto 0);
 
     signal s_digsel_gm: std_logic_vector(7 downto 0);
     signal s_segment_gm: std_logic_vector(7 downto 0) := (others => '1');
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+    --fin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     signal s_fin_ok: std_logic;
     signal s_fin_nok: std_logic;
     
-    --Combinaciones de estados 
-    signal SJ_SP: std_logic;        --Activo si State_Juego o State_Pausa activado;
+    
 
    
 begin
     
-    fin_fase <= SW_FASE;
+    --FSM
     Menu_n <= not State(1);
     SJ_SP <= State(4) or State(5) or State(6);
+    
+    --Botones
+    s_any <= s_bt(4) or s_bt(3) or s_bt(2) or s_bt(1) or s_bt(0);
+    
+    --Display
     SEGMENT <= s_segment_gm and s_segment_txt;  --desactivado = 1 --> 1 and x = x
     DIGSEL <= not s_digsel_txt; --??
-    s_any <= s_bt(4) or s_bt(3) or s_bt(2) or s_bt(1) or s_bt(0);
+    
     
     Maquina_estados: FSM
         port map (
@@ -370,11 +399,11 @@ begin
         NUM_ESTADOS => State'length 
     )
     port map (
-        CLK => relojes(2),          --faltaría un CE en algun lado para que vaya a ~200Hz
+        CLK => relojes(2),
         ESTADO => State, 
         DIF => dificultad,
         COCHE => car,
-        DIGSEL => s_digsel_txt,     -- siempre cuenta usar el txt como referencia???
+        DIGSEL => s_digsel_txt,
         SEGMENT => s_segment_txt  
     );
 
@@ -393,9 +422,23 @@ begin
             CLK => relojes(0),
             CARR_ACTUAL => road_ac,
             CARR_FUTURA => road_ft,
+            --numero => 
             POS_CAR => car_pos, 
             DIGSEL => s_digsel_gm,
             SEGMENT => s_segment_gm 
         );
+    Cuent_atras: CNTR
+    port map(
+        RESET => State(0),
+        CLK => relojes(0),
+        CE => State(4),
+        PULSE => relojes(2),
+        LOAD => s_hab_race,
+        DIFF => dificultad,             
+        ZERO => fin_fase,
+        SEG => numero
+    );
+    
+    
     
 end Behavioral;

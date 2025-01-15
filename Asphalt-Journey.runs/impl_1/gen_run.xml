@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734624561">
-  <File Type="ROUTE-PWR" Name="SUPER_TOP_power_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="CNTR_Logic_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SUPER_TOP.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="SUPER_TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="CNTR_Logic_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="SUPER_TOP_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="SUPER_TOP.msk"/>
-  <File Type="ROUTE-CLK" Name="SUPER_TOP_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="CNTR_Logic_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="SUPER_TOP.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SUPER_TOP_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CNTR_Logic_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="SUPER_TOP.bit"/>
   <File Type="BG-DRC" Name="SUPER_TOP.drc"/>
   <File Type="BG-BGN" Name="SUPER_TOP.bgn"/>
@@ -16,37 +16,37 @@
   <File Type="BITSTR-NKY" Name="SUPER_TOP.nky"/>
   <File Type="BITSTR-BMM" Name="SUPER_TOP_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="SUPER_TOP.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="SUPER_TOP_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CNTR_Logic_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="SUPER_TOP.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SUPER_TOP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CNTR_Logic_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="SUPER_TOP.ltx"/>
   <File Type="BOOT-PDI-FILE" Name="SUPER_TOP_boot.pdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="NPI_FILE" Name="SUPER_TOP.npi"/>
-  <File Type="OPT-DRC" Name="SUPER_TOP_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="CNTR_Logic_drc_opted.rpt"/>
   <File Type="RBD_FILE" Name="SUPER_TOP.rbd"/>
   <File Type="OPT-HWDEF" Name="SUPER_TOP.hwdef"/>
-  <File Type="PLACE-IO" Name="SUPER_TOP_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="SUPER_TOP_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="SUPER_TOP_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="SUPER_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-IO" Name="CNTR_Logic_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CNTR_Logic_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CNTR_Logic_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CNTR_Logic_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="SUPER_TOP_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="SUPER_TOP_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="SUPER_TOP_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="SUPER_TOP_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="SUPER_TOP_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="SUPER_TOP_route_status.pb"/>
+  <File Type="ROUTE-DRC" Name="CNTR_Logic_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CNTR_Logic_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CNTR_Logic_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CNTR_Logic_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CNTR_Logic_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="SUPER_TOP_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="SUPER_TOP_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="SUPER_TOP_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="SUPER_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CNTR_Logic_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="SUPER_TOP_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="SUPER_TOP_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="SUPER_TOP_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="SUPER_TOP_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="SUPER_TOP_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="SUPER_TOP_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CNTR_Logic_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CNTR_Logic_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CNTR_Logic_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="CNTR_Logic_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CNTR_Logic_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="SUPER_TOP_opt.dcp"/>
   <File Type="PLACE-DCP" Name="SUPER_TOP_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="SUPER_TOP_pwropt.dcp"/>
@@ -54,13 +54,13 @@
   <File Type="PHYSOPT-DCP" Name="SUPER_TOP_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="SUPER_TOP_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SUPER_TOP_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SUPER_TOP_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SUPER_TOP_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SUPER_TOP_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SUPER_TOP_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SUPER_TOP_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-DRC-RPX" Name="SUPER_TOP_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SUPER_TOP_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CNTR_Logic_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CNTR_Logic_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CNTR_Logic_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CNTR_Logic_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CNTR_Logic_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="CNTR_Logic_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CNTR_Logic_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="SUPER_TOP.pdi"/>
   <File Type="PL-PDI-FILE" Name="SUPER_TOP_pld.pdi"/>
   <File Type="RCFI_FILE" Name="SUPER_TOP.rcfi"/>

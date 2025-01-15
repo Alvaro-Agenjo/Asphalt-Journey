@@ -1,55 +1,99 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 12.12.2024 15:21:06
+-- Design Name: 
+-- Module Name: SUPER_TOP - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
 library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
 
 entity CNTR is
-	generic(
-    	WIDTH	 : positive := 4 -- Counter width
-    );
     port(
-     RST : in std_logic; -- Synchronous active low reset (max. priority)
-     CLK : in std_logic; -- Clock
-     LOAD_N: in std_logic; -- Synchronous active low preload
-     CE    : in std_logic; -- CLock enable
-     STROBE: in std_logic;
-     DIN   : in  std_logic_vector(WIDTH -1 downto 0); -- preload value
-     ACT : out std_logic:='0';  -- Paralel output
-     VAL : out std_logic_vector(WIDTH-1 downto 0)
-   --  ZERO_N: out std_logic -- Synchronous active low preload
-     );          -- unsigned es parte de la libreria numeric, dado que std_logic no tiene formato al poner unsigned lo convertimos en binario sin signo dado que es un contador y no un si/no de bits como las entradas
-end entity CNTR;
- --constant LIMIT := std_logic_vector(WIDTH -1 downto 0):="0101";
-architecture BEHAVIOURAL of CNTR is
-   -- signal count_i : integer:=to_integer(unsigned(DIN)); -- Se añade como param aux ya que no se puede operar con salidas
-   -- signal LOAD_AUX: std_logic;
-   -- signal r_count: unsigned(WIDTH-1 downto 0):="0000";
-   -- signal Parcial_T : integer :=50000000;--si la freq es de 50MHz
-   -- signal LIMIT : std_logic_vector(WIDTH-1 downto 0):= "0101";
-begin
-	process(CLK) -- Clock & all asynchronous inputs
-	variable LOAD_AUX : std_logic;
-	variable r_count: unsigned(WIDTH-1 downto 0):="0000";
-    begin
-    if CE = '1' then
-        if RST='0' then
-            LOAD_AUX:='1';
-        end if;
-        if LOAD_N ='1' OR LOAD_AUX = '1' then
-        	   r_count:=unsigned(DIN);
-        end if;
-       	if rising_edge(STROBE) then
-           	r_count:=r_count-1;
-        	if r_count="0000" then
-            	LOAD_AUX:='1';
-            	ACT<='1';
-            	VAL<=std_logic_vector(r_count);
-            	else
-            	VAL<=std_logic_vector(r_count);
-            	ACT<='0';
-        	end if;
-        end if;
-    end if;
-    end process;
-    	--Check clock enable
+        reset: in std_logic;                    -- Reset asynchronus (active low).
+        CLK: in std_logic;                      -- Clock
+        CE: in std_logic;                       -- CE (Habilitción de modulo)
+        PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
+        LOAD: in std_logic;                     -- Control de carga sincrono y activo a nivel alto
+        DIFF: in positive;                      -- dificultad pra ajustar el tiempo añadido             
+        ZERO: out std_logic;                    -- flag activo a nivel bajo (fin de cuenta).
+        SEG : out std_logic_vector(7 downto 0)  -- vector con los segmentos a iluminar
+    );
+end CNTR;
+
+architecture Behavioral of CNTR is
+--componentes
+    --decoder
+    component DECODER_CNTR is
+    port(
+        NUM : in  natural;
+        SEG : out std_logic_vector(7 downto 0)
+    );
+    end component DECODER_CNTR;
     
-end architecture BEHAVIOURAL;
+    --Logic
+    component CNTR_Logic is
+    port(
+        RESET: in std_logic;                    -- Reset asynchronus (active low).
+        CLK: in std_logic;                      -- Clock
+        CE: in std_logic;                       -- CE (Habilitción de modulo)
+        PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
+        LOAD: in std_logic;                     -- Control de carga sincrono y activo a nivel alto
+        ADD: in positive;                       -- valor a añadir al actual
+        VALUE: out natural;                     -- cuenta actual                 
+        ZERO: out std_logic                     -- flag activo a nivel bajo (fin de cuenta).
+    );
+    end component CNTR_Logic;
+    
+    --señales
+    signal s_value: natural;
+    signal s_add: positive;
+    signal reset_tem: std_logic;
+    signal s_zero: std_logic;
+    
+begin
+    reset_tem <= RESET or s_zero; --cuando alguna de las dos sea 1 resetea
+    s_add <= 4 - DIFF;
+    ZERO <= s_zero;
+    
+    Logica: CNTR_Logic
+    port map (
+        RESET => reset_tem,
+        CLK => CLK,
+        CE => CE,
+        PULSE => PULSE,
+        LOAD => LOAD,
+        ADD => s_add,
+        VALUE => s_value,                 
+        ZERO => s_zero
+    );
+    
+    DECODER:  DECODER_CNTR
+    port map(
+        NUM => s_value,
+        SEG =>SEG
+    );  
+end Behavioral;

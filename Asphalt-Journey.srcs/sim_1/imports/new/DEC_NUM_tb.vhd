@@ -37,28 +37,30 @@ architecture Behavioral of DEC_NUM_tb is
     end component;
 
 --Señales
-    signal num  : integer;
+    signal num  : natural;
     signal leds : std_logic_vector(7 downto 0);
     
 --Vector para test
     type struct_test is record
-        num  : integer;
+        num  : natural;
         leds : std_logic_vector(7 downto 0);
     end record;
     
     type vector_test is array (natural range <>) of struct_test;
     
     constant test : vector_test := (
-             (0, "00000011"),
-             (1, "10011111"),
-             (2, "00100101"),
-             (3, "00001101"),
-             (4, "10011001"),
-             (5, "01001001"),
-             (6, "01000001"),
-             (7, "00011111"),
-             (8, "00000001"),
-             (9, "00001001") );
+             (0,  "00000011"),
+             (1,  "10011111"),
+             (2,  "00100101"),
+             (3,  "00001101"),
+             (4,  "10011001"),
+             (5,  "01001001"),
+             (6,  "01000001"),
+             (7,  "00011111"),
+             (8,  "00000001"),
+             (9,  "00001001"),
+             (10, "11111111")
+    );
 begin
 --UUT: Unit Under Test
     uut: DEC_NUM
