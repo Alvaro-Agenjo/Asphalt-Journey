@@ -33,7 +33,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity CNTR is
     port(
-        reset: in std_logic;                    -- Reset asynchronus (active low).
+        RESET: in std_logic;                    -- Reset asynchronus (active low).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)

@@ -15,8 +15,9 @@ architecture Behavioral of IMPRIMIR_JUEGO_tb is
             CLK : in std_logic; --Reloj
             CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
             CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
+            SEGMENT_CNT: in std_logic_vector (0 to 7); --Numero decodificado
             POS_CAR : in positive; --Posición del coche: en qué Display está
-            DIGSEL : out std_logic_vector(7 downto 1); --Selección de Display a encender
+            DIGSEL : out std_logic_vector(7 downto 0); --Selección de Display a encender
             SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
         );        
     end component;
@@ -29,8 +30,9 @@ architecture Behavioral of IMPRIMIR_JUEGO_tb is
     signal s_carr_actual : road_tile_array;
     signal s_carr_futura : road_tile_array;
     signal s_pos_car : positive;
-    signal s_digsel : std_logic_vector(7 downto 1);
+    signal s_digsel : std_logic_vector(7 downto 0);
     signal s_segment : std_logic_vector(7 downto 0); 
+    signal s_segment_cnt : std_logic_vector(7 downto 0) := "00000000"; 
 
 --Vector para test
     type struct_test is record
@@ -62,6 +64,7 @@ begin
             CLK => s_clk,
             CARR_ACTUAL => s_carr_actual,
             CARR_FUTURA => s_carr_futura,
+            SEGMENT_CNT => s_segment_cnt,
             POS_CAR => s_pos_car, 
             DIGSEL => s_digsel,
             SEGMENT => s_segment 
@@ -78,6 +81,7 @@ begin
             wait for 7*period;
         
         end loop;
+        wait for period;
         
         assert false
             report "[FIN SIMULACION]"

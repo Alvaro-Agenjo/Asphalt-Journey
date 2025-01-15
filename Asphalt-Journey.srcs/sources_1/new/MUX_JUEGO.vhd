@@ -21,12 +21,15 @@ begin
         variable i : integer := 1;
     begin
         if rising_edge(CLK) then
-            CARRETERA <= VEC_CARRETERAS(i);
+            if i /= 8 then 
+                CARRETERA <= VEC_CARRETERAS(i);
+            end if;
+            
             DISPLAY <= i;
             
             i := i+1; --Recorrer vector de carreteras
             
-            if i > 7  then --Cuando termino de recorrer el vector de carreteras
+            if i > 8  then --Cuando termino de recorrer el vector de carreteras
                 i := 1; --Reiniciar i
             end if; 
         end if;

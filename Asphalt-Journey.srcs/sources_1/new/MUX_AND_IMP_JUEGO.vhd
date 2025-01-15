@@ -9,7 +9,7 @@ entity MUX_AND_IMP_JUEGO is
     port(
         CLK : in std_logic; --Reloj
         VEC_CARRETERAS : in road_tile_array; --Vector de carretras
-        DIGSEL : out std_logic_vector (1 to 7); --Vector que controla que display está encendido.
+        DIGSEL : out std_logic_vector (1 to 8); --Vector que controla que display está encendido.
         SEGMENT : out std_logic_vector(2 downto 0) --Vector que controla que segmentos estan encendidos en el display seleccionado
     );
 end MUX_AND_IMP_JUEGO;
@@ -29,7 +29,7 @@ architecture Behavioral of MUX_AND_IMP_JUEGO is
     port(
         CARRETERA : in road_tile; --Carretera a imprimir
         DISPLAY : in integer; --Display a encender
-        DIGSEL : out std_logic_vector(1 to 7); --Vector que controla que display está encendido.--Selecció
+        DIGSEL : out std_logic_vector(1 to 8); --Vector que controla que display está encendido.--Selecció
         SEGMENT : out std_logic_vector(2 downto 0) --Vector que controla que segmentos estan encendidos en el display seleccionado
     );
     end component;

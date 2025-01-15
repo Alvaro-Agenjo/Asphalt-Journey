@@ -9,7 +9,7 @@ entity IMPRESION_JUEGO is
     port(
         CARRETERA : in road_tile; --Carretera a imprimir
         DISPLAY : in integer; --Display a encender
-        DIGSEL : out std_logic_vector(1 to 7); --Vector que controla que display está encendido.--Selecció
+        DIGSEL : out std_logic_vector(1 to 8); --Vector que controla que display está encendido.--Selecció --hasta 8
         SEGMENT : out std_logic_vector(2 downto 0) --Vector que controla que segmentos estan encendidos en el display seleccionado
     );
     
@@ -36,19 +36,21 @@ begin
     begin
         case DISPLAY is
             when 1 =>
-                DIGSEL <= "1000000";
+                DIGSEL <= "10000000";
             when 2 =>
-                DIGSEL <= "0100000";
+                DIGSEL <= "01000000";
             when 3 =>
-                DIGSEL <= "0010000";
+                DIGSEL <= "00100000";
             when 4 =>
-                DIGSEL <= "0001000";
+                DIGSEL <= "00010000";
             when 5 =>
-                DIGSEL <= "0000100";
+                DIGSEL <= "00001000";
             when 6 =>
-                DIGSEL <= "0000010";
+                DIGSEL <= "00000100";
             when 7 =>
-                DIGSEL <= "0000001";   
+                DIGSEL <= "00000010";
+            when 8 =>
+                DIGSEL <= "00000001";   
             when others => --Defecto: error 
                 DIGSEL <= (others => '0');                
         end case;

@@ -7,12 +7,13 @@ use work.MyPackage.all;
 
 entity ORDEN_IMPRESION_JUEGO is
     port (
-        DIGSEL_ACTUAL : in std_logic_vector(1 to 7); --Display de estado actual a encender 
-        DIGSEL_FUTURO : in std_logic_vector(1 to 7); --Display de estado futuro a encender
+        DIGSEL_ACTUAL : in std_logic_vector(1 to 8); --Display de estado actual a encender 
+        DIGSEL_FUTURO : in std_logic_vector(1 to 8); --Display de estado futuro a encender
         SEGMENT_ACTUAL : in std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
         SEGMENT_FUTURO : in std_logic_vector(2 downto 0); --Segmentos del estado futuro a encender
+        SEGMENT_CNT: in std_logic_vector (0 to 7);
         POS_CAR : positive; --Posición del coche
-        DIGSEL : out std_logic_vector(1 to 7); --Displays a encender
+        DIGSEL : out std_logic_vector(1 to 8); --Displays a encender
         SEGMENT : out std_logic_vector(0 to 7) --Segmentos del display a encender 
     );
 end ORDEN_IMPRESION_JUEGO;
@@ -23,6 +24,7 @@ begin
     process(DIGSEL_ACTUAL, DIGSEL_FUTURO, POS_CAR)
           variable v_digsel_posit : positive; 
     begin
+        
         --Compruebo que estoy en el mismo display en ambos tiempos
         if DIGSEL_ACTUAL = DIGSEL_FUTURO then 
             v_digsel_posit := to_integer(unsigned(DIGSEL_ACTUAL));
@@ -49,7 +51,10 @@ begin
             end case;
             
             --Si el display encendido es en el que está el coche...
-            if v_digsel_posit = POS_CAR then
+            if DIGSEL_ACTUAL = "00000001" then
+                SEGMENT <= SEGMENT_CNT;
+            
+            elsif v_digsel_posit = POS_CAR then
                 SEGMENT <= SEGMENT_FUTURO(1) & --a 
                            SEGMENT_FUTURO(0) & --b
                            SEGMENT_ACTUAL(0) & --c
@@ -58,6 +63,7 @@ begin
                            SEGMENT_FUTURO(2) & --f
                            SEGMENT_ACTUAL(1) & --g
                            '0'; --DP encendido         
+            
             else
                 SEGMENT <= SEGMENT_FUTURO(1) & --a 
                            SEGMENT_FUTURO(0) & --b
