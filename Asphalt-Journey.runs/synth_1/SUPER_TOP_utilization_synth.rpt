@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Dec 19 17:10:23 2024
+| Date         : Thu Jan 16 22:39:39 2025
 | Host         : DESKTOP-A7KB9SN running 64-bit major release  (build 9200)
 | Command      : report_utilization -file SUPER_TOP_utilization_synth.rpt -pb SUPER_TOP_utilization_synth.pb
 | Design       : SUPER_TOP
@@ -31,15 +31,15 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                |  967 |     0 |          0 |     63400 |  1.53 |
-|   LUT as Logic             |  962 |     0 |          0 |     63400 |  1.52 |
+| Slice LUTs*                |  724 |     0 |          0 |     63400 |  1.14 |
+|   LUT as Logic             |  719 |     0 |          0 |     63400 |  1.13 |
 |   LUT as Memory            |    5 |     0 |          0 |     19000 |  0.03 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |    5 |     0 |            |           |       |
-| Slice Registers            |  350 |     0 |          0 |    126800 |  0.28 |
-|   Register as Flip Flop    |  350 |     0 |          0 |    126800 |  0.28 |
-|   Register as Latch        |    0 |     0 |          0 |    126800 |  0.00 |
-| F7 Muxes                   |    7 |     0 |          0 |     31700 |  0.02 |
+| Slice Registers            |  478 |     0 |          0 |    126800 |  0.38 |
+|   Register as Flip Flop    |  470 |     0 |          0 |    126800 |  0.37 |
+|   Register as Latch        |    8 |     0 |          0 |    126800 | <0.01 |
+| F7 Muxes                   |    0 |     0 |          0 |     31700 |  0.00 |
 | F8 Muxes                   |    0 |     0 |          0 |     15850 |  0.00 |
 +----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -60,9 +60,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 5     |          Yes |           - |          Set |
-| 238   |          Yes |           - |        Reset |
-| 3     |          Yes |         Set |            - |
-| 104   |          Yes |       Reset |            - |
+| 168   |          Yes |           - |        Reset |
+| 7     |          Yes |         Set |            - |
+| 298   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -95,7 +95,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   40 |     0 |          0 |       210 | 19.05 |
+| Bonded IOB                  |   39 |     0 |          0 |       210 | 18.57 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         6 |  0.00 |
@@ -117,7 +117,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |          0 |        32 |  6.25 |
+| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |          0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         6 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         6 |  0.00 |
@@ -151,31 +151,33 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  385 |                 LUT |
-| LUT2     |  266 |                 LUT |
-| FDCE     |  238 |        Flop & Latch |
-| CARRY4   |  206 |          CarryLogic |
-| LUT3     |  149 |                 LUT |
-| LUT4     |  136 |                 LUT |
-| LUT1     |  131 |                 LUT |
-| LUT5     |  106 |                 LUT |
-| FDRE     |  104 |        Flop & Latch |
+| FDRE     |  298 |        Flop & Latch |
+| LUT2     |  271 |                 LUT |
+| LUT6     |  209 |                 LUT |
+| LUT5     |  165 |                 LUT |
+| FDCE     |  160 |        Flop & Latch |
+| CARRY4   |  143 |          CarryLogic |
+| LUT1     |  107 |                 LUT |
+| LUT4     |   81 |                 LUT |
+| LUT3     |   43 |                 LUT |
 | OBUF     |   32 |                  IO |
-| IBUF     |    8 |                  IO |
-| MUXF7    |    7 |               MuxFx |
+| LDCE     |    8 |        Flop & Latch |
+| IBUF     |    7 |                  IO |
+| FDSE     |    7 |        Flop & Latch |
 | SRL16E   |    5 |  Distributed Memory |
 | FDPE     |    5 |        Flop & Latch |
-| FDSE     |    3 |        Flop & Latch |
-| BUFG     |    2 |               Clock |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+----------+------+
-| Ref Name | Used |
-+----------+------+
++--------------+------+
+|   Ref Name   | Used |
++--------------+------+
+| Progreso_LED |    1 |
++--------------+------+
 
 
 9. Instantiated Netlists

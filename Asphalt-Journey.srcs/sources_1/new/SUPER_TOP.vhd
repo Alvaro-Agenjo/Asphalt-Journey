@@ -36,12 +36,10 @@ entity SUPER_TOP is
         RESET_N: in std_logic;                  --Reset asincrono a nivel bajo.
         CLK: in std_logic;                      --Reloj del sistema.
         B_UP: in std_logic;                     --Señal sin procesar boton arriba   (4)
-        B_DOWN: in std_logic;                   --Señal sin procesar boton abajo    (0)
-        B_LEFT: in std_logic;                   --Señal sin procesar boton izquierda(3)
+        B_DOWN: in std_logic;                   --Señal sin procesar boton abajo    (3)
+        B_LEFT: in std_logic;                   --Señal sin procesar boton izquierda(2)
         B_RIGHT: in std_logic;                  --Señal sin procesar boton derecha  (1)
-        B_CENTER: in std_logic;                 --Señal sin procesar boton central  (2)
-        
-        SW_FASE: in std_logic;
+        B_CENTER: in std_logic;                 --Señal sin procesar boton central  (0)
 
         LED: out std_logic_vector(0 to 15);        --Vector para encender los leds (Barra de progreso)
         DIGSEL: out std_logic_vector(7 downto 0);   --Vector que controla que display está encendido.
@@ -51,9 +49,7 @@ end SUPER_TOP;
 
 architecture Behavioral of SUPER_TOP is
 --Constantes
-    constant FREQS: positive_array := (200, 1);
-    constant CLK_FREQ: positive := 1_000;
-    --constant CLK_PERIOD: time := 1 sec/ CLK_FREQ;
+    constant FREQS: positive_array := (500, 1);   
     constant MAX_DIFF: positive := 3;
     constant MAX_CAR: positive := 2;
     constant COOLDOWN_TIME: time := 50 ms;
@@ -76,9 +72,6 @@ architecture Behavioral of SUPER_TOP is
 
     --Barra de progreso
     component Progreso_LED is
-    generic (
-        BASE_LENGTH: natural := 5                  --Numero de fases del escenario
-    );
     port(
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
         CLK: in std_logic;                      -- Reloj del sistema.
@@ -114,7 +107,6 @@ architecture Behavioral of SUPER_TOP is
             CE: in std_logic;                   -- CE (habilitación de módulo)
             SENAL: in std_logic;                -- Pulso para cambio de escenario.
             ROAD_AC: in road_tile_array;        -- Input codificada caretera actual
-            ROAD_FT: in road_tile_array;        -- Input codificada caretera futura
             CAR_POS: in positive;               -- Carril actual del coche
             FIN_NOK: out std_logic              -- Flag termina el juego si hay colision o salida de carretera
         );
@@ -263,7 +255,7 @@ architecture Behavioral of SUPER_TOP is
     signal s_segment_txt: std_logic_vector(7 downto 0);
 
     signal s_digsel_gm: std_logic_vector(7 downto 0);
-    signal s_segment_gm: std_logic_vector(7 downto 0) := (others => '1');
+    signal s_segment_gm: std_logic_vector(7 downto 0);
 
     --fin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     signal s_fin_ok: std_logic;
@@ -283,16 +275,16 @@ begin
     
     --Display
     SEGMENT <= s_segment_gm and s_segment_txt;  --desactivado = 1 --> 1 and x = x
-    DIGSEL <= not s_digsel_txt; --??
+    DIGSEL <= not (s_digsel_txt or s_digsel_gm); --??
     
     
     Maquina_estados: FSM
         port map (
             RESET_N => RESET_N,
             CLK => relojes(0),
-            CONFIRM => s_bt(2),
-            JUEGO2MENU => s_bt(0),
-            MENU2JUEGO => s_bt(1),
+            CONFIRM => s_bt(0),
+            JUEGO2MENU => s_bt(3),
+            MENU2JUEGO => s_bt(4),
             ANY => s_any,
             FIN_OK => s_fin_ok,
             FIN_NOK => s_fin_nok,
@@ -316,9 +308,6 @@ begin
         );
         
     Barra_LED: Progreso_LED 
-    generic map(
-        BASE_LENGTH => 5               --Seis fases por nivel?
-    )
     port map(
         RESET_N => Menu_n,
         CLK => relojes(0),
@@ -339,7 +328,7 @@ begin
             CLK =>relojes(0),
             CE=>State(2),
             PLUS => s_bt(4),
-            MINUS => s_bt(0),
+            MINUS => s_bt(3),
             VAL => dificultad
         );
      
@@ -352,7 +341,7 @@ begin
             CLK =>relojes(0),
             CE=>State(3),
             PLUS => s_bt(4),
-            MINUS => s_bt(0),
+            MINUS => s_bt(3),
             VAL => car
         );
 
@@ -363,7 +352,6 @@ begin
             CE=> State(4),
             SENAL =>fin_fase,
             ROAD_AC =>road_ac,
-            ROAD_FT =>road_ft,
             CAR_POS =>car_pos, 
             FIN_NOK =>s_fin_nok
         );
@@ -376,9 +364,9 @@ begin
         RESET_N => Menu_n,
         CLK => relojes(0),
         CE => State(4),
-        LEFT => s_bt(3),
+        LEFT => s_bt(2),
         RIGHT => s_bt(1), 
-        CENTER => s_bt(2),
+        CENTER => s_bt(0),
         CAR => car,
         CAR_POS => car_pos,
         HAB_RACE => s_hab_race,
@@ -400,7 +388,8 @@ begin
         NUM_ESTADOS => State'length 
     )
     port map (
-        CLK => relojes(2),
+        CLK => relojes(0),
+        --Pulso => relojes(1),
         ESTADO => State, 
         DIF => dificultad,
         COCHE => car,
@@ -421,6 +410,7 @@ begin
     Ctrl_impresion:IMPRIMIR_JUEGO
         port map(
             CLK => relojes(0),
+            --Pulso => relojes(1),
             CARR_ACTUAL => road_ac,
             CARR_FUTURA => road_ft,
             SEGMENT_CNT => numero, 
@@ -430,7 +420,7 @@ begin
         );
     Cuent_atras: CNTR
     port map(
-        RESET => State(0),
+        RESET => State(1),
         CLK => relojes(0),
         CE => State(4),
         PULSE => relojes(2),

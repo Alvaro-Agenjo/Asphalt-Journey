@@ -45,16 +45,15 @@ entity Logic_LED is
         N_LED: out natural;             --Numero de leds a encender
         FIN_OK: out std_logic           --Se ha llegado al final del escenario
     );
-
-    constant BASE_LENGTH : POSITIVE := 5;       -- número de fases por cada nivel de dificultad
 end Logic_LED;
 
 architecture Behavioral of Logic_LED is
+    constant BASE_LENGTH : POSITIVE := 5;       -- número de fases por cada nivel de dificultad
 begin
 
     process(RESET_N, CLK, SENAL)
         variable fase: natural :=1;    --Fase actual del escenario
-        variable TOTAL_LENGTH: positive:= 1;
+        variable TOTAL_LENGTH: positive;
     begin
         TOTAL_LENGTH := DIFF * BASE_LENGTH;
         if RESET_N = '0' then
