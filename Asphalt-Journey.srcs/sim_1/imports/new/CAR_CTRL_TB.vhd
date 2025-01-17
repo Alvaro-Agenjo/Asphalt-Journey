@@ -38,13 +38,11 @@ end CAR_CTRL_TB;
 architecture Behavioral of CAR_CTRL_TB is
 --componente
     component CAR_CTRL is
-    generic(
-        COOLDOWN_TIME: time := 10 sec       --Tiempo de enfriamiento de habilidad
-    );
     port(
         RESET_N: in std_logic;              --Reset asincrono, activo a nivel bajo
         CLK: in std_logic;                  --Reloj del sistema
         CE: in std_logic;                   --CE (Habilitación del módulo)
+        SEGUNDO: in std_logic;              --Pulso a 1Hz cooldown timer
         LEFT: in std_logic;                 --Boton izquierdo tratado
         RIGHT: in std_logic;                --Boton derecho tratado
         CENTER: in std_logic;               --Boton central tratado 
@@ -69,17 +67,15 @@ architecture Behavioral of CAR_CTRL_TB is
     signal s_car: positive := 1;
 --constantes
     constant CLK_PERIOD: time := 10 ns;
-    constant COOLDOWN_TEST_TIME: time := 4*CLK_PERIOD;
+    constant COOLDOWN_TIME : positive := 10; 
 begin
 
     UUT: CAR_CTRL 
-    generic map(
-        COOLDOWN_TIME => COOLDOWN_TEST_TIME
-    )
     port map(
         RESET_N => s_reset_n,
         CLK => s_clk,
         CE => s_ce,
+        SEGUNDO => s_clk,
         LEFT => s_left,
         RIGHT => s_right, 
         CENTER => s_center,
@@ -138,7 +134,7 @@ begin
         report "***** Test CAR hability cooldown *****";
         s_reset_n <= '1';
         s_ce <= '1';
-        wait for COOLDOWN_TEST_TIME;
+        wait for COOLDOWN_TIME * CLK_PERIOD;
         
         
         s_center <= '1';
@@ -167,7 +163,7 @@ begin
         s_reset_n <= '1';
         s_ce <= '1';
         s_car <= 2;
-        wait for COOLDOWN_TEST_TIME;
+        wait for COOLDOWN_TIME * CLK_PERIOD;
         
         
         s_center <= '1';

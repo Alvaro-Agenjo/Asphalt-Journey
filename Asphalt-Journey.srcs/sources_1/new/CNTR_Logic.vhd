@@ -32,6 +32,9 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity CNTR_Logic is
+    generic(
+        INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
+    );
     port(
         RESET: in std_logic;                    -- Reset asynchronus (active high).
         CLK: in std_logic;                      -- Clock
@@ -41,10 +44,7 @@ entity CNTR_Logic is
         ADD: in positive;                       -- valor a añadir al actual
         VALUE: out natural;                     -- cuenta actual                 
         ZERO: out std_logic                     -- flag activo a nivel alto (fin de cuenta).
-    );
-    
-    constant INIT_COUNT: natural := 3;          -- Valor donde inicia la cuenta tras reset
-    
+    );    
 end CNTR_Logic;
 
 architecture Behavioral of CNTR_Logic is
@@ -68,7 +68,7 @@ begin
                 if LOAD = '1' then
                     count := count + ADD;
                 end if;
-                if count = 0 then 
+                if count <= 0 then 
                     ZERO <= '1';
                 end if;
                 val <= count;                

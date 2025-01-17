@@ -37,16 +37,19 @@ end CNTR_Logic_TB;
 architecture tb of CNTR_Logic_TB is
 
     component CNTR_Logic is
+        generic(
+        INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
+    );
     port(
-        RESET: in std_logic;                    -- Reset asynchronus (active low).
+        RESET: in std_logic;                    -- Reset asynchronus (active high).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
         LOAD: in std_logic;                     -- Control de carga sincrono y activo a nivel alto
         ADD: in positive;                       -- valor a añadir al actual
         VALUE: out natural;                     -- cuenta actual                 
-        ZERO: out std_logic                     -- flag activo a nivel bajo (fin de cuenta).
-    );
+        ZERO: out std_logic                     -- flag activo a nivel alto (fin de cuenta).
+    );  
     end component CNTR_Logic;
 
     signal s_reset: std_logic;

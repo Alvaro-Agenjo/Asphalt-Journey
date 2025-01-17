@@ -282,7 +282,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="SUPER_TOP"/>
+        <Option Name="TopModule" Val="CAR_CTRL"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -393,7 +393,6 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/Cooldown_TB.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Cooldown_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -402,7 +401,6 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/CAR_CTRL_TB.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/CAR_CTRL_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -542,6 +540,7 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/IMPRIMIR_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>

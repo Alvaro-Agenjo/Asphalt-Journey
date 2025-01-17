@@ -16,8 +16,8 @@ REM usage: simulate.bat
 REM
 REM ****************************************************************************
 REM simulate design
-echo "xsim IMPRIMIR_JUEGO_tb_behav -key {Behavioral:sim_1:Functional:IMPRIMIR_JUEGO_tb} -tclbatch IMPRIMIR_JUEGO_tb.tcl -log simulate.log"
-call xsim  IMPRIMIR_JUEGO_tb_behav -key {Behavioral:sim_1:Functional:IMPRIMIR_JUEGO_tb} -tclbatch IMPRIMIR_JUEGO_tb.tcl -log simulate.log
+echo "xsim CAR_CTRL_TB_behav -key {Behavioral:sim_1:Functional:CAR_CTRL_TB} -tclbatch CAR_CTRL_TB.tcl -log simulate.log"
+call xsim  CAR_CTRL_TB_behav -key {Behavioral:sim_1:Functional:CAR_CTRL_TB} -tclbatch CAR_CTRL_TB.tcl -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

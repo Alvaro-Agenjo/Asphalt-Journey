@@ -32,13 +32,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity CAR_CTRL is
-    generic(
-        COOLDOWN_TIME: time := 10 sec       --Tiempo de enfriamiento de habilidad
-    );
     port(
         RESET_N: in std_logic;              --Reset asincrono, activo a nivel bajo
         CLK: in std_logic;                  --Reloj del sistema
         CE: in std_logic;                   --CE (Habilitación del módulo)
+        SEGUNDO: in std_logic;              --Pulso a 1Hz cooldown timer
         LEFT: in std_logic;                 --Boton izquierdo tratado
         RIGHT: in std_logic;                --Boton derecho tratado
         CENTER: in std_logic;               --Boton central tratado 
@@ -66,22 +64,21 @@ architecture Behavioral of CAR_CTRL is
     end component SELECTOR;
     
     component Cooldown is
-    generic(
-        WAIT_TIME: time := 10 sec
+    generic (
+         WAIT_TIME: positive := 10          --segundos de recarga
     );
-    port(
-        RESET_N: in std_logic;
-        CLK: in std_logic;
-        CE: in std_logic;
-        CENTER: in std_logic;
-        HABILITY_FLAG: out std_logic
+    port( 
+        CLK: in std_logic;                  --Reloj del sistema
+        SEGUNDO: in std_logic;              -- pulso a 1Hz para contabilizar segundos
+        CE: in std_logic;                   --CE (Habilitación de módulo)
+        CENTER: in std_logic;               --Boton central tratado
+        HABILITY_FLAG: out std_logic        --Flag que indica la activación de la habilidad
     );
     end component Cooldown; 
     
     
     --señales
     signal s_hability_flag: std_logic; 
-      
 begin
     
     CTRL_POS: SELECTOR
@@ -96,14 +93,13 @@ begin
             MINUS => LEFT,
             VAL => CAR_POS
         );
+        
+        
     Cooldown_dev: Cooldown
-    generic map(
-        WAIT_TIME => COOLDOWN_TIME 
-    )
     port map(
-        RESET_N => RESET_N,
         CLK => CLK,
         CE => CE,
+        SEGUNDO => SEGUNDO,
         CENTER => CENTER,
         HABILITY_FLAG => s_hability_flag
     );

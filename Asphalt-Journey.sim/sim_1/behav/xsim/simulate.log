@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd" Line 93
+Note: ***** Test RESET *****
+Time: 0 ps  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Note: ***** Test Enable *****
+Time: 7 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Stopped at time : 67 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd" Line 134
+Note: ***** Test CAR hability cooldown *****
+Time: 67 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Note: ***** Second push before cooldown *****
+Time: 187 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Note: ***** Test TANK hability cooldown *****
+Time: 205 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Note: ***** Second push before cooldown *****
+Time: 327 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Note: ***** Test car movement (right) *****
+Time: 345 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Note: ***** Test car movement (left) *****
+Time: 415 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+Failure: [PASSED] Test passed successfully
+Time: 487 ns  Iteration: 0  Process: /CAR_CTRL_TB/test  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd
+$finish called at time : 487 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd" Line 225

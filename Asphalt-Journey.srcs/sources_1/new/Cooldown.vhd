@@ -32,12 +32,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Cooldown is
-    generic(
-        WAIT_TIME: time := 10 sec           --tiempo de enfriamiento de la habilidad
+    generic (
+         WAIT_TIME: positive := 10          --segundos de recarga
     );
-    port(
-        RESET_N: in std_logic;              --Reset asincrono, activo a nivel bajo 
+    port( 
         CLK: in std_logic;                  --Reloj del sistema
+        SEGUNDO: in std_logic;              -- pulso a 1Hz para contabilizar segundos
         CE: in std_logic;                   --CE (Habilitación de módulo)
         CENTER: in std_logic;               --Boton central tratado
         HABILITY_FLAG: out std_logic        --Flag que indica la activación de la habilidad
@@ -45,33 +45,57 @@ entity Cooldown is
 end Cooldown;
 
 architecture Behavioral of Cooldown is
-    signal hability: std_logic;
+    --Temporizador 10 sec
+    component CNTR_Logic is
+    generic(
+        INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
+    );
+    port(
+        RESET: in std_logic;                    -- Reset asynchronus (active high).
+        CLK: in std_logic;                      -- Clock
+        CE: in std_logic;                       -- CE (Habilitción de modulo)
+        PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
+        LOAD: in std_logic;                     -- Control de carga sincrono y activo a nivel alto
+        ADD: in positive;                       -- valor a añadir al actual
+        VALUE: out natural;                     -- cuenta actual                 
+        ZERO: out std_logic                     -- flag activo a nivel alto (fin de cuenta).
+    );   
+    end component CNTR_Logic;
+    
+    signal hability: std_logic:='0';
+    signal reset_tem: std_logic;
+    signal s_listo: std_logic;
 begin
     
-    process(RESET_N, CLK)
-        variable espera: std_logic;
-        variable base_t: time :=0 sec;
-        variable actual_t: time :=0 sec; 
+    Temporizador: CNTR_Logic
+    generic map(
+        INIT_COUNT => WAIT_TIME
+    )
+    port map (
+        RESET => reset_tem,
+        CLK => CLK,
+        CE => CE,
+        PULSE => SEGUNDO,
+        LOAD => '0',
+        ADD => 0,                 
+        ZERO => s_listo
+    );
+    
+    process(CLK) 
     begin
-        if RESET_N = '0' then 
-            espera := '1';
-        elsif rising_edge(CLK) then
+        if rising_edge(CLK) then
             if CE = '1' then 
+                reset_tem <= '0';
                 hability <= '0';
-                actual_t := now;
-                if CENTER = '1' then        --se detecta la pulsación del botón
-                    if espera = '0' then    -- ha pasado el tiempo de recarga
-                        espera := '1';      --inicia el tiempo de recarga
-                        base_t := now;
-                        hability <= '1';   --notifica la activación de la habilidad
+                if CENTER = '1' then
+                    if s_listo = '1' then
+                        hability <= '1';
+                        reset_tem <= '1';                        
                     end if;
                 end if;
-                if actual_t -base_t >= WAIT_TIME then   --si la diferencia entre el tiempo actual y el momento donde se activo la habilidad es superior al tiempo de recarga
-                    espera := '0';      --termino la espera
-                end if;
             else 
-                base_t := now;      --modulo deshabilitado refresca tiempo de inicio
-            end if;     
+                reset_tem <= '1';
+            end if;    
         end if;
     end process; 
     HABILITY_FLAG <= hability;

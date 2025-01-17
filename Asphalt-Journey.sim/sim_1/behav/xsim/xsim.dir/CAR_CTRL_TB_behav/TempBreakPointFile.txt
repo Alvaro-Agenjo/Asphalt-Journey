@@ -1,1 +1,3 @@
 Breakpoint File Version 1.0
+93,true,"C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd"
+134,true,"C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/CAR_CTRL_TB.vhd"
