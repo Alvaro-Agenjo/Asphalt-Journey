@@ -70,6 +70,7 @@ architecture Behavioral of SUPER_TOP is
     );
     end component CLK_MANAGER;  
 
+
     --Barra de progreso
     component Progreso_LED is
     port(
@@ -83,6 +84,7 @@ architecture Behavioral of SUPER_TOP is
         FIN_OK: out std_logic                   -- Flag fin correcto.
     );
     end component Progreso_LED;
+
 
     --Selector 
     component SELECTOR is
@@ -98,6 +100,7 @@ architecture Behavioral of SUPER_TOP is
         VAL: out positive          --Dificultad seleccionada
     );
     end component SELECTOR;
+
     
     --detector de colisiones
     component CRASH_DTCTR is
@@ -112,15 +115,15 @@ architecture Behavioral of SUPER_TOP is
         );
     end component CRASH_DTCTR;
 
-    -- control coche
+ 
+ 
+    -- control coche    (tiempo de cooldown, modificar en Cooldown)
     component CAR_CTRL is
-    generic(
-        COOLDOWN_TIME: time := 10 sec       --Tiempo de enfriamiento de habilidad
-    );
     port(
         RESET_N: in std_logic;              --Reset asincrono, activo a nivel bajo
         CLK: in std_logic;                  --Reloj del sistema
         CE: in std_logic;                   --CE (Habilitación del módulo)
+        SEGUNDO: in std_logic;              --Pulso a 1Hz cooldown timer
         LEFT: in std_logic;                 --Boton izquierdo tratado
         RIGHT: in std_logic;                --Boton derecho tratado
         CENTER: in std_logic;               --Boton central tratado 

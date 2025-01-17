@@ -2,8 +2,6 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer 
 INFO: [VRFC 10-3107] analyzing entity 'SYNCHRNZR_tb'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'FMS_TB'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'IMPRIMIR_JUEGO_tb'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_BUTTONS_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'SYNC_BUTTONS_tb'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd" into library xil_defaultlib

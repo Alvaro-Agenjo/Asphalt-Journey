@@ -1,9 +1,10 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IMPRIMIR_JUEGO_tb_behav xil_defaultlib.IMPRIMIR_JUEGO_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CAR_CTRL_TB_behav xil_defaultlib.CAR_CTRL_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-1537] value 0 is out of target constraint range 1 to 2147483647 [C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Cooldown.vhd:80]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -12,14 +13,9 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_textio
-Compiling package xil_defaultlib.mypackage
-Compiling architecture behavioral of entity xil_defaultlib.MUX_JUEGO [mux_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.DEC_JUEGO [dec_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.IMPRESION_JUEGO [impresion_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.MUX_AND_IMP_JUEGO [mux_and_imp_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.GESTION_IMPRESION_JUEGO [gestion_impresion_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.ORDEN_IMPRESION_JUEGO [orden_impresion_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.IMPRIMIR_JUEGO [imprimir_juego_default]
-Compiling architecture behavioral of entity xil_defaultlib.imprimir_juego_tb
-Built simulation snapshot IMPRIMIR_JUEGO_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.SELECTOR [\SELECTOR(max=7)\]
+Compiling architecture behavioral of entity xil_defaultlib.CNTR_Logic [\CNTR_Logic(init_count=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.Cooldown [cooldown_default]
+Compiling architecture behavioral of entity xil_defaultlib.CAR_CTRL [car_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.car_ctrl_tb
+Built simulation snapshot CAR_CTRL_TB_behav
