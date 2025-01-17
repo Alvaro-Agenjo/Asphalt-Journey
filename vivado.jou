@@ -3,68 +3,245 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Jan 16 21:38:04 2025
-# Process ID: 5916
-# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13080 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
-# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/vivado.log
-# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
-# Running On        :DESKTOP-A7KB9SN
+# Start of session at: Fri Jan 17 09:11:55 2025
+# Process ID: 12776
+# Current directory: C:/Users/cesar/Documents/GitHub/Asphalt-Journey
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10568 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
+# Log file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/vivado.log
+# Journal file: C:/Users/cesar/Documents/GitHub/Asphalt-Journey\vivado.jou
+# Running On        :DESKTOP-1HN8B7K
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :19045
-# Processor Detail  :Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
-# CPU Frequency     :2496 MHz
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :2803 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :8373 MB
-# Swap memory       :6710 MB
-# Total Virtual     :15084 MB
-# Available Virtual :6617 MB
+# Host memory       :16969 MB
+# Swap memory       :18253 MB
+# Total Virtual     :35223 MB
+# Available Virtual :28169 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr}
-set_property STEPS.SYNTH_DESIGN.ARGS.INCREMENTAL_MODE aggressive [get_runs synth_1]
-reset_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
+open_project C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr
+set_property is_enabled true [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/MUX_JUEGO_tb.vhd]
+set_property is_enabled true [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/ORDEN_IMPRESION_JUEGO_tb.vhd]
+set_property is_enabled true [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/GESTION_IMPRESION_JUEGO_tb.vhd]
+set_property is_enabled true [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/MUX_AND_IMP_JUEGO_tb.vhd]
+set_property is_enabled true [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRESION_JUEGO_tb.vhd]
+set_property is_enabled true [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DEC_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source DEC_JUEGO_tb.tcl
+close_sim
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/DEC_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRESION_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRESION_JUEGO_tb.tcl
+close_sim
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRESION_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source MUX_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source MUX_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source MUX_JUEGO_tb.tcl
+close_sim
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/MUX_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_AND_IMP_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source MUX_AND_IMP_JUEGO_tb.tcl
+close_sim
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/MUX_AND_IMP_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top GESTION_IMPRESION_JUEGO [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top GESTION_IMPRESION_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source GESTION_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source GESTION_IMPRESION_JUEGO_tb.tcl
+close_sim
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/GESTION_IMPRESION_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ORDEN_IMPRESION_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/ORDEN_IMPRESION_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRIMIR_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+set_property is_enabled true [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/ORDEN_IMPRESION_JUEGO_tb.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ORDEN_IMPRESION_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRIMIR_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ORDEN_IMPRESION_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRIMIR_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SUPER_TOP [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRIMIR_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property is_enabled false [get_files  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/ORDEN_IMPRESION_JUEGO_tb.vhd]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-open_run synth_1 -name synth_1
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-refresh_design
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-synth_design -top SUPER_TOP -part xc7a100tcsg324-1 -lint 
-create_fileset -blockset -define_from Progreso_LED Progreso_LED
-file mkdir {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new}
-close [ open {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc} w ]
-add_files -fileset Progreso_LED {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc}}
-set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.
-
-# Add in a clock definition for each input clock to the out-of-context module.
-# The module will be synthesized as top so reference the clock origin using get_ports.
-# You will need to define a clock on each input clock port, no top level clock information
-# is provided to the module when set as out-of-context.
-# Here is an example:
-# create_clock -name clk_200 -period 5 [get_ports clk]
-}
-set filename "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc"
-set fileId [open $filename "w"]
-puts -nonewline $fileId $data
-close $fileId
-set_property USED_IN {out_of_context synthesis implementation}  [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc}}]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-refresh_design
-reset_run impl_1 -prev_step 
+reset_run Progreso_LED_synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1

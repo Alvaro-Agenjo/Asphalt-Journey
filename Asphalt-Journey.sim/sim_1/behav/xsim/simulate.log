@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: [FIN SIMULACION]
-Time: 150 ns  Iteration: 0  Process: /IMPRIMIR_JUEGO_tb/line__74  File: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd
-$finish called at time : 150 ns : File "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd" Line 88

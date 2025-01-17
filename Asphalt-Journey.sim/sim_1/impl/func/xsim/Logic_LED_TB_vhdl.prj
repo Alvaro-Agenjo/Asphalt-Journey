@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"Logic_LED_TB_func_impl.vhd" \
-"../../../../../Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd" \
-
-# Do not sort compile order
-nosort

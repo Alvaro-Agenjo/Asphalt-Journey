@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/Progreso_LED_synth_1/Progreso_LED.tcl"
+  variable script "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/Progreso_LED_synth_1/Progreso_LED.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,10 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "Progreso_LED_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/.Xil/Vivado-5916-DESKTOP-A7KB9SN/incrSyn}
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {Common 17-41} -limit 10000000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -68,18 +65,18 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.cache/wt} [current_project]
-set_property parent.project_path {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.cache/wt [current_project]
+set_property parent.project_path C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo {c:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.cache/ip} [current_project]
+set_property ip_output_repo c:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd}
-  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd}
-  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd}
+  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd
+  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd
+  C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -90,8 +87,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc -mode out_of_context {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc}}
-set_property used_in_implementation false [get_files {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc}}]
+read_xdc -mode out_of_context C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc
+set_property used_in_implementation false [get_files C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -10,8 +10,8 @@ entity GESTION_IMPRESION_JUEGO is
         CLK : in std_logic; --Reloj
         CARR_ACTUAL : in road_tile_array; --Carretera actual a imprimir
         CARR_FUTURA : in road_tile_array; --Carretera futura a imprimir
-        DIGSEL_ACTUAL : out std_logic_vector(1 to 8); --Display de estado actual a encender 
-        DIGSEL_FUTURO : out std_logic_vector(1 to 8); --Display de estado futuro a encender
+        DIGSEL_ACTUAL : out std_logic_vector(7 downto 0); --Display de estado actual a encender 
+        DIGSEL_FUTURO : out std_logic_vector(7 downto 0); --Display de estado futuro a encender
         SEGMENT_ACTUAL : out std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
         SEGMENT_FUTURO : out std_logic_vector(2 downto 0) --Segmentos del estado futuro a encender
     );
@@ -23,7 +23,7 @@ architecture Behavioral of GESTION_IMPRESION_JUEGO is
         port(
             CLK : in std_logic; --Reloj
             VEC_CARRETERAS : in road_tile_array; --Vector de carretras
-            DIGSEL : out std_logic_vector (1 to 8); --Vector que controla que display está encendido.
+            DIGSEL : out std_logic_vector (7 downto 0); --Vector que controla que display está encendido.
             SEGMENT : out std_logic_vector(2 downto 0) --Vector que controla que segmentos estan encendidos en el display seleccionado
         );
     end component;

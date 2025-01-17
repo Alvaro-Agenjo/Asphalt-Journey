@@ -14,7 +14,7 @@ architecture Behavioral of IMPRESION_JUEGO_tb is
         port(
             CARRETERA : in road_tile; --Carretera a imprimir
             DISPLAY : in integer; --Display a encender
-            DIGSEL : out std_logic_vector(1 to 7); --Vector que controla que display está encendido.
+            DIGSEL : out std_logic_vector(7 downto 0); --Vector que controla que display está encendido.
             SEGMENT : out std_logic_vector(2 downto 0) --Vector que controla que segmentos estan encendidos en el display seleccionado
         );
     end component;
@@ -25,7 +25,7 @@ architecture Behavioral of IMPRESION_JUEGO_tb is
 --Señales
     signal s_carretera : road_tile;
     signal s_display : integer;
-    signal s_digsel : std_logic_vector(1 to 7);
+    signal s_digsel : std_logic_vector(7 downto 0);
     signal s_segment : std_logic_vector(2 downto 0);
 
 --Vector de test
@@ -44,13 +44,15 @@ architecture Behavioral of IMPRESION_JUEGO_tb is
              (right_obstacle,5), 
              (obstacle,      6),
              (road,          7),
+             (no_road,       8),
              (left_obstacle, 1), 
              (right_limit,   2),
              (right_obstacle,3), 
              (obstacle,      4),
              (no_road,       5), 
              (left_limit,    6),
-             (right_obstacle,7) );
+             (right_obstacle,7), 
+             (no_road,       8) );
 
 begin
 --Unit Under Test
