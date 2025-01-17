@@ -360,13 +360,11 @@ begin
         );
         
     ControlCoche: CAR_CTRL 
-    generic map(
-        COOLDOWN_TIME => COOLDOWN_TIME
-    )
     port map(
         RESET_N => Menu_n,
         CLK => relojes(0),
         CE => State(4),
+        SEGUNDO => relojes(2),
         LEFT => s_bt(2),
         RIGHT => s_bt(1), 
         CENTER => s_bt(0),

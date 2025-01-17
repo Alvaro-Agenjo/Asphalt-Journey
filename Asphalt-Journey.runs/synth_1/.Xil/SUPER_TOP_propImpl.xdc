@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc rfile:../../../Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc} rfile:../../../Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 set_property src_info {type:XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
