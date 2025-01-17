@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: [FIN SIMULACION]
-Time: 170 ns  Iteration: 0  Process: /IMPRIMIR_JUEGO_tb/line__77  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd
-$finish called at time : 170 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd" Line 97
