@@ -196,7 +196,7 @@ architecture Behavioral of SUPER_TOP is
             CLK : in std_logic; --Reloj
             CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
             CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
-            SEGMENT_CNT: in std_logic_vector (0 to 7); --numero decodificado
+            SEGMENT_CNT: in std_logic_vector (7 downto 0); --numero decodificado
             POS_CAR : in positive; --Posición del coche: en qué Display está
             DIGSEL : out std_logic_vector(7 downto 0); --Selección de Display a encender
             SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
@@ -410,7 +410,6 @@ begin
     Ctrl_impresion:IMPRIMIR_JUEGO
         port map(
             CLK => relojes(0),
-            --Pulso => relojes(1),
             CARR_ACTUAL => road_ac,
             CARR_FUTURA => road_ft,
             SEGMENT_CNT => numero, 

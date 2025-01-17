@@ -10,7 +10,7 @@ entity IMPRIMIR_JUEGO is
         CLK : in std_logic; --Reloj
         CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
         CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
-        SEGMENT_CNT: in std_logic_vector(0 to 7); --Numero decodificado
+        SEGMENT_CNT: in std_logic_vector(7 downto 0); --Numero decodificado
         POS_CAR : in positive; --Posición del coche: en qué Display está
         DIGSEL : out std_logic_vector(7 downto 0); --Selección de Display a encender
         SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
@@ -24,8 +24,8 @@ architecture Behavioral of IMPRIMIR_JUEGO is
             CLK : in std_logic; --Reloj
             CARR_ACTUAL : in road_tile_array; --Carretera actual a imprimir
             CARR_FUTURA : in road_tile_array; --Carretera futura a imprimir
-            DIGSEL_ACTUAL : out std_logic_vector(1 to 8); --Display de estado actual a encender 
-            DIGSEL_FUTURO : out std_logic_vector(1 to 8); --Display de estado futuro a encender
+            DIGSEL_ACTUAL : out std_logic_vector(7 downto 0); --Display de estado actual a encender 
+            DIGSEL_FUTURO : out std_logic_vector(7 downto 0); --Display de estado futuro a encender
             SEGMENT_ACTUAL : out std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
             SEGMENT_FUTURO : out std_logic_vector(2 downto 0) --Segmentos del estado futuro a encender
         );    
@@ -33,14 +33,14 @@ architecture Behavioral of IMPRIMIR_JUEGO is
 
     component ORDEN_IMPRESION_JUEGO is
         port (
-            DIGSEL_ACTUAL : in std_logic_vector(1 to 8); --Display de estado actual a encender 
-            DIGSEL_FUTURO : in std_logic_vector(1 to 8); --Display de estado futuro a encender
+            DIGSEL_ACTUAL : in std_logic_vector(7 downto 0); --Display de estado actual a encender 
+            DIGSEL_FUTURO : in std_logic_vector(7 downto 0); --Display de estado futuro a encender
             SEGMENT_ACTUAL : in std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
             SEGMENT_FUTURO : in std_logic_vector(2 downto 0); --Segmentos del estado futuro a encender
-            SEGMENT_CNT: in std_logic_vector (0 to 7);  --Segmentos del contador regresivo
-            POS_CAR : positive; --Posición del coche
-            DIGSEL : out std_logic_vector(1 to 8); --Displays a encender
-            SEGMENT : out std_logic_vector(0 to 7) --Segementos del display a encender 
+            SEGMENT_CNT: in std_logic_vector (7 downto 0);  --Segmentos del contador regresivo
+            POS_CAR : in positive; --Posición del coche
+            DIGSEL : out std_logic_vector(7 downto 0); --Displays a encender
+            SEGMENT : out std_logic_vector(7 downto 0) --Segementos del display a encender 
         );  
     end component;
 

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Thu Jan 16 22:40:58 2025
-| Host             : DESKTOP-A7KB9SN running 64-bit major release  (build 9200)
+| Date             : Fri Jan 17 12:47:11 2025
+| Host             : DESKTOP-1HN8B7K running 64-bit major release  (build 9200)
 | Command          : report_power -file SUPER_TOP_power_routed.rpt -pb SUPER_TOP_power_summary_routed.pb -rpx SUPER_TOP_power_routed.rpx
 | Design           : SUPER_TOP
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 34.664 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 35.384 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 33.867                           |
+| Dynamic (W)              | 34.587                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |    17.440 |     3151 |       --- |             --- |
-|   LUT as Logic          |    14.668 |     1870 |     63400 |            2.95 |
+| Slice Logic             |    17.537 |     3152 |       --- |             --- |
+|   LUT as Logic          |    14.766 |     1873 |     63400 |            2.95 |
 |   CARRY4                |     2.573 |      449 |     15850 |            2.83 |
-|   Register              |     0.184 |      557 |    126800 |            0.44 |
+|   Register              |     0.183 |      557 |    126800 |            0.44 |
 |   LUT as Shift Register |     0.010 |        4 |     19000 |            0.02 |
 |   BUFG                  |     0.006 |        1 |        32 |            3.13 |
 |   Others                |     0.000 |       53 |       --- |             --- |
-| Signals                 |    15.472 |     2583 |       --- |             --- |
+| Signals                 |    16.095 |     2586 |       --- |             --- |
 | I/O                     |     0.955 |       39 |       210 |           18.57 |
 | Static Power            |     0.797 |          |           |                 |
-| Total                   |    34.664 |          |           |                 |
+| Total                   |    35.384 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    33.499 |      32.936 |      0.563 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    34.219 |      33.656 |      0.563 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.127 |       0.034 |      0.093 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.267 |       0.263 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -139,45 +139,45 @@ Table of Contents
 +------------------------------------+-----------+
 | Name                               | Power (W) |
 +------------------------------------+-----------+
-| SUPER_TOP                          |    33.867 |
-|   Barra_LED                        |    27.064 |
-|     Display                        |     0.023 |
-|     Unidad_logica                  |    27.042 |
-|   ControlCoche                     |     0.342 |
-|     CTRL_POS                       |     0.338 |
-|     Cooldown_dev                   |     0.004 |
-|   Ctrl_impresion                   |     1.307 |
-|     inst_gestion_impresion_juego   |     1.307 |
-|       mux_and_imp_juego_actual     |     0.733 |
-|       mux_and_imp_juego_futuro     |     0.575 |
-|   Cuent_atras                      |     1.099 |
-|     Logica                         |     1.099 |
-|   DetectorColision                 |     0.003 |
-|   Habilidad_tanque                 |     0.058 |
-|   Impresion_texto                  |     1.055 |
-|     inst_mux_txt                   |     1.055 |
-|   Maquina_estados                  |     0.752 |
-|   SEL_CAR                          |     0.225 |
-|   SEL_DIF                          |     0.453 |
-|   Tratamiento_Botones              |     0.246 |
-|     for_generate[0].inst_sync_edge |     0.028 |
+| SUPER_TOP                          |    34.587 |
+|   Barra_LED                        |    27.637 |
+|     Display                        |     0.026 |
+|     Unidad_logica                  |    27.611 |
+|   ControlCoche                     |     0.367 |
+|     CTRL_POS                       |     0.361 |
+|     Cooldown_dev                   |     0.005 |
+|   Ctrl_impresion                   |     1.178 |
+|     inst_gestion_impresion_juego   |     1.178 |
+|       mux_and_imp_juego_actual     |     0.613 |
+|       mux_and_imp_juego_futuro     |     0.565 |
+|   Cuent_atras                      |     1.174 |
+|     Logica                         |     1.174 |
+|   DetectorColision                 |     0.004 |
+|   Habilidad_tanque                 |     0.061 |
+|   Impresion_texto                  |     1.142 |
+|     inst_mux_txt                   |     1.142 |
+|   Maquina_estados                  |     0.795 |
+|   SEL_CAR                          |     0.239 |
+|   SEL_DIF                          |     0.485 |
+|   Tratamiento_Botones              |     0.249 |
+|     for_generate[0].inst_sync_edge |     0.025 |
+|       edge                         |     0.021 |
+|       sync                         |     0.004 |
+|     for_generate[1].inst_sync_edge |     0.014 |
+|       edge                         |     0.010 |
+|       sync                         |     0.004 |
+|     for_generate[2].inst_sync_edge |     0.028 |
 |       edge                         |     0.024 |
 |       sync                         |     0.004 |
-|     for_generate[1].inst_sync_edge |     0.016 |
-|       edge                         |     0.012 |
+|     for_generate[3].inst_sync_edge |     0.046 |
+|       edge                         |     0.041 |
+|       sync                         |     0.005 |
+|     for_generate[4].inst_sync_edge |     0.136 |
+|       edge                         |     0.133 |
 |       sync                         |     0.004 |
-|     for_generate[2].inst_sync_edge |     0.024 |
-|       edge                         |     0.020 |
-|       sync                         |     0.004 |
-|     for_generate[3].inst_sync_edge |     0.042 |
-|       edge                         |     0.038 |
-|       sync                         |     0.004 |
-|     for_generate[4].inst_sync_edge |     0.135 |
-|       edge                         |     0.132 |
-|       sync                         |     0.003 |
-|   gen_clk                          |     0.250 |
-|     timer_gen[0].tx                |     0.117 |
-|     timer_gen[1].tx                |     0.133 |
+|   gen_clk                          |     0.247 |
+|     timer_gen[0].tx                |     0.132 |
+|     timer_gen[1].tx                |     0.114 |
 +------------------------------------+-----------+
 
 

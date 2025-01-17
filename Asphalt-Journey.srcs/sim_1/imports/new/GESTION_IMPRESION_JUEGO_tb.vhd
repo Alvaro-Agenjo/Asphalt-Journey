@@ -15,8 +15,8 @@ architecture Behavioral of GESTION_IMPRESION_JUEGO_tb is
             CLK : in std_logic; --Reloj
             CARR_ACTUAL : in road_tile_array; --Carretera actual a imprimir
             CARR_FUTURA : in road_tile_array; --Carretera futura a imprimir
-            DIGSEL_ACTUAL : out std_logic_vector(1 to 7); --Display de estado actual a encender 
-            DIGSEL_FUTURO : out std_logic_vector(1 to 7); --Display de estado futuro a encender
+            DIGSEL_ACTUAL : out std_logic_vector(7 downto 0); --Display de estado actual a encender 
+            DIGSEL_FUTURO : out std_logic_vector(7 downto 0); --Display de estado futuro a encender
             SEGMENT_ACTUAL : out std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
             SEGMENT_FUTURO : out std_logic_vector(2 downto 0) --Segmentos del estado futuro a encender
         );
@@ -29,8 +29,8 @@ architecture Behavioral of GESTION_IMPRESION_JUEGO_tb is
     signal s_clk : std_logic := '0';
     signal s_carr_actual : road_tile_array;
     signal s_carr_futura : road_tile_array;
-    signal s_digsel_actual : std_logic_vector(1 to 7);
-    signal s_digsel_futuro : std_logic_vector(1 to 7);
+    signal s_digsel_actual : std_logic_vector(7 downto 0);
+    signal s_digsel_futuro : std_logic_vector(7 downto 0);
     signal s_segment_actual : std_logic_vector(2 downto 0);
     signal s_segment_futuro : std_logic_vector(2 downto 0);
     
@@ -65,11 +65,11 @@ begin
 --Test
     process
     begin
-        for i in 0 to test'high loop
+        for i in 0 to test'high-1 loop
             s_carr_futura <= test(i);
             s_carr_actual <= test(i+1);
             
-            for j in 1 to 7 loop --Espero a procesar todas las carreteras
+            for j in 1 to 8 loop --Espero a procesar todas las carreteras
                 wait until s_clk = '1';
             end loop; 
             

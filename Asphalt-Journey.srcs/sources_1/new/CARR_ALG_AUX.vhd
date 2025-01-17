@@ -9,7 +9,7 @@ entity CARR_ALG_AUX is
     Port (
         tiempo : in time; -- Entrada de tipo time
         -- salida : out std_logic_vector(WIDTH*3-1 downto 0) -- Salida de tipo std_logic_vector de 8 bits
-        salida_d : out road_tile_array -- Salida de tipo riad_tile_array de tamaño 7
+        salida_d : out road_tile_array -- Salida de tipo road_tile_array de tamaño 7
     );  -- road_tile_array
 end CARR_ALG_AUX;
 

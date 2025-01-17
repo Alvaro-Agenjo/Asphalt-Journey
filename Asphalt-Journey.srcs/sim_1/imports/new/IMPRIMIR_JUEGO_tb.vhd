@@ -15,7 +15,7 @@ architecture Behavioral of IMPRIMIR_JUEGO_tb is
             CLK : in std_logic; --Reloj
             CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
             CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
-            SEGMENT_CNT: in std_logic_vector (0 to 7); --Numero decodificado
+            SEGMENT_CNT: in std_logic_vector (7 downto 0); --Numero decodificado
             POS_CAR : in positive; --Posición del coche: en qué Display está
             DIGSEL : out std_logic_vector(7 downto 0); --Selección de Display a encender
             SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
@@ -32,25 +32,28 @@ architecture Behavioral of IMPRIMIR_JUEGO_tb is
     signal s_pos_car : positive;
     signal s_digsel : std_logic_vector(7 downto 0);
     signal s_segment : std_logic_vector(7 downto 0); 
-    signal s_segment_cnt : std_logic_vector(7 downto 0) := "00000000"; 
+    signal s_segment_cnt : std_logic_vector(7 downto 0) := (others => '0'); 
 
 --Vector para test
     type struct_test is record
         carr_futura : road_tile_array;
         carr_actual : road_tile_array;
         pos_car  : positive;
+        segment_cnt : std_logic_vector(7 downto 0);
     end record;
     
     type vector_test is array (natural range <>) of struct_test;
     
     constant test : vector_test := (
-            ((left_limit, road, road, road, road, road, right_limit), --Carretera Futura
+            ((left_obstacle, road, road, road, road, road, right_limit), --Carretera Futura
              (left_limit, road, road, road, road, road, right_limit), --Carretera Actual
-              1), --Posición del coche
+              1, --Posición del coche
+              "00001101"), --Contador=3
                  
             ((left_obstacle, road, obstacle, road, road, right_obstacle, no_road),
              (no_road, left_limit, obstacle, road, obstacle, right_obstacle, no_road),
-              4)
+              4,
+              "10011111") --Contador=1
             );     
 
 
@@ -77,10 +80,16 @@ begin
             s_carr_futura <= test(i).carr_futura;
             s_carr_actual <= test(i).carr_actual;
             s_pos_car <= test(i).pos_car;
+            s_segment_cnt <= test(i).segment_cnt;
             
-            wait for 7*period;
+            wait for 0.5*period;
+            
+            wait until s_digsel = "00000001";  
+            
+            wait for 0.5*period; 
         
         end loop;
+        
         wait for period;
         
         assert false

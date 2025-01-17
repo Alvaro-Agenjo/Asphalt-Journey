@@ -14,7 +14,7 @@ architecture Behavioral of MUX_AND_IMP_JUEGO_tb is
         port(
             CLK : in std_logic; --Reloj
             VEC_CARRETERAS : in road_tile_array; --Vector de carretras
-            DIGSEL : out std_logic_vector (1 to 7); --Vector que controla que display está encendido.
+            DIGSEL : out std_logic_vector (7 downto 0); --Vector que controla que display está encendido.
             SEGMENT : out std_logic_vector(2 downto 0) --Vector que controla que segmentos estan encendidos en el display seleccionado
         );    
     end component;
@@ -25,7 +25,7 @@ architecture Behavioral of MUX_AND_IMP_JUEGO_tb is
 --Señales
     signal s_clk : std_logic := '0';
     signal s_vec_carreteras : road_tile_array;
-    signal s_digsel : std_logic_vector (1 to 7);
+    signal s_digsel : std_logic_vector (7 downto 0);
     signal s_segment : std_logic_vector (2 downto 0);
     
 --Vector de test
@@ -57,7 +57,7 @@ begin
         for i in 0 to test'high loop
             s_vec_carreteras <= test(i); --Cambio de Texto
             
-            for j in 1 to 7 loop --Espero a procesar todas las carreteras
+            for j in 1 to 8 loop --Espero a procesar todas las carreteras
                 wait until s_clk = '1';
             end loop; 
             

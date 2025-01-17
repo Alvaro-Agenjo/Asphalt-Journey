@@ -56,7 +56,7 @@ begin
         for i in 0 to test'high loop
             s_vec_carreteras <= test(i); --Cambio de Texto
             
-            for j in 1 to 7 loop --Espero a procesar todas las carreteras
+            for j in 1 to 8 loop --Espero a procesar todas las carreteras
                 wait until s_clk = '1';
             end loop; 
             

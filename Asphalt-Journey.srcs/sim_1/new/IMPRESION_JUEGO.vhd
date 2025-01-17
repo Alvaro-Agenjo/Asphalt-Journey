@@ -9,7 +9,7 @@ entity IMPRESION_JUEGO is
     port(
         CARRETERA : in road_tile; --Carretera a imprimir
         DISPLAY : in integer; --Display a encender
-        DIGSEL : out std_logic_vector(1 to 8); --Vector que controla que display está encendido.--Selecció --hasta 8
+        DIGSEL : out std_logic_vector(7 downto 0); --Vector que controla que display está encendido.--Selecció --hasta 8
         SEGMENT : out std_logic_vector(2 downto 0) --Vector que controla que segmentos estan encendidos en el display seleccionado
     );
     

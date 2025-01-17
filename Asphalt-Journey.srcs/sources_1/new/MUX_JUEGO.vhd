@@ -23,6 +23,8 @@ begin
         if rising_edge(CLK) then
             if i /= 8 then 
                 CARRETERA <= VEC_CARRETERAS(i);
+            else
+                CARRETERA <= no_road;
             end if;
             
             DISPLAY <= i;
