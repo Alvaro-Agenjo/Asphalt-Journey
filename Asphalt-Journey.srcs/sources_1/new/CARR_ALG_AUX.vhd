@@ -7,7 +7,7 @@ entity CARR_ALG_AUX is
         WIDTH   :POSITIVE :=3
     );
     Port (
-        tiempo : in time; -- Entrada de tipo time
+        CLK      : std_logic;
         -- salida : out std_logic_vector(WIDTH*3-1 downto 0) -- Salida de tipo std_logic_vector de 8 bits
         salida_d : out road_tile_array -- Salida de tipo riad_tile_array de tamaño 7
     );  -- road_tile_array
@@ -27,7 +27,7 @@ signal aux                : road_tile_array:=(no_road,no_road,no_road,no_road,no
 --signal ver2 : std_logic:='0';
 --signal sec : std_logic:='0';
 begin
-    process(tiempo)
+    process(CLK)
         variable tiempo_int : integer;
         variable random_numbers : std_logic_vector(WIDTH*3-1 downto 0);
         variable dcha           : std_logic_vector(WIDTH-1 DOWNTO 0);
@@ -41,7 +41,10 @@ begin
         variable salida_aux : road_tile_array;
     begin
         -- Convertir tiempo a entero (en nanosegundos)
-        tiempo_int := integer(tiempo/ 1 ns); 
+        --tiempo_int := integer(tiempo/ 1 ns); 
+        if rising_edge(CLK) then
+            tiempo_int := tiempo_int + 1;
+        end if;
         -- Convertir entero a std_logic_vector (8 bits)
         sec:='0';
         if tiempo_int < 0 then
