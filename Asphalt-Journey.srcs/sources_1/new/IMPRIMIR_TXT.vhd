@@ -8,7 +8,7 @@ use work.MyPackage.all;
 entity IMPRIMIR_TXT is
     generic( NUM_ESTADOS : positive := 8 );
     port(
-        CLK : std_logic; --Reloj
+        CLK : in std_logic; --Reloj
         ESTADO : in std_logic_vector(NUM_ESTADOS-1 downto 0); --Vector de estados
         DIF : in positive; --Numero de dificultad
         COCHE : in positive; --Numero de coche
