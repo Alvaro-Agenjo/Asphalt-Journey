@@ -8,6 +8,7 @@ use work.MyPackage.all;
 entity IMPRIMIR_JUEGO is
     port(
         CLK : in std_logic; --Reloj
+        CE: in std_logic;
         CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
         CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
         SEGMENT_CNT: in std_logic_vector(7 downto 0); --Numero decodificado
@@ -33,6 +34,7 @@ architecture Behavioral of IMPRIMIR_JUEGO is
 
     component ORDEN_IMPRESION_JUEGO is
         port (
+            ENABLE: in std_logic;
             DIGSEL_ACTUAL : in std_logic_vector(7 downto 0); --Display de estado actual a encender 
             DIGSEL_FUTURO : in std_logic_vector(7 downto 0); --Display de estado futuro a encender
             SEGMENT_ACTUAL : in std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
@@ -66,6 +68,7 @@ begin
     --Orden = ordenar segmentos actual y futuro + colocar el coche 
     inst_orden_impresion_juego: ORDEN_IMPRESION_JUEGO
         port map(
+            ENABLE => CE,
             DIGSEL_ACTUAL => s_digsel_actual,  
             DIGSEL_FUTURO => s_digsel_futuro,
             SEGMENT_ACTUAL => s_segment_actual,

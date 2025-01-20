@@ -59,10 +59,8 @@ begin
                 count := INIT_COUNT;
                 ZERO <= '0';
             end if;             
-            if CE /= '1' then  -- modulo no habilitado valor a transmitir 10 
-                val <= 10; --fuera de rango usado como nulo --> 1111111
-            else
-               if PULSE = '1' then
+            if CE = '1' then  -- modulo habilitado valor a transmitir 10 
+                if PULSE = '1' then
                     count := count - 1;
                 end if;
                 if LOAD = '1' then
@@ -71,7 +69,9 @@ begin
                 if count <= 0 then 
                     ZERO <= '1';
                 end if;
-                val <= count;                
+                val <= count;
+            else    -- modulo no habilitado valor a transmitir 10
+               val <= 10; --fuera de rango usado como nulo --> 1111111                
             end if;
         end if;         
     end process;

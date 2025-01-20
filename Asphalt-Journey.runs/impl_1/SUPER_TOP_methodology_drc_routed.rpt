@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Fri Jan 17 13:59:16 2025
+| Date         : Mon Jan 20 11:09:16 2025
 | Host         : DESKTOP-A7KB9SN running 64-bit major release  (build 9200)
 | Command      : report_methodology -file SUPER_TOP_methodology_drc_routed.rpt -pb SUPER_TOP_methodology_drc_routed.pb -rpx SUPER_TOP_methodology_drc_routed.rpx
 | Design       : SUPER_TOP
@@ -2197,7 +2197,7 @@ Related violations: <none>
 
 TIMING-17#433 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[3]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[3]_inv/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#434 Critical Warning

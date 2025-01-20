@@ -7,6 +7,7 @@ use work.MyPackage.all;
 
 entity ORDEN_IMPRESION_JUEGO is
     port (
+        ENABLE: IN STD_LOGIC;
         DIGSEL_ACTUAL : in std_logic_vector(7 downto 0); --Display de estado actual a encender 
         DIGSEL_FUTURO : in std_logic_vector(7 downto 0); --Display de estado futuro a encender
         SEGMENT_ACTUAL : in std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
@@ -21,9 +22,10 @@ end ORDEN_IMPRESION_JUEGO;
 architecture Behavioral of ORDEN_IMPRESION_JUEGO is
 begin
 
-    process(DIGSEL_ACTUAL, DIGSEL_FUTURO)
+    process(ENABLE, DIGSEL_ACTUAL, DIGSEL_FUTURO)
           variable v_digsel_posit : positive; 
     begin
+    if ENABLE = '1' THEN 
             --Compruebo que estoy en el mismo display en ambos tiempos
             if DIGSEL_ACTUAL = DIGSEL_FUTURO then 
                 v_digsel_posit := to_integer(unsigned(DIGSEL_ACTUAL));
@@ -79,7 +81,10 @@ begin
             else --Si DISGSELs distintos
                 DIGSEL <= (others => 'U');      
             end if;
-         
+         else
+            SEGMENT <= "11111111";
+            DIGSEL <= "00000000";
+         END IF;
     end process;
           
 end Behavioral;

@@ -197,6 +197,7 @@ architecture Behavioral of SUPER_TOP is
     component IMPRIMIR_JUEGO is
         port(
             CLK : in std_logic; --Reloj
+            CE: in std_logic;
             CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
             CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
             SEGMENT_CNT: in std_logic_vector (7 downto 0); --numero decodificado
@@ -234,7 +235,7 @@ architecture Behavioral of SUPER_TOP is
     signal car: positive; --seleccion car
     
     --Botones
-    signal s_raw_bt: std_logic_vector(NUM_BUT-1 downto 0) := (B_UP, B_LEFT, B_CENTER, B_RIGHT , B_DOWN);
+    signal s_raw_bt: std_logic_vector(NUM_BUT-1 downto 0) := (B_UP, B_DOWN, B_LEFT, B_RIGHT , B_CENTER);
     signal s_bt: std_logic_vector(NUM_BUT-1 downto 0);
     signal s_any: std_logic;    
     
@@ -389,8 +390,7 @@ begin
         NUM_ESTADOS => State'length 
     )
     port map (
-        CLK => relojes(0),
-        --Pulso => relojes(1),
+        CLK => relojes(1),
         ESTADO => State, 
         DIF => dificultad,
         COCHE => car,
@@ -410,7 +410,8 @@ begin
     
     Ctrl_impresion:IMPRIMIR_JUEGO
         port map(
-            CLK => relojes(0),
+            CLK => relojes(1),
+            CE => State(4),
             CARR_ACTUAL => road_ac,
             CARR_FUTURA => road_ft,
             SEGMENT_CNT => numero, 
