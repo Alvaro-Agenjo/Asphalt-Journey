@@ -1,1 +1,0 @@
---incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "IMPRIMIR_JUEGO_behav" "xil_defaultlib.IMPRIMIR_JUEGO" -log "elaborate.log" 
