@@ -35,7 +35,6 @@ architecture Behavioral of IMPRIMIR_TXT is
     component MUX_TXT is
         port(
             CLK : in std_logic; --Reloj
-            ENABLE_N: in std_logic;
             TXT : in char_array (7 downto 0); --Texto a imprimir en BCDs
             CARACTER : out character; --Caracter a imprimir en cada BCD
             DISPLAY : out integer
@@ -45,6 +44,7 @@ architecture Behavioral of IMPRIMIR_TXT is
     --IMPRESION_BCD
     component IMPRESION_BCD is
         port(
+            ENABLE_N: IN std_logic;
             CARACTER : in character; --Caracter a imprimir
             DISPLAY : in integer; --Display a encender
             DIGSEL : out std_logic_vector(7 downto 0); --Vector que controla que display está encendido.
@@ -72,8 +72,7 @@ begin
     --MUX_TXT
     inst_mux_txt: MUX_TXT
         port map(
-            CLK => CLK,
-            ENABLE_N => ESTADO(4), 
+            CLK => CLK, 
             TXT => s_txt, 
             CARACTER => s_caracter, 
             DISPLAY => s_display
@@ -83,6 +82,7 @@ begin
     --IMPRESION_BCD
     inst_impresion_bcd: IMPRESION_BCD
         port map(
+            ENABLE_N => ESTADO(4),
             CARACTER => s_caracter, 
             DISPLAY => s_display, 
             DIGSEL => DIGSEL, 

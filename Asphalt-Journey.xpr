@@ -293,13 +293,13 @@
           <Attr Name="UsedIn" Val="out_of_context"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/IMPRESION_JUEGO.vhd">
+      <File Path="$PSRCDIR/sources_1/new/IMPRESION_BDC.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/IMPRESION_BCDs.vhd">
+      <File Path="$PSRCDIR/sources_1/new/IMPRESION_JUEGO.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

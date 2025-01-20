@@ -1,3 +1,4 @@
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -6,6 +7,7 @@ use ieee.std_logic_textio.all;
 
 entity IMPRESION_BCD is
     port(
+    ENABLE_N: IN STD_LOGIC;
         CARACTER : in character; --Caracter a imprimir
         DISPLAY : in integer; --Display a encender
         DIGSEL : out std_logic_vector(7 downto 0); --Vector que controla que display está encendido.
@@ -29,8 +31,9 @@ begin
        LEDS => SEGMENT 
     );
     
-    process(DISPLAY)
+    process(ENABLE_N, DISPLAY)
     begin
+    IF ENABLE_N = '0' THEN 
         case DISPLAY is
             when 7 =>
                 DIGSEL <= "10000000";
@@ -52,7 +55,9 @@ begin
                 DIGSEL <= (others => '0');
                           
         end case;
+        ELSE 
+            DIGSEL <= "00000000";
+            END IF;
     end process;
 
 end Behavioral;
-

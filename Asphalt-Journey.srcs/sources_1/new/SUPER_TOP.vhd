@@ -278,7 +278,7 @@ begin
     s_any <= s_bt(4) or s_bt(3) or s_bt(2) or s_bt(1) or s_bt(0);
     
     --Display
-    SEGMENT <= s_segment_gm and s_segment_txt;  --desactivado = 1 --> 1 and x = x
+    SEGMENT <= s_segment_txt and s_segment_txt;  --desactivado = 1 --> 1 and x = x
     DIGSEL <= not (s_digsel_txt or s_digsel_gm); --??
     
     

@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -30,8 +29,9 @@ begin
        LEDS => SEGMENT 
     );
     
-    process(DISPLAY)
+    process(ENABLE_N, DISPLAY)
     begin
+    IF ENABLE_N = '0' THEN 
         case DISPLAY is
             when 7 =>
                 DIGSEL <= "10000000";
@@ -53,6 +53,10 @@ begin
                 DIGSEL <= (others => '0');
                           
         end case;
+        ELSE 
+            DIGSEL <= "00000000";
+            END IF;
     end process;
 
 end Behavioral;
+
