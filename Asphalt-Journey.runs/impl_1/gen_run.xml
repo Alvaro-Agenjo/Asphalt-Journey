@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737369320">
-  <File Type="ROUTE-PWR" Name="SUPER_TOP_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737371574">
   <File Type="PA-TCL" Name="SUPER_TOP.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="SUPER_TOP_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="SUPER_TOP_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="SUPER_TOP_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="SUPER_TOP.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="SUPER_TOP_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="SUPER_TOP_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="SUPER_TOP_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="SUPER_TOP_opt.dcp"/>
   <File Type="OPT-DRC" Name="SUPER_TOP_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SUPER_TOP_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="SUPER_TOP.hwdef"/>
+  <File Type="OPT-TIMING" Name="SUPER_TOP_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="SUPER_TOP_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="SUPER_TOP_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="SUPER_TOP_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="SUPER_TOP_timing_summary_pwropted.rpt"/>
@@ -23,16 +20,12 @@
   <File Type="PLACE-CTRL" Name="SUPER_TOP_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="SUPER_TOP_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="SUPER_TOP_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="SUPER_TOP.bin"/>
   <File Type="PLACE-TIMING" Name="SUPER_TOP_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="SUPER_TOP_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="SUPER_TOP_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="SUPER_TOP_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="SUPER_TOP.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="SUPER_TOP_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="SUPER_TOP_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="SUPER_TOP_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="SUPER_TOP.rbt"/>
   <File Type="PHYSOPT-TIMING" Name="SUPER_TOP_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="SUPER_TOP_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="SUPER_TOP_routed.dcp"/>
@@ -43,7 +36,9 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="SUPER_TOP_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SUPER_TOP_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SUPER_TOP_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="SUPER_TOP_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="SUPER_TOP_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="SUPER_TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="SUPER_TOP_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="SUPER_TOP_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="SUPER_TOP_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="SUPER_TOP_timing_summary_routed.rpt"/>
@@ -54,17 +49,22 @@
   <File Type="ROUTE-BUS-SKEW" Name="SUPER_TOP_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="SUPER_TOP_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="SUPER_TOP_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="SUPER_TOP_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="SUPER_TOP_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SUPER_TOP_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SUPER_TOP_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SUPER_TOP_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SUPER_TOP_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SUPER_TOP_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="SUPER_TOP.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SUPER_TOP_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SUPER_TOP_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="SUPER_TOP.bit"/>
+  <File Type="BG-BIN" Name="SUPER_TOP.bin"/>
+  <File Type="BITSTR-MSK" Name="SUPER_TOP.msk"/>
+  <File Type="BITSTR-RBT" Name="SUPER_TOP.rbt"/>
   <File Type="BITSTR-NKY" Name="SUPER_TOP.nky"/>
   <File Type="BITSTR-BMM" Name="SUPER_TOP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="SUPER_TOP.mmi"/>
   <File Type="PDI-FILE" Name="SUPER_TOP.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="SUPER_TOP_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="SUPER_TOP_pld.pdi"/>
@@ -189,12 +189,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sim_1/new/IMPRESION_BCDs.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/IMPRIMIR_TXT.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -208,12 +202,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/MUX_JUEGO.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sim_1/new/IMPRESION_JUEGO.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -296,6 +284,18 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IMPRESION_JUEGO.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IMPRESION_BCDs.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>

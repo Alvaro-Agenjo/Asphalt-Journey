@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Mon Jan 20 11:36:58 2025
-| Host         : DESKTOP-A7KB9SN running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 12:14:08 2025
+| Host         : DESKTOP-1HN8B7K running 64-bit major release  (build 9200)
 | Command      : report_drc -file SUPER_TOP_drc_opted.rpt -pb SUPER_TOP_drc_opted.pb -rpx SUPER_TOP_drc_opted.rpx
 | Design       : SUPER_TOP
 | Device       : xc7a100tcsg324-1
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
-             Max violations: <unlimited>
-             Violations found: 1
-+----------+----------+-----------------------------------------------------+------------+
-| Rule     | Severity | Description                                         | Violations |
-+----------+----------+-----------------------------------------------------+------------+
-| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-+----------+----------+-----------------------------------------------------+------------+
+             Max checks: <unlimited>
+             Checks found: 1
++----------+----------+-----------------------------------------------------+--------+
+| Rule     | Severity | Description                                         | Checks |
++----------+----------+-----------------------------------------------------+--------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1      |
++----------+----------+-----------------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
