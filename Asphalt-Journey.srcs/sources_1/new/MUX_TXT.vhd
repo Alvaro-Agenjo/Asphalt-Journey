@@ -29,6 +29,7 @@ begin
                 if i < 0 then --Cuando termino de recorrer el vector de caracteres
                     i := 7; --Reiniciar i
                 end if;
+             
         end if;
     end process;  
 

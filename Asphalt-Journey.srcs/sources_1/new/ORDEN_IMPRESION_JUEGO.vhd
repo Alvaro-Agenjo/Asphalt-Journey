@@ -77,6 +77,9 @@ begin
                                SEGMENT_ACTUAL(1) & --g
                                '1'; --DP apagado     
                 end if; 
+            
+            else --Si DISGSELs distintos
+                DIGSEL <= (others => 'U');      
             end if;
          else
             SEGMENT <= "11111111";
