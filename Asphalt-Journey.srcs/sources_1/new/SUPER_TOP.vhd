@@ -210,7 +210,7 @@ architecture Behavioral of SUPER_TOP is
     --Contador descencente
     component CNTR is
     port(
-        RESET: in std_logic;                    -- Reset asynchronus (active low).
+        RESET_N: in std_logic;                    -- Reset asynchronus (active low).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -421,7 +421,7 @@ begin
         );
     Cuent_atras: CNTR
     port map(
-        RESET => State(1),
+        RESET_N => State(4),
         CLK => relojes(0),
         CE => State(4),
         PULSE => relojes(2),

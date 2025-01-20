@@ -36,7 +36,7 @@ entity CNTR_Logic is
         INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
     );
     port(
-        RESET: in std_logic;                    -- Reset asynchronus (active high).
+        RESET_N: in std_logic;                    -- Reset asynchronus (active high).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -51,11 +51,11 @@ architecture Behavioral of CNTR_Logic is
 signal val: natural;
 begin
     
-    process (CLK, RESET, LOAD)
+    process (CLK, RESET_N, LOAD)
         variable count: natural := INIT_COUNT;  
     begin
         if rising_edge(CLK) then
-            if RESET ='1' then
+            if RESET_N ='0' then
                 count := INIT_COUNT;
                 ZERO <= '0';
             end if;             

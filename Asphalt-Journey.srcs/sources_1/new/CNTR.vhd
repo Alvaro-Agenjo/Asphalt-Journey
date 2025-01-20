@@ -33,7 +33,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity CNTR is
     port(
-        RESET: in std_logic;                    -- Reset asynchronus (active low).
+        RESET_N: in std_logic;                    -- Reset asynchronus (active low).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -60,7 +60,7 @@ architecture Behavioral of CNTR is
         INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
     );
     port(
-        RESET: in std_logic;                    -- Reset asynchronus (active high).
+        RESET_N: in std_logic;                    -- Reset asynchronus (active high).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -78,13 +78,13 @@ architecture Behavioral of CNTR is
     signal s_zero: std_logic;
     
 begin
-    reset_tem <= RESET or s_zero; --cuando alguna de las dos sea 1 resetea
+    reset_tem <= RESET_N or not(s_zero); --cuando alguna de las dos sea 1 resetea
     s_add <= 4 - DIFF;
     ZERO <= s_zero;
     
     Logica: CNTR_Logic
     port map (
-        RESET => reset_tem,
+        RESET_N => reset_tem,
         CLK => CLK,
         CE => CE,
         PULSE => PULSE,

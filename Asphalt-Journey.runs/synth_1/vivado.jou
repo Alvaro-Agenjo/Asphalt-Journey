@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Jan 20 11:07:01 2025
-# Process ID: 14308
-# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey.runs/synth_1
+# Start of session at: Mon Jan 20 11:35:23 2025
+# Process ID: 11528
+# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/synth_1
 # Command line: vivado.exe -log SUPER_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SUPER_TOP.tcl
-# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey.runs/synth_1/SUPER_TOP.vds
-# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey.runs/synth_1\vivado.jou
+# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/synth_1/SUPER_TOP.vds
+# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/synth_1\vivado.jou
 # Running On        :DESKTOP-A7KB9SN
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
@@ -19,6 +19,6 @@
 # Host memory       :8373 MB
 # Swap memory       :6710 MB
 # Total Virtual     :15084 MB
-# Available Virtual :5088 MB
+# Available Virtual :6776 MB
 #-----------------------------------------------------------
 source SUPER_TOP.tcl -notrace

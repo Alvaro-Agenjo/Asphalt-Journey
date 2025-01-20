@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737367618">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737369320">
   <File Type="ROUTE-PWR" Name="SUPER_TOP_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SUPER_TOP.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="SUPER_TOP_power_summary_routed.pb"/>
@@ -189,7 +189,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCDs.vhd">
+    <File Path="$PSRCDIR/sim_1/new/IMPRESION_BCDs.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -213,7 +213,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO.vhd">
+    <File Path="$PSRCDIR/sim_1/new/IMPRESION_JUEGO.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -291,7 +291,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc">
+    <File Path="$PSRCDIR/Progreso_LED/new/Progreso_LED_ooc.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -307,7 +307,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Xilinx/Vivado/2024.1/data/boards/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Xilinx/Vivado/2024.1/data/boards/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
         <Attr Name="ImportTime" Val="1729190191"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

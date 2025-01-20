@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="868b4b76be484bb9bc55dfeeea6db7e5"/>
@@ -29,13 +29,13 @@
     <Option Name="SimulatorGccInstallDirVCS" Val=""/>
     <Option Name="SimulatorGccInstallDirRiviera" Val=""/>
     <Option Name="SimulatorGccInstallDirActiveHdl" Val=""/>
-    <Option Name="SimulatorVersionXsim" Val="2024.2"/>
-    <Option Name="SimulatorVersionModelSim" Val="2024.1"/>
-    <Option Name="SimulatorVersionQuesta" Val="2024.1"/>
+    <Option Name="SimulatorVersionXsim" Val="2024.1"/>
+    <Option Name="SimulatorVersionModelSim" Val="2023.2"/>
+    <Option Name="SimulatorVersionQuesta" Val="2023.2"/>
     <Option Name="SimulatorVersionXcelium" Val="23.03.002"/>
     <Option Name="SimulatorVersionVCS" Val="U-2023.03-1"/>
-    <Option Name="SimulatorVersionRiviera" Val="2024.04"/>
-    <Option Name="SimulatorVersionActiveHdl" Val="15.0"/>
+    <Option Name="SimulatorVersionRiviera" Val="2023.04"/>
+    <Option Name="SimulatorVersionActiveHdl" Val="14.1"/>
     <Option Name="SimulatorGccVersionXsim" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionModelSim" Val="7.4.0"/>
     <Option Name="SimulatorGccVersionQuesta" Val="7.4.0"/>
@@ -196,7 +196,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCDs.vhd">
+      <File Path="$PSRCDIR/sim_1/new/IMPRESION_BCDs.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -220,7 +220,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO.vhd">
+      <File Path="$PSRCDIR/sim_1/new/IMPRESION_JUEGO.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -298,11 +298,23 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc">
+      <File Path="$PSRCDIR/Progreso_LED/new/Progreso_LED_ooc.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="out_of_context"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/IMPRESION_JUEGO.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/IMPRESION_BCDs.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
@@ -314,7 +326,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Xilinx/Vivado/2024.1/data/boards/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Xilinx/Vivado/2024.1/data/boards/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
           <Attr Name="ImportTime" Val="1729190191"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -329,7 +341,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/DEC_JUEGO_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_JUEGO_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/DEC_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -338,7 +350,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/DEC_NUM_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_NUM_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/DEC_NUM_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -347,7 +359,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/DEC_TXT_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/DEC_TXT_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/DEC_TXT_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -356,7 +368,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/Progreso_LED_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Progreso_LED_TB.vhd"/>
           <Attr Name="ImportTime" Val="1735324982"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -365,7 +377,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/Logic_LED_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Logic_LED_TB.vhd"/>
           <Attr Name="ImportTime" Val="1735324982"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -374,7 +386,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/Display_LED_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Display_LED_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -383,7 +395,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/TIMER_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TIMER_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/TIMER_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -392,7 +404,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/CLK_MANAGER_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CLK_MANAGER_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/CLK_MANAGER_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -401,7 +413,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/CRASH_DTCTR_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CRASH_DTCTR_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/CRASH_DTCTR_TB.vhd"/>
           <Attr Name="ImportTime" Val="1735324982"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -410,7 +422,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/Select_DIFF_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Select_DIFF_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Select_DIFF_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -418,7 +430,7 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/Cooldown_TB.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Cooldown_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Cooldown_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -426,7 +438,7 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/CAR_CTRL_TB.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CAR_CTRL_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/CAR_CTRL_TB.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -435,7 +447,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/SYNC_BUTTONS_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_BUTTONS_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/SYNC_BUTTONS_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734260645"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -444,7 +456,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/EDGE_DETECTOR_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/EDGE_DETECTOR_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/EDGE_DETECTOR_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734260645"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -453,7 +465,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/SYNC_EDGE_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNC_EDGE_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/SYNC_EDGE_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734260645"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -462,7 +474,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/SYNCHRNZR_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SYNCHRNZR_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/SYNCHRNZR_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734260645"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -471,7 +483,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/CONTROL_IMPRESION_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CONTROL_IMPRESION_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/CONTROL_IMPRESION_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -480,7 +492,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/MUX_TXT_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_TXT_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/MUX_TXT_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -489,7 +501,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/IMPRESION_BCD_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_BCD_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/IMPRESION_BCD_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -498,7 +510,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/IMPRIMIR_TXT_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_TXT_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/IMPRIMIR_TXT_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735324933"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -507,7 +519,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/TANK_HAB_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/TANK_HAB_TB.vhd"/>
           <Attr Name="ImportTime" Val="1735324933"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -516,7 +528,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/SUPER_TOP_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/SUPER_TOP_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/SUPER_TOP_TB.vhd"/>
           <Attr Name="ImportTime" Val="1735324933"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -525,7 +537,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/FMS_TB.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/FMS_TB.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/FMS_TB.vhd"/>
           <Attr Name="ImportTime" Val="1735324982"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -541,7 +553,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/MUX_AND_IMP_JUEGO_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_AND_IMP_JUEGO_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/MUX_AND_IMP_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -550,7 +562,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/CNTR_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/CNTR_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/CNTR_tb.vhd"/>
           <Attr Name="ImportTime" Val="1736884764"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -566,7 +578,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/IMPRIMIR_JUEGO_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRIMIR_JUEGO_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/IMPRIMIR_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -575,7 +587,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/IMPRESION_JUEGO_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/IMPRESION_JUEGO_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/IMPRESION_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -584,7 +596,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/BUTTON_SYNC_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/BUTTON_SYNC_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/BUTTON_SYNC_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734982468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -593,7 +605,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/MUX_JUEGO_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/MUX_JUEGO_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/MUX_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -609,7 +621,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/ORDEN_IMPRESION_JUEGO_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/ORDEN_IMPRESION_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -618,7 +630,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/GESTION_IMPRESION_JUEGO_tb.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/GESTION_IMPRESION_JUEGO_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/GESTION_IMPRESION_JUEGO_tb.vhd"/>
           <Attr Name="ImportTime" Val="1735325045"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
