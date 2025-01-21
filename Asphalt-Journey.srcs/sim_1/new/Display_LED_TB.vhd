@@ -38,12 +38,10 @@ end Display_LED_TB;
 architecture Behavioral of Display_LED_TB is
     --Componente
     component Display_LED is
-    
-    port(
+    port (
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel alto
-        CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        CE: in std_logic;                       -- Clock enable (200 Hz)
-        N_LED: in natural;                     -- Numero de leds a iluminar
+        ENABLE: in std_logic;                   -- Habilitacion del módulo
+        N_LED: in natural;                      -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     );
     end component Display_LED;
@@ -92,8 +90,7 @@ begin
     UUT: Display_LED 
     port map(
         RESET_N => s_reset_n,
-        CLK => s_clk,
-        CE => s_ce,
+        ENABLE => s_ce,
         N_LED => s_n_led,
         LEDS => s_leds
     );
@@ -136,7 +133,7 @@ begin
             s_n_led <= value(i).t_n_led;
             wait until s_clk = '1';     
             
-            wait for  0.1*CLK_PERIOD;
+            wait for  0.2*CLK_PERIOD;
             -- Comprobar la salida de LIGHT
             assert (s_leds = value(i).t_led)
             report "[ERROR] Expected value: " & integer'image(TO_INTEGER(unsigned(value(i).t_led))) &

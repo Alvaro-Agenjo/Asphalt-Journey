@@ -101,8 +101,8 @@ begin
         s_ce <= '0';
         
         wait for 0.2* CLK_PERIOD;
-        assert s_n_led = 0
-            report "[ERROR] Expected value: " & integer'image(0) &
+        assert s_n_led = 1
+            report "[ERROR] Expected value: " & integer'image(1) &
                    " Obtained: " & integer'image(s_n_led)
             severity failure;
         
@@ -118,7 +118,7 @@ begin
         for i in 0 to 3 loop
             wait until s_clk = '1';
             
-            assert s_n_led = 0
+            assert s_n_led = 1
                 report "[ERROR] Expected value: " & integer'image(0) &
                    " Obtained: " & integer'image(s_n_led)
             severity failure;
@@ -138,7 +138,7 @@ begin
 -- Posible error por tiempos ver en implementación --
 -----------------------------------------------------     
             wait until s_clk = '1'; 
-            wait for  0.1*CLK_PERIOD;
+            wait for  0.2*CLK_PERIOD;
             -- Comprobar la salida de LIGHT
             assert (s_n_led = 16 * i / tamano)
             report "[ERROR] Expected value: " & integer'image(16 * i / tamano) &
@@ -147,6 +147,9 @@ begin
         end loop;
         
         report "***** Test Overflow *****";
+        wait until s_clk='1';
+        
+        wait for 0.2*CLK_PERIOD;
         
         assert s_fin_ok = '1'
         report "[ERROR] Finish bit should be 1"
@@ -178,6 +181,9 @@ begin
         
         report "***** Test Overflow *****";
         
+        wait until s_clk = '1'; 
+        wait for  0.1*CLK_PERIOD;
+            
         assert s_fin_ok = '1'
         report "[ERROR] Finish bit should be 1"
             severity failure;
