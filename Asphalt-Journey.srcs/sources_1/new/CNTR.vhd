@@ -78,7 +78,7 @@ architecture Behavioral of CNTR is
     signal s_zero: std_logic;
     
 begin
-    reset_tem <= RESET_N or not(s_zero); --cuando alguna de las dos sea 1 resetea
+    reset_tem <= (RESET_N) or (not(s_zero)); --cuando alguna de las dos sea 1 resetea
     s_add <= 4 - DIFF;
     ZERO <= s_zero;
     

@@ -220,7 +220,32 @@ architecture Behavioral of SUPER_TOP is
         SEG : out std_logic_vector(7 downto 0)  -- vector con los segmentos a iluminar
     );
     end component CNTR;
-     
+    
+    --Generar carretera
+    component CARR_ALG_AUX is 
+        Generic(
+            WIDTH : POSITIVE := 3
+        );
+        Port (
+            CLK : in std_logic;
+            CHANGE : in std_logic;
+            salida_d : out road_tile_array -- Salida de tipo riad_tile_array de tamaño 7
+        );  
+    end component;
+    
+    --Administrar carretera
+    component ADMIN_CARR is
+    port(
+        CLK : in std_logic; --Reloj
+        ENABLE : in std_logic; -- Enable cuando estado juego activo
+        CHANGE : in std_logic; -- Señal de cambio de carretera, viene del contador
+        NEW_ROAD : in road_tile_array; --Carretera generada última, en CARR_ALG_AUX
+        OLD_ROAD : in road_tile_array; --Carretera antigua futura
+        CARR_FUTURA : out road_tile_array := (left_limit, road, road, road, road, road, right_limit); --Carretera Actual
+        CARR_ACTUAL : out road_tile_array := (left_limit, road, road, road, road, road, right_limit) --Carretera Futura
+    );
+    end component;
+    
 --señales
     
     signal relojes: std_logic_vector (0 to FREQS'high +1);
@@ -247,6 +272,8 @@ architecture Behavioral of SUPER_TOP is
     signal road_ft: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
     signal raw_road_ac: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
     signal road_ac: road_tile_array;
+    signal new_road : road_tile_array;
+    
     
     --Coche y habilidades
     signal car_pos: positive;
@@ -419,6 +446,7 @@ begin
             DIGSEL => s_digsel_gm,
             SEGMENT => s_segment_gm 
         );
+        
     Cuent_atras: CNTR
     port map(
         RESET_N => State(4),
@@ -429,6 +457,27 @@ begin
         DIFF => dificultad,             
         ZERO => fin_fase,
         SEG => numero
+    );
+    
+    Generar_carretera: CARR_ALG_AUX
+    generic map(
+        WIDTH => 3
+    )
+    port map(
+        CLK => relojes(0),
+        CHANGE => relojes(2),
+        salida_d => new_road
+    );
+    
+    Administrar_carretera: ADMIN_CARR
+    port map(
+        CLK => relojes(0),
+        ENABLE => State(4),
+        CHANGE => relojes(2),
+        NEW_ROAD => new_road,
+        OLD_ROAD => road_ft,
+        CARR_FUTURA => road_ft,
+        CARR_ACTUAL => raw_road_ac
     );
     
     
