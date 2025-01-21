@@ -101,7 +101,7 @@ architecture Behavioral of SUPER_TOP is
     );
     end component SELECTOR;
 
-    
+
     --detector de colisiones
     component CRASH_DTCTR is
         port(
@@ -115,8 +115,7 @@ architecture Behavioral of SUPER_TOP is
         );
     end component CRASH_DTCTR;
 
- 
- 
+
     -- control coche    (tiempo de cooldown, modificar en Cooldown)
     component CAR_CTRL is
     port(
@@ -134,6 +133,7 @@ architecture Behavioral of SUPER_TOP is
     );
     end component CAR_CTRL;
     
+    
     -- Habilidad tanque
     component TANK_HAB is
     port(
@@ -145,6 +145,7 @@ architecture Behavioral of SUPER_TOP is
         ROAD_AC: out road_tile_array    
     );
     end component TANK_HAB;
+    
     
     -- imprimir TXT
     component IMPRIMIR_TXT is
@@ -159,7 +160,8 @@ architecture Behavioral of SUPER_TOP is
         DIGSEL : out std_logic_vector(7 downto 0); 
         SEGMENT : out std_logic_vector(7 downto 0) 
         );
-    end component;
+    end component IMPRIMIR_TXT;
+    
     
     --Tratamiento de botones
     component SYNC_BUTTONS is
@@ -171,7 +173,8 @@ architecture Behavioral of SUPER_TOP is
             BUTTONS_ASYNC : in std_logic_vector(NUM_BUTTONS-1 downto 0); 
             BUTTONS_SYNC : out std_logic_vector(NUM_BUTTONS-1 downto 0) 
         ); 
-    end component;
+    end component SYNC_BUTTONS;
+
 
     --FSM
     component FSM is
@@ -205,7 +208,7 @@ architecture Behavioral of SUPER_TOP is
             DIGSEL : out std_logic_vector(7 downto 0); --Selección de Display a encender
             SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
         );        
-    end component;
+    end component IMPRIMIR_JUEGO;
     
     --Contador descencente
     component CNTR is
@@ -231,7 +234,7 @@ architecture Behavioral of SUPER_TOP is
             CHANGE : in std_logic;
             salida_d : out road_tile_array -- Salida de tipo riad_tile_array de tamaño 7
         );  
-    end component;
+    end component CARR_ALG_AUX;
     
     --Administrar carretera
     component ADMIN_CARR is
@@ -244,7 +247,18 @@ architecture Behavioral of SUPER_TOP is
         CARR_FUTURA : out road_tile_array := (left_limit, road, road, road, road, road, right_limit); --Carretera Actual
         CARR_ACTUAL : out road_tile_array := (left_limit, road, road, road, road, road, right_limit) --Carretera Futura
     );
-    end component;
+    end component ADMIN_CARR;
+    
+    --Niveles predefinidos
+    component NIVELES_CARRETERAS is
+    port( 
+        CLK : in std_logic; --Señal de reloj
+        ENABLE : in std_logic; --Habilitación en estado JUEGO
+        CHANGE : in std_logic; --Cambio de carretera al acabar el contador
+        DIF : in positive; --Nivel de dificultad
+        CARR_FUTURA : out road_tile_array --Carretera futura
+    );
+    end component NIVELES_CARRETERAS;
     
 --señales
     
@@ -458,15 +472,37 @@ begin
         ZERO => fin_fase,
         SEG => numero
     );
+ 
+-- VERSION GENERAR CARRETERA   
+--    Generar_carretera: CARR_ALG_AUX
+--    generic map(
+--        WIDTH => 3
+--    )
+--    port map(
+--        CLK => relojes(0),
+--        CHANGE => relojes(2),
+--        salida_d => new_road
+--    );
     
-    Generar_carretera: CARR_ALG_AUX
-    generic map(
-        WIDTH => 3
-    )
+--    Administrar_carretera: ADMIN_CARR
+--    port map(
+--        CLK => relojes(0),
+--        ENABLE => State(4),
+--        CHANGE => relojes(2),
+--        NEW_ROAD => new_road,
+--        OLD_ROAD => road_ft,
+--        CARR_FUTURA => road_ft,
+--        CARR_ACTUAL => raw_road_ac
+--    );
+
+--VERSION NIVELES DE DIFICULTAD
+    Niveles_de_carreteras: NIVELES_CARRETERAS
     port map(
         CLK => relojes(0),
-        CHANGE => relojes(2),
-        salida_d => new_road
+        ENABLE => State(4),
+        CHANGE => relojes(2), --CAMBIAR POR SEÑAL DEL CONTADOR CUANDO FUCNIONE
+        DIF => dificultad,
+        CARR_FUTURA => new_road 
     );
     
     Administrar_carretera: ADMIN_CARR

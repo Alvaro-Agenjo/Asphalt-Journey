@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737461768" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Logic_LED.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737487199" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Logic_LED.dcp">
   <File Type="PA-TCL" Name="SUPER_TOP.tcl"/>
   <File Type="REPORTS-TCL" Name="SUPER_TOP_reports.tcl"/>
   <File Type="RDS-RDS" Name="SUPER_TOP.vds"/>
@@ -224,6 +224,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/ADMIN_CARR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NIVELES_CARRETERAS.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
