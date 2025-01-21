@@ -36,6 +36,7 @@ entity TANK_HAB is
     port(
         CLK: in std_logic;                  --Reloj del sistema
         CE: in std_logic;                   --CE (Habilitación de móduo)
+        PULSE: in std_logic;                --Señal que indica el cambio de carretera
         TANK_POS: in positive;              --Posicion del vehículo.
         HAB_TANK: in std_logic;             -- Señal que indica la activación de habilidad
         RAW_ROAD_AC: in road_tile_array;    --Carretera antes de habilidad
@@ -47,8 +48,11 @@ architecture Behavioral of TANK_HAB is
     signal new_road: road_tile_array;
 begin
     process(CLK)
-    begin 
-        if rising_edge(CLK) then
+        variable activated: std_logic := '0';
+    begin  
+        if PULSE = '1' then
+            activated := '0';
+        elsif rising_edge(CLK) then
             new_road <= RAW_ROAD_AC;
             if CE = '1' then
                 if HAB_TANK = '1' then
@@ -58,6 +62,14 @@ begin
                         when right_obstacle => new_road(TANK_POS) <= right_limit;
                         when others => new_road(TANK_POS) <= RAW_ROAD_AC(TANK_POS);
                     end case;                 
+                    activated := '1';
+                elsif activated = '1' then 
+                    case new_road(TANK_POS) is
+                        when obstacle => new_road(TANK_POS) <= road;
+                        when left_obstacle => new_road(TANK_POS) <= left_limit;
+                        when right_obstacle => new_road(TANK_POS) <= right_limit;
+                        when others => new_road(TANK_POS) <= new_road(TANK_POS);
+                    end case;
                 end if;
             end if;
         end if;

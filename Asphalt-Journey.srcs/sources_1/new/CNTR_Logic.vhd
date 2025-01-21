@@ -66,19 +66,26 @@ begin
                 ZERO <= '0';
                 val <= 10; --fuera de rango usado como nulo --> 1111111
             else
-                ZERO <= '0';
 --               if PULSE = '1' then
 --                    count := count - 1;
 --                end if;
                 if LOAD = '1' then
                     count := count + ADD;
                 end if;
+                
+   --version A          
                 if count = 0 then 
                     ZERO <= '1';
                 elsif count <= -1 then 
                     ZERO <= '0';
                     count:= INIT_COUNT;
                 end if;
+                
+                
+   --version B
+--                if count  = 0 then 
+--                    ZERO <= '1'
+--                end if;
                 val <= count;                
             end if;
         end if;         

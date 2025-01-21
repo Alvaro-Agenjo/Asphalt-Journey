@@ -49,7 +49,7 @@ end SUPER_TOP;
 
 architecture Behavioral of SUPER_TOP is
 --Constantes
-    constant FREQS: positive_array := (500, 1);   
+    constant FREQS: positive_array := (800, 1);   
     constant MAX_DIFF: positive := 3;
     constant MAX_CAR: positive := 2;
     constant NUM_BUT: positive := 5;
@@ -136,12 +136,13 @@ architecture Behavioral of SUPER_TOP is
     -- Habilidad tanque
     component TANK_HAB is
     port(
-        CLK: in std_logic;
-        CE: in std_logic; 
-        RAW_ROAD_AC: in road_tile_array;
-        TANK_POS: in positive;
-        HAB_TANK: in std_logic;
-        ROAD_AC: out road_tile_array    
+        CLK: in std_logic;                  --Reloj del sistema
+        CE: in std_logic;                   --CE (Habilitación de móduo)
+        PULSE: in std_logic;                --Señal que indica el cambio de carretera
+        TANK_POS: in positive;              --Posicion del vehículo.
+        HAB_TANK: in std_logic;             -- Señal que indica la activación de habilidad
+        RAW_ROAD_AC: in road_tile_array;    --Carretera antes de habilidad
+        ROAD_AC: out road_tile_array        --Carretera tras la habilidad
     );
     end component TANK_HAB;
     
@@ -219,6 +220,32 @@ architecture Behavioral of SUPER_TOP is
         SEG : out std_logic_vector(7 downto 0)  -- vector con los segmentos a iluminar
     );
     end component CNTR;
+    
+    --Generar carretera
+    component CARR_ALG_AUX is 
+        Generic(
+            WIDTH : POSITIVE := 3
+        );
+        Port (
+            CLK : in std_logic;
+            CHANGE : in std_logic;
+            salida_d : out road_tile_array -- Salida de tipo riad_tile_array de tamaño 7
+        );  
+    end component;
+    
+    --Administrar carretera
+    component ADMIN_CARR is
+    port(
+        CLK : in std_logic; --Reloj
+        ENABLE : in std_logic; -- Enable cuando estado juego activo
+        CHANGE : in std_logic; -- Señal de cambio de carretera, viene del contador
+        NEW_ROAD : in road_tile_array; --Carretera generada última, en CARR_ALG_AUX
+        OLD_ROAD : in road_tile_array; --Carretera antigua futura
+        CARR_FUTURA : out road_tile_array := (left_limit, road, road, road, road, road, right_limit); --Carretera Actual
+        CARR_ACTUAL : out road_tile_array := (left_limit, road, road, road, road, road, right_limit) --Carretera Futura
+    );
+    end component;
+    
      
 --señales
     
@@ -246,6 +273,7 @@ architecture Behavioral of SUPER_TOP is
     signal road_ft: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
     signal raw_road_ac: road_tile_array:= (road, left_limit, road, obstacle, road, right_limit, no_road);
     signal road_ac: road_tile_array;
+    signal new_road : road_tile_array;
     
     --Coche y habilidades
     signal car_pos: positive;
@@ -278,7 +306,7 @@ begin
     
     --Display
     SEGMENT <= s_segment_gm and s_segment_txt;  --desactivado = 1 --> 1 and x = x
-    DIGSEL <= not (s_digsel_txt or s_digsel_gm); --??
+    DIGSEL <= not (s_digsel_txt or s_digsel_gm); 
     
     --test tempo 
     --fin_fase <= relojes(2);
@@ -366,7 +394,7 @@ begin
         RESET_N => Menu_n,
         CLK => relojes(0),
         CE => State(4),
-        SEGUNDO => relojes(2),  ------------------------------------------------------------------
+        SEGUNDO => relojes(2),
         LEFT => s_bt(2),
         RIGHT => s_bt(1), 
         CENTER => s_bt(0),
@@ -380,6 +408,7 @@ begin
     port map(
         CLK => relojes(0),
         CE => State(4), 
+        PULSE => fin_fase,
         RAW_ROAD_AC => raw_road_ac,
         TANK_POS => car_pos,
         HAB_TANK => s_hab_tank, 
@@ -433,6 +462,25 @@ begin
         SEG => numero
     );
     
+    Generar_carretera: CARR_ALG_AUX
+    generic map(
+        WIDTH => 3
+    )
+    port map(
+        CLK => relojes(0),
+        CHANGE => relojes(2),
+        salida_d => new_road
+    );
     
+    Administrar_carretera: ADMIN_CARR
+    port map(
+        CLK => relojes(0),
+        ENABLE => State(4),
+        CHANGE => relojes(2),
+        NEW_ROAD => new_road,
+        OLD_ROAD => road_ft,
+        CARR_FUTURA => road_ft,
+        CARR_ACTUAL => raw_road_ac
+    );
     
 end Behavioral;
