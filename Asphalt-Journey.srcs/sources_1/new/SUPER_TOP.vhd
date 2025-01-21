@@ -280,6 +280,8 @@ begin
     SEGMENT <= s_segment_gm and s_segment_txt;  --desactivado = 1 --> 1 and x = x
     DIGSEL <= not (s_digsel_txt or s_digsel_gm); --??
     
+    --test tempo 
+    fin_fase <= relojes(2);
     
     Maquina_estados: FSM
         port map (
@@ -364,7 +366,7 @@ begin
         RESET_N => Menu_n,
         CLK => relojes(0),
         CE => State(4),
-        SEGUNDO => relojes(2),
+        SEGUNDO => relojes(1),  ------------------------------------------------------------------
         LEFT => s_bt(2),
         RIGHT => s_bt(1), 
         CENTER => s_bt(0),
@@ -418,17 +420,18 @@ begin
             DIGSEL => s_digsel_gm,
             SEGMENT => s_segment_gm 
         );
-    Cuent_atras: CNTR
-    port map(
-        RESET => State(1),
-        CLK => relojes(0),
-        CE => State(4),
-        PULSE => relojes(2),
-        LOAD => s_hab_race,
-        DIFF => dificultad,             
-        ZERO => fin_fase,
-        SEG => numero
-    );
+    
+--    Cuent_atras: CNTR
+--    port map(
+--        RESET => State(1),
+--        CLK => relojes(0),
+--        CE => State(4),
+--        PULSE => relojes(2),
+--        LOAD => s_hab_race,
+--        DIFF => dificultad,             
+--        ZERO => fin_fase,
+--        SEG => numero
+--    );
     
     
     

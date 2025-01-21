@@ -51,14 +51,18 @@ begin
     begin 
         if RESET_N = '0' then
             FIN_NOK <= '0';
+        elsif SENAL = '1' then 
+            if CE = '1' then
+                if ROAD_AC(CAR_POS) = obstacle then 
+                    FIN_NOK <= '1';
+                else 
+                    FIN_NOK <= '0';
+                end if;
+            end if;
         elsif rising_edge(CLK) then
             if CE = '1' then
-                if CAR_POS > ROAD_AC'high or CAR_POS < ROAD_AC'low then 
-                    FIN_NOK <= '1';
-                elsif SENAL = '1'then
-                    if ROAD_AC(CAR_POS) = obstacle then 
-                        FIN_NOK <= '1';
-                    end if;   
+                if CAR_POS > 8 or CAR_POS < 1 then 
+                    FIN_NOK <= '1';   
                 elsif ROAD_AC(CAR_POS) = no_road then
                     FIN_NOK <= '1';
                 end if;

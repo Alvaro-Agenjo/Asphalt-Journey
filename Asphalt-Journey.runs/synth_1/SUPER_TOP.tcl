@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.runs/synth_1/SUPER_TOP.tcl"
+  variable script "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/synth_1/SUPER_TOP.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,54 +57,55 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.xpr} [current_project]
+set_property webtalk.parent_dir {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.cache/wt} [current_project]
+set_property parent.project_path {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo {c:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.cache/ip} [current_project]
+set_property ip_output_repo {c:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/MyPackage.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/IMPRIMIR_JUEGO.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/MUX_TXT.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/CRASH_DTCTR.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/CNTR.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/EDGE_DETECTOR.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/SYNCHRONIZER.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/CAR_CTRL.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/CARR_ALG_AUX.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/FSM.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/CONTROL_IMPRESION.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/CNTR_Logic.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/ORDEN_IMPRESION_JUEGO.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/DECODER_CNTR.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/Cooldown.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/GESTION_IMPRESION_JUEGO.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/MUX_AND_IMP_JUEGO.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/TANK_HAB.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/IMPRIMIR_TXT.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/Select_DIF.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/SYNC_BUTTONS.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/SUPER_TOP.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/SYNC_EDGE.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/MUX_JUEGO.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/TIMER.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/IMPRESION_BCD.vhd}
-  {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/sources_1/new/IMPRESION_JUEGO.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/MyPackage.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/IMPRIMIR_JUEGO.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/MUX_TXT.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CRASH_DTCTR.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CNTR.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/EDGE_DETECTOR.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNCHRONIZER.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CAR_CTRL.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CARR_ALG_AUX.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/FSM.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CONTROL_IMPRESION.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CNTR_Logic.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Logic_LED.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_JUEGO.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/ORDEN_IMPRESION_JUEGO.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DECODER_CNTR.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Cooldown.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/GESTION_IMPRESION_JUEGO.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/MUX_AND_IMP_JUEGO.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/TANK_HAB.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/IMPRIMIR_TXT.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Select_DIF.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CLK_MANAGER.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNC_BUTTONS.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SUPER_TOP.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Display_LED.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNC_EDGE.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/MUX_JUEGO.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_TXT.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/TIMER.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/IMPRESION_BCD.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/IMPRESION_JUEGO.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -115,12 +116,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc}}]
+read_xdc {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/Users/alvag/Desktop/Nueva carpeta/Asphalt-Journey.srcs/utils_1/imports/synth_1/SUPER_TOP.dcp}
+read_checkpoint -auto_incremental -incremental {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/utils_1/imports/synth_1/SUPER_TOP.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

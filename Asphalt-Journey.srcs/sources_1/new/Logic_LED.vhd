@@ -60,11 +60,12 @@ begin
             N_LED <= 0;
             fase := 0;
             FIN_OK <= '0';
+        elsif SENAL = '1' then
+            if CE = '1' then 
+                fase := fase +1;
+            end if;
         elsif rising_edge(CLK) then
             if CE = '1' then
-                if SENAL = '1' then 
-                    fase := fase +1;
-                end if;
                 if fase >= TOTAL_LENGTH then        --Límite a 16 LEDs
                     N_LED <= 16;
                     FIN_OK <= '1';

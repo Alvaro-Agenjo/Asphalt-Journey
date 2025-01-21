@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Mon Jan 20 16:42:19 2025
+| Date             : Tue Jan 21 12:29:58 2025
 | Host             : DESKTOP-A7KB9SN running 64-bit major release  (build 9200)
 | Command          : report_power -file SUPER_TOP_power_routed.rpt -pb SUPER_TOP_power_summary_routed.pb -rpx SUPER_TOP_power_routed.rpx
 | Design           : SUPER_TOP
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 45.582 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 44.042 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 44.786                           |
+| Dynamic (W)              | 43.245                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |    17.808 |     3286 |       --- |             --- |
-|   LUT as Logic          |    14.973 |     1939 |     63400 |            3.06 |
-|   CARRY4                |     2.618 |      455 |     15850 |            2.87 |
-|   Register              |     0.200 |      589 |    126800 |            0.46 |
+| Slice Logic             |    16.258 |     3052 |       --- |             --- |
+|   LUT as Logic          |    13.594 |     1780 |     63400 |            2.81 |
+|   CARRY4                |     2.500 |      427 |     15850 |            2.69 |
+|   Register              |     0.149 |      526 |    126800 |            0.41 |
 |   LUT as Shift Register |     0.010 |        4 |     19000 |            0.02 |
-|   BUFG                  |     0.006 |        2 |        32 |            6.25 |
+|   BUFG                  |     0.006 |        3 |        32 |            9.38 |
 |   Others                |     0.000 |       51 |       --- |             --- |
-| Signals                 |    15.515 |     2657 |       --- |             --- |
-| I/O                     |    11.463 |       39 |       210 |           18.57 |
+| Signals                 |    15.639 |     2431 |       --- |             --- |
+| I/O                     |    11.348 |       39 |       210 |           18.57 |
 | Static Power            |     0.797 |          |           |                 |
-| Total                   |    45.582 |          |           |                 |
+| Total                   |    44.042 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    33.909 |      33.347 |      0.563 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.512 |       0.419 |      0.093 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     3.242 |       3.238 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    32.484 |      31.921 |      0.563 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.508 |       0.415 |      0.093 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     3.209 |       3.205 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -139,47 +139,45 @@ Table of Contents
 +------------------------------------+-----------+
 | Name                               | Power (W) |
 +------------------------------------+-----------+
-| SUPER_TOP                          |    44.786 |
-|   Barra_LED                        |    25.841 |
-|     Display                        |     0.020 |
-|     Unidad_logica                  |    25.821 |
-|   ControlCoche                     |     1.114 |
-|     CTRL_POS                       |     0.422 |
-|     Cooldown_dev                   |     0.692 |
-|       Temporizador                 |     0.658 |
-|   Ctrl_impresion                   |     1.226 |
-|     inst_gestion_impresion_juego   |     1.208 |
-|       mux_and_imp_juego_actual     |     0.669 |
-|       mux_and_imp_juego_futuro     |     0.539 |
-|     inst_orden_impresion_juego     |     0.018 |
-|   Cuent_atras                      |     1.019 |
-|     Logica                         |     1.019 |
-|   DetectorColision                 |     0.005 |
-|   Habilidad_tanque                 |     0.055 |
-|   Impresion_texto                  |     1.201 |
-|     inst_mux_txt                   |     1.201 |
-|   Maquina_estados                  |     0.815 |
-|   SEL_CAR                          |     0.227 |
-|   SEL_DIF                          |     1.264 |
-|   Tratamiento_Botones              |     0.261 |
-|     for_generate[0].inst_sync_edge |     0.030 |
-|       edge                         |     0.025 |
+| SUPER_TOP                          |    43.245 |
+|   Barra_LED                        |    26.321 |
+|     Display                        |     0.023 |
+|     Unidad_logica                  |    26.298 |
+|   ControlCoche                     |     0.847 |
+|     CTRL_POS                       |     0.291 |
+|     Cooldown_dev                   |     0.556 |
+|       Temporizador                 |     0.531 |
+|   Ctrl_impresion                   |     1.165 |
+|     inst_gestion_impresion_juego   |     1.146 |
+|       mux_and_imp_juego_actual     |     0.632 |
+|       mux_and_imp_juego_futuro     |     0.514 |
+|     inst_orden_impresion_juego     |     0.020 |
+|   DetectorColision                 |     0.011 |
+|   Habilidad_tanque                 |     0.062 |
+|   Impresion_texto                  |     1.222 |
+|     inst_mux_txt                   |     1.222 |
+|   Maquina_estados                  |     0.657 |
+|   SEL_CAR                          |     0.188 |
+|   SEL_DIF                          |     0.890 |
+|   Tratamiento_Botones              |     0.251 |
+|     for_generate[0].inst_sync_edge |     0.035 |
+|       edge                         |     0.030 |
 |       sync                         |     0.005 |
-|     for_generate[1].inst_sync_edge |     0.028 |
-|       edge                         |     0.023 |
+|     for_generate[1].inst_sync_edge |     0.022 |
+|       edge                         |     0.017 |
 |       sync                         |     0.005 |
-|     for_generate[2].inst_sync_edge |     0.024 |
-|       edge                         |     0.019 |
+|     for_generate[2].inst_sync_edge |     0.033 |
+|       edge                         |     0.028 |
 |       sync                         |     0.005 |
-|     for_generate[3].inst_sync_edge |     0.045 |
-|       edge                         |     0.040 |
+|     for_generate[3].inst_sync_edge |     0.035 |
+|       edge                         |     0.030 |
 |       sync                         |     0.005 |
-|     for_generate[4].inst_sync_edge |     0.134 |
-|       edge                         |     0.130 |
-|       sync                         |     0.003 |
-|   gen_clk                          |     0.250 |
-|     timer_gen[0].tx                |     0.119 |
-|     timer_gen[1].tx                |     0.132 |
+|     for_generate[4].inst_sync_edge |     0.127 |
+|       edge                         |     0.122 |
+|       sync                         |     0.005 |
+|   gen_clk                          |     0.243 |
+|     timer_gen[0].tx                |     0.120 |
+|     timer_gen[1].tx                |     0.122 |
 +------------------------------------+-----------+
 
 
