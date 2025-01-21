@@ -53,22 +53,20 @@ begin
 
     process(RESET_N, CLK, SENAL)
         variable fase: natural :=1;    --Fase actual del escenario
-        variable TOTAL_LENGTH: positive;
+        variable TOTAL_LENGTH: positive:= 5;
     begin
         TOTAL_LENGTH := DIFF * BASE_LENGTH;
         if RESET_N = '0' then
-            N_LED <= 0;
+            N_LED <= 1;
             fase := 0;
             FIN_OK <= '0';
-        elsif SENAL = '1' then
-            if CE = '1' then 
-                fase := fase +1;
-            end if;
         elsif rising_edge(CLK) then
             if CE = '1' then
                 if fase >= TOTAL_LENGTH then        --Límite a 16 LEDs
                     N_LED <= 16;
                     FIN_OK <= '1';
+                elsif SENAL = '1' then 
+                    fase := fase +1;
                 else
                     N_LED <= 16 * FASE / TOTAL_LENGTH;
                 end if;

@@ -46,6 +46,15 @@ end CNTR;
 
 architecture Behavioral of CNTR is
 --componentes
+    --detector flanco
+    component EDGEDTCTR is 
+        port(
+            CLK : in std_logic;
+            SYNC_IN : in std_logic;
+            EDGE : out std_logic
+        ); 
+    end component;
+    
     --decoder
     component DECODER_CNTR is
     port(
@@ -64,7 +73,7 @@ architecture Behavioral of CNTR is
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
-        LOAD: in std_logic;                     -- Control de carga sincrono y activo a nivel alto
+        LOAD: in std_logic := '0';              -- Control de carga sincrono y activo a nivel alto
         ADD: in positive;                       -- valor a añadir al actual
         VALUE: out natural;                     -- cuenta actual                 
         ZERO: out std_logic                     -- flag activo a nivel alto (fin de cuenta).
@@ -78,13 +87,13 @@ architecture Behavioral of CNTR is
     signal s_zero: std_logic;
     
 begin
-    reset_tem <= RESET or s_zero; --cuando alguna de las dos sea 1 resetea
+    --reset_tem <= RESET or s_zero; --cuando alguna de las dos sea 1 resetea
     s_add <= 4 - DIFF;
-    ZERO <= s_zero;
+    --ZERO <= s_zero;
     
     Logica: CNTR_Logic
     port map (
-        RESET => reset_tem,
+        RESET => RESET,--reset_tem,
         CLK => CLK,
         CE => CE,
         PULSE => PULSE,
@@ -93,7 +102,12 @@ begin
         VALUE => s_value,                 
         ZERO => s_zero
     );
-    
+    FLANCO: EDGEDTCTR
+        port map(
+            CLK => CLK,
+            SYNC_IN => s_zero,
+            EDGE => ZERO 
+        );
     DECODER:  DECODER_CNTR
     port map(
         NUM => s_value,
