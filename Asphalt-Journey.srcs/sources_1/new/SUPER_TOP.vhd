@@ -252,11 +252,11 @@ architecture Behavioral of SUPER_TOP is
     --Niveles predefinidos
     component NIVELES_CARRETERAS is
     port( 
-        CLK : in std_logic; --Señal de reloj
         ENABLE : in std_logic; --Habilitación en estado JUEGO
         CHANGE : in std_logic; --Cambio de carretera al acabar el contador
         DIF : in positive; --Nivel de dificultad
-        CARR_FUTURA : out road_tile_array --Carretera futura
+        CARR_FUTURA : out road_tile_array; --Carretera futura
+        CARR_ACTUAL : out road_tile_array --Carretera actual
     );
     end component NIVELES_CARRETERAS;
     
@@ -498,23 +498,23 @@ begin
 --VERSION NIVELES DE DIFICULTAD
     Niveles_de_carreteras: NIVELES_CARRETERAS
     port map(
-        CLK => relojes(0),
         ENABLE => State(4),
         CHANGE => relojes(2), --CAMBIAR POR SEÑAL DEL CONTADOR CUANDO FUCNIONE
         DIF => dificultad,
-        CARR_FUTURA => new_road 
+        CARR_FUTURA => road_ft, 
+        CARR_ACTUAL => raw_road_ac 
     );
     
-    Administrar_carretera: ADMIN_CARR
-    port map(
-        CLK => relojes(0),
-        ENABLE => State(4),
-        CHANGE => relojes(2),
-        NEW_ROAD => new_road,
-        OLD_ROAD => road_ft,
-        CARR_FUTURA => road_ft,
-        CARR_ACTUAL => raw_road_ac
-    );
+--    Administrar_carretera: ADMIN_CARR
+--    port map(
+--        CLK => relojes(0),
+--        ENABLE => State(4),
+--        CHANGE => relojes(2),
+--        NEW_ROAD => new_road,
+--        OLD_ROAD => road_ft,
+--        CARR_FUTURA => road_ft,
+--        CARR_ACTUAL => raw_road_ac
+--    );
     
     
     
