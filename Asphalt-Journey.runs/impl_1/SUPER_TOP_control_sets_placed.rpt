@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |   221 |
-|    Minimum number of control sets                        |   221 |
+| Total control sets                                       |   223 |
+|    Minimum number of control sets                        |   223 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |  1427 |
+| Unused register locations in slices containing registers |  1442 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,8 +39,8 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |   221 |
-| >= 0 to < 4        |   201 |
+| Total control sets |   223 |
+| >= 0 to < 4        |   203 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     3 |
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             229 |           83 |
-| No           | No                    | Yes                    |              99 |           53 |
-| No           | Yes                   | No                     |             183 |           97 |
-| Yes          | No                    | No                     |              63 |           26 |
-| Yes          | No                    | Yes                    |             256 |          144 |
-| Yes          | Yes                   | No                     |              31 |            7 |
+| No           | No                    | No                     |             228 |           89 |
+| No           | No                    | Yes                    |             100 |           54 |
+| No           | Yes                   | No                     |             184 |           98 |
+| Yes          | No                    | No                     |              63 |           25 |
+| Yes          | No                    | Yes                    |             256 |          139 |
+| Yes          | Yes                   | No                     |              31 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
