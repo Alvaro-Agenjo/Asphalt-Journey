@@ -1,0 +1,861 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 21 16:48:00 2025
+# Process ID: 9300
+# Current directory: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10520 C:\ALVARO\UPM\Cuarto de carrera\Primer cuatri\Sistemas electronicos digitales\3. Trabajo\VHDL\Asphalt-Journey\Asphalt-Journey.xpr
+# Log file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/vivado.log
+# Journal file: C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey\vivado.jou
+# Running On        :DESKTOP-A7KB9SN
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8373 MB
+# Swap memory       :6710 MB
+# Total Virtual     :15084 MB
+# Available Virtual :7729 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr}
+set_property is_enabled true [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd}}]
+set_property is_enabled true [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd}}]
+set_property is_enabled true [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Progreso_LED_TB.vhd}}]
+set_property is_enabled true [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd}}]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TANK_HAB_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source TANK_HAB_TB.tcl
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd} 127
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd} 123
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd} -line 127
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd} -line 123
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Logic_LED_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Display_LED_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source Display_LED_TB.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Logic_LED_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source Logic_LED_TB.tcl
+close_sim
+launch_simulation
+source Logic_LED_TB.tcl
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd} 99
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd} -line 99
+run all
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd} 136
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd} 87
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run all
+step
+step
+step
+step
+step
+step
+run all
+step
+step
+step
+step
+step
+run all
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+relaunch_sim
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd} -line 87
+run all
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd} -line 136
+run all
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd} 169
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run all
+run all
+run all
+relaunch_sim
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Display_LED_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+set_property is_enabled false [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd}}]
+set_property is_enabled true [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/Progreso_LED.vhd}}]
+launch_simulation
+source Display_LED_TB.tcl
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd} 132
+relaunch_sim
+relaunch_sim
+step
+add_bp {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd} 130
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd} -line 132
+relaunch_sim
+step
+step
+step
+step
+step
+step
+relaunch_sim
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run all
+close_sim
+set_property is_enabled false [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Logic_LED_TB.vhd}}]
+set_property is_enabled false [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/TANK_HAB_TB.vhd}}]
+set_property is_enabled false [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd}}]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Progreso_LED_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source Progreso_LED_TB.tcl
+run all
+relaunch_sim
+set_property is_enabled true [get_files  {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd}}]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Display_LED_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source Display_LED_TB.tcl
+run all
+remove_bps -file {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/Display_LED_TB.vhd} -line 130
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim
+launch_simulation
+source Display_LED_TB.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Progreso_LED_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source Progreso_LED_TB.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim

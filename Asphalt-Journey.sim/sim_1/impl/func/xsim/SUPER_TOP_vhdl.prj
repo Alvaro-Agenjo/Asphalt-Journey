@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"SUPER_TOP_func_impl.vhd" \
-
-# Do not sort compile order
-nosort

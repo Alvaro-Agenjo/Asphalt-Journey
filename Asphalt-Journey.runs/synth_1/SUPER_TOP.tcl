@@ -56,8 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -79,6 +79,7 @@ read_vhdl -library xil_defaultlib {
   {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CRASH_DTCTR.vhd}
   {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CNTR.vhd}
   {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/EDGE_DETECTOR.vhd}
+  {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/DEC_NUM.vhd}
   {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/SYNCHRONIZER.vhd}
   {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CAR_CTRL.vhd}
   {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/sources_1/new/CARR_ALG_AUX.vhd}

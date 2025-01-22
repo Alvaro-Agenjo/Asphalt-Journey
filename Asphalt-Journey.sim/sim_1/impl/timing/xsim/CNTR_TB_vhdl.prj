@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Asphalt-Journey.srcs/sim_1/new/CNTR_Logic_TB.vhd" \
+"../../../../../Asphalt-Journey.srcs/sim_1/new/CNTR_tb.vhd" \
+"../../../../../Asphalt-Journey.srcs/sim_1/new/SUPER_TOP_TB.vhd" \
+
+# Do not sort compile order
+nosort

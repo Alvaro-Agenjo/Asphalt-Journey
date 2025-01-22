@@ -49,7 +49,7 @@ end SUPER_TOP;
 
 architecture Behavioral of SUPER_TOP is
 --Constantes
-    constant FREQS: positive_array := (800, 1);   
+    constant FREQS: positive_array := (1000, 1);   
     constant MAX_DIFF: positive := 3;
     constant MAX_CAR: positive := 2;
     constant NUM_BUT: positive := 5;
@@ -462,25 +462,25 @@ begin
         SEG => numero
     );
     
-    Generar_carretera: CARR_ALG_AUX
-    generic map(
-        WIDTH => 3
-    )
-    port map(
-        CLK => relojes(0),
-        CHANGE => relojes(2),
-        salida_d => new_road
-    );
+--    Generar_carretera: CARR_ALG_AUX
+--    generic map(
+--        WIDTH => 3
+--    )
+--    port map(
+--        CLK => relojes(0),
+--        CHANGE => relojes(2),
+--        salida_d => new_road
+--    );
     
-    Administrar_carretera: ADMIN_CARR
-    port map(
-        CLK => relojes(0),
-        ENABLE => State(4),
-        CHANGE => relojes(2),
-        NEW_ROAD => new_road,
-        OLD_ROAD => road_ft,
-        CARR_FUTURA => road_ft,
-        CARR_ACTUAL => raw_road_ac
-    );
+--    Administrar_carretera: ADMIN_CARR
+--    port map(
+--        CLK => relojes(0),
+--        ENABLE => State(4),
+--        CHANGE => relojes(2),
+--        NEW_ROAD => new_road,
+--        OLD_ROAD => road_ft,
+--        CARR_FUTURA => road_ft,
+--        CARR_ACTUAL => raw_road_ac
+--    );
     
 end Behavioral;

@@ -84,6 +84,7 @@ architecture Behavioral of CNTR is
     signal s_value: natural;
     signal s_add: positive;
     signal reset_tem: std_logic;
+    signal s_zero_raw: std_logic;
     signal s_zero: std_logic;
     
 begin
@@ -92,26 +93,29 @@ begin
     
  --version B
     --reset_tem <= RESET or s_zero; --cuando alguna de las dos sea 1 resetea
- 
+    ZERO <= s_zero;
     s_add <= 4 - DIFF;
     
     Logica: CNTR_Logic
     port map (
         --version A
-        RESET => RESET,     --reset_tem, --version B
+        RESET => RESET,  
+        
+        --version B   
+        --RESET => reset_tem,
         CLK => CLK,
         CE => CE,
         PULSE => PULSE,
         LOAD => LOAD,
         ADD => s_add,
         VALUE => s_value,                 
-        ZERO => s_zero
+        ZERO => s_zero_raw
     );
     FLANCO: EDGEDTCTR
         port map(
             CLK => CLK,
-            SYNC_IN => s_zero,
-            EDGE => ZERO 
+            SYNC_IN => s_zero_raw,
+            EDGE => s_zero 
         );
     DECODER:  DECODER_CNTR
     port map(
