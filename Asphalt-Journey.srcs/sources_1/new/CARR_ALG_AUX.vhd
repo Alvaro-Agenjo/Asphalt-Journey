@@ -37,13 +37,13 @@ begin
         variable aux  : std_logic_vector(WIDTH*3-1 downto 0);
         variable ver1 : std_logic:='0';
         variable ver2 : std_logic:='0';
+        variable bloqueo : std_logic:='0'; -- Bloquea los procesos si no se activa CHANGE
         variable sec  : std_logic:='0';
         variable salida :  std_logic_vector(WIDTH*3-1 downto 0);
         variable salida_aux : road_tile_array;
     begin
     if CHANGE = '1' then 
-        ver1 := '0';
-        ver2 := '0'; 
+        bloqueo:='0';
     end if;
         -- Convertir tiempo a entero (en nanosegundos)
         --tiempo_int := integer(tiempo/ 1 ns); 
@@ -82,7 +82,7 @@ begin
             obs := "110";
         end if;
         
-        if (ver1 = '0') and (ver2 = '0') then 
+        if bloqueo='0' then 
             if unsigned(izq)<unsigned(dcha_ver) and unsigned(dcha)>unsigned(izq_ver) then -- Caso posible
                 if unsigned(izq)<unsigned(dcha) then 
                     if unsigned(izq_ver)-unsigned(dcha) =1 and obs/=std_logic_vector(unsigned(izq_ver)-1) then
@@ -98,7 +98,7 @@ begin
                     dcha_ver<=dcha;
                     izq_ver<=izq;
                     obs_ver<=obs;
-                    -- ver1:='0';
+                    ver1:='0';
                     salida_aux(to_integer(unsigned(dcha_ver)+1)):=right_limit;
                     salida_aux(to_integer(unsigned(izq_ver)+1)):=left_limit;
                     
@@ -115,12 +115,17 @@ begin
     --                salida(WIDTH-1 downto 0)<=dcha_ver;
     --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
     --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
+                    
+                    --Cuando tengas una carretera nueva que este bien
+                    --bloqueo:= '1';??
+                
+                
                 
                 elsif ver2='1' and sec='0' then
                     dcha_ver<=dcha;
                     izq_ver<=izq;
                     obs_ver<=(others=>'1');
-                    -- ver2:='0';
+                    ver2:='0';
                     for i in 1 to 7 loop
                         salida_aux(i):=no_road;
                     end loop;
@@ -137,8 +142,8 @@ begin
                     else
                         salida_aux(to_integer(unsigned(obs_ver)+1)):=no_road;
                     end if;
---                    for i in 1 to to_integer(unsigned(izq_ver)+1) loop
---                        salida_aux(i):=no_road;
+--                    for i in 1 to to_integer(unsigned(izq_ver)+1) loop -- Se comentan los for porque al tener una variable en su bucle
+--                        salida_aux(i):=no_road;                        -- da errores en el bitstream
 --                    end loop;
                     
 --                    for i in to_integer(unsigned(dcha_ver)+1) to 7 loop
@@ -161,6 +166,12 @@ begin
     --                salida(WIDTH-1 downto 0)<=dcha_ver;
     --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
     --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
+                    
+                    
+                    --Cuando tengas una carretera nueva que este bien
+                    bloqueo:= '1';
+                
+                
                 else
                     salida_aux(to_integer(unsigned(dcha_ver)+1)):=right_limit;
                     salida_aux(to_integer(unsigned(izq_ver)+1)):=left_limit;
@@ -177,6 +188,14 @@ begin
     --                salida(WIDTH-1 downto 0)<=dcha_ver;
     --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
     --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
+                    
+                    
+                    --Cuando tengas una carretera nueva que este bien
+                    --bloqueo:= '1';??
+                    
+                
+                
+                
                 end if;
             end if;
             if CHANGE = '1' then 

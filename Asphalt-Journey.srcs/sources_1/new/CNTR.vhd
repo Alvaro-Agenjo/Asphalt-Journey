@@ -33,7 +33,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity CNTR is
     port(
-        RESET_N: in std_logic;                    -- Reset asynchronus (active low).
+        RESET: in std_logic;                    -- Reset asynchronus (active low).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -46,6 +46,15 @@ end CNTR;
 
 architecture Behavioral of CNTR is
 --componentes
+    --detector flanco
+    component EDGEDTCTR is 
+        port(
+            CLK : in std_logic;
+            SYNC_IN : in std_logic;
+            EDGE : out std_logic
+        ); 
+    end component;
+    
     --decoder
     component DECODER_CNTR is
     port(
@@ -60,11 +69,11 @@ architecture Behavioral of CNTR is
         INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
     );
     port(
-        RESET_N: in std_logic;                    -- Reset asynchronus (active high).
+        RESET: in std_logic;                    -- Reset asynchronus (active high).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
-        LOAD: in std_logic;                     -- Control de carga sincrono y activo a nivel alto
+        LOAD: in std_logic := '0';              -- Control de carga sincrono y activo a nivel alto
         ADD: in positive;                       -- valor a añadir al actual
         VALUE: out natural;                     -- cuenta actual                 
         ZERO: out std_logic                     -- flag activo a nivel alto (fin de cuenta).
@@ -78,13 +87,18 @@ architecture Behavioral of CNTR is
     signal s_zero: std_logic;
     
 begin
-    reset_tem <= (RESET_N) or (not(s_zero)); --cuando alguna de las dos sea 1 resetea
+ --version A
+    
+    
+ --version B
+    --reset_tem <= RESET or s_zero; --cuando alguna de las dos sea 1 resetea
+ 
     s_add <= 4 - DIFF;
-    ZERO <= s_zero;
     
     Logica: CNTR_Logic
     port map (
-        RESET_N => reset_tem,
+        --version A
+        RESET => RESET,     --reset_tem, --version B
         CLK => CLK,
         CE => CE,
         PULSE => PULSE,
@@ -93,7 +107,12 @@ begin
         VALUE => s_value,                 
         ZERO => s_zero
     );
-    
+    FLANCO: EDGEDTCTR
+        port map(
+            CLK => CLK,
+            SYNC_IN => s_zero,
+            EDGE => ZERO 
+        );
     DECODER:  DECODER_CNTR
     port map(
         NUM => s_value,

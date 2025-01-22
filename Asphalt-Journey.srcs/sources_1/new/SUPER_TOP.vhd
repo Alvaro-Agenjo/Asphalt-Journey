@@ -49,7 +49,7 @@ end SUPER_TOP;
 
 architecture Behavioral of SUPER_TOP is
 --Constantes
-    constant FREQS: positive_array := (500, 1);   
+    constant FREQS: positive_array := (800, 1);   
     constant MAX_DIFF: positive := 3;
     constant MAX_CAR: positive := 2;
     constant COOLDOWN_TIME: time := 50 ms;
@@ -138,7 +138,8 @@ architecture Behavioral of SUPER_TOP is
     component TANK_HAB is
     port(
         CLK: in std_logic;
-        CE: in std_logic; 
+        CE: in std_logic;
+        PULSE : in std_logic; 
         RAW_ROAD_AC: in road_tile_array;
         TANK_POS: in positive;
         HAB_TANK: in std_logic;
@@ -213,7 +214,7 @@ architecture Behavioral of SUPER_TOP is
     --Contador descencente
     component CNTR is
     port(
-        RESET_N: in std_logic;                    -- Reset asynchronus (active low).
+        RESET: in std_logic;                    -- Reset asynchronus (active low).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -419,7 +420,8 @@ begin
     Habilidad_tanque: TANK_HAB 
     port map(
         CLK => relojes(0),
-        CE => State(4), 
+        CE => State(4),
+        PULSE => fin_fase, 
         RAW_ROAD_AC => raw_road_ac,
         TANK_POS => car_pos,
         HAB_TANK => s_hab_tank, 
@@ -463,7 +465,7 @@ begin
         
     Cuent_atras: CNTR
     port map(
-        RESET_N => State(4),
+        RESET => State(1),
         CLK => relojes(0),
         CE => State(4),
         PULSE => relojes(2),
@@ -515,7 +517,5 @@ begin
 --        CARR_FUTURA => road_ft,
 --        CARR_ACTUAL => raw_road_ac
 --    );
-    
-    
-    
+      
 end Behavioral;
