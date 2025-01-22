@@ -7,7 +7,7 @@ entity EDGEDTCTR is
     port (
         CLK : in std_logic;
         SYNC_IN : in std_logic;
-        EDGE : out std_logic
+        EDGE : out std_logic := '0'
     );
 end EDGEDTCTR;
 

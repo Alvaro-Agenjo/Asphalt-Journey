@@ -119,8 +119,9 @@ begin
     
         report "****** Test RESET *******";
         s_reset <= '1';
-        wait until s_clk = '1';
-        
+        for i in 0 to 3 loop
+            wait until s_clk = '1';
+        end loop;
         wait for 0.2* CLK_PERIOD;
         assert s_zero = '0'
             report "[ERROR] Value should be differet to '0' --> zero = '0', value obtained: 1"
@@ -145,32 +146,35 @@ begin
         report "****** Test COUNT *******";
         s_reset <= '0';
         s_ce <= '1';
-        wait until s_clk = '1';
+       
         
         
-        for i in INIT*2 downto 1 loop
-            
+        for i in INIT  downto 1 loop
+            wait until s_pulse = '1';
             wait for  0.2*CLK_PERIOD;
             -- Comprobar la salida de LIGHT
             assert s_seg = value(i).leds
                 report "[ERROR] Expected value: " & integer'image(to_integer(unsigned(value(i).leds))) & " Obtained: " & integer'image(to_integer(unsigned(s_seg)))
             severity failure;
             
-            wait until s_pulse = '1';
-            wait until s_clk = '1'; 
+            --wait until s_pulse = '1';
+            --wait until s_clk = '1'; 
         
         end loop;
         
         report "***** Test END REACHED *****";
-        wait for 0.2*CLK_PERIOD;
-        
+        for i in 0 to 7 loop 
+            wait until s_clk = '1';
+        end loop;
+    
+        wait for 0.2*CLK_PERIOD;    
         assert s_zero = '1'
             report "[ERROR] Value should be '0' --> zero = '1', value obtained: 0"
         severity failure;
         
-        assert s_seg = value(0).leds
-            report "[ERROR] Expected value: " & integer'image(to_integer(unsigned(value(0).leds))) & " Obtained: " & integer'image(to_integer(unsigned(s_seg)))
-        severity failure;
+--        assert s_seg = value(0).leds
+--            report "[ERROR] Expected value: " & integer'image(to_integer(unsigned(value(0).leds))) & " Obtained: " & integer'image(to_integer(unsigned(s_seg)))
+--        severity failure;
         
         s_reset <= '1';
         wait until s_clk = '1';

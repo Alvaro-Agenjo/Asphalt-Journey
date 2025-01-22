@@ -476,7 +476,7 @@ begin
 --    )
 --    port map(
 --        CLK => relojes(0),
---        CHANGE => relojes(2),
+--        CHANGE => fin_fase, --relojes(2),
 --        salida_d => new_road
 --    );
     
@@ -484,7 +484,7 @@ begin
 --    port map(
 --        CLK => relojes(0),
 --        ENABLE => State(4),
---        CHANGE => relojes(2),
+--        CHANGE => fin_fase,   --relojes(2),
 --        NEW_ROAD => new_road,
 --        OLD_ROAD => road_ft,
 --        CARR_FUTURA => road_ft,
@@ -494,7 +494,7 @@ begin
      Niveles_de_carreteras: NIVELES_CARRETERAS
     port map(
         ENABLE => State(4),
-        CHANGE => relojes(2), --CAMBIAR POR SEÑAL DEL CONTADOR CUANDO FUCNIONE
+        CHANGE => fin_fase, --relojes(2), --CAMBIAR POR SEÑAL DEL CONTADOR CUANDO FUCNIONE
         DIF => dificultad,
         CARR_FUTURA => road_ft, 
         CARR_ACTUAL => raw_road_ac 
