@@ -86,9 +86,11 @@ begin
             if unsigned(izq)<unsigned(dcha_ver) and unsigned(dcha)>unsigned(izq_ver) then -- Caso posible
                 if unsigned(izq)<unsigned(dcha) then 
                     if unsigned(izq_ver)-unsigned(dcha) =1 and obs/=std_logic_vector(unsigned(izq_ver)-1) then
-                        ver2:='1';
+                        ver2:='1'; 
+                        bloqueo:= '1';
                     else 
                         ver1:='1';
+                        bloqueo:= '1';
                     end if;
                 end if;
             end if;
@@ -116,8 +118,8 @@ begin
     --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
     --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
                     
-                    --Cuando tengas una carretera nueva que este bien
-                    --bloqueo:= '1';??
+                    -- Si la carretera es válida, bloquea el proceso iterativo
+                    bloqueo:= '1';
                 
                 
                 
