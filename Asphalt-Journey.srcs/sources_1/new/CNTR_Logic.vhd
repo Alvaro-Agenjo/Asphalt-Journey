@@ -53,20 +53,14 @@ begin
     
     process (CLK, RESET, LOAD)
         variable count: natural := INIT_COUNT;  
-    begin    
-----        if rising_edge(PULSE)then 
-----            if CE = '1' then 
-----                count := count -1;
-----            end if;
---        end if;  
+    begin
         if RESET ='1' then
             count := INIT_COUNT;
-            ZERO <= '0';    
-
-         elsif PULSE = '1' then
-            if CE = '1' then 
+            ZERO <= '0';
+        elsif PULSE = '1' then
+            if CE = '1'then
                 count := count - 1;
-            end if;     
+            end if;
         elsif rising_edge(CLK) then             
             if CE /= '1' then  -- modulo no habilitado valor a transmitir 10 
                 ZERO <= '0';
@@ -80,19 +74,24 @@ begin
                 end if;
                 
    --version A          
---                if count = 1 then 
+--                if count = 0 then 
 --                    ZERO <= '1';
---                elsif count <= 0 then 
+--                elsif count <= -1 then 
 --                    ZERO <= '0';
 --                    count:= INIT_COUNT;
---                end if;  
-   --version B
+--                end if;
+                
+    --version B Cuenta pero nunca resetea automatico
                 if count  = 0 then 
                     ZERO <= '1';
-                elsif count < 0 then 
-                    ZERO <= '0';
-                    count := INIT_COUNT;
-                end if;
+                end if; 
+   --version B'
+--                if count  = 1 then 
+--                    ZERO <= '1';
+--                elsif count < 1 then 
+--                    ZERO <= '0';
+--                    count:= INIT_COUNT;
+--                end if;
                 val <= count;                
             end if;
         end if;         

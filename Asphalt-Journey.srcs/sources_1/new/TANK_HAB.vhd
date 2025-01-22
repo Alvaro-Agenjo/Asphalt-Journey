@@ -47,7 +47,7 @@ end TANK_HAB;
 architecture Behavioral of TANK_HAB is
     signal new_road: road_tile_array;
 begin
-    process(CLK, PULSE)
+    process(CLK)
         variable activated: std_logic := '0';
     begin  
         if PULSE = '1' then
