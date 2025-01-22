@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 21.01.2025 11:47:06
--- Design Name: 
--- Module Name: ADMIN_CARR - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -40,14 +20,14 @@ architecture Behavioral of ADMIN_CARR is
 begin
     process(CLK, ENABLE, CHANGE)
     begin
-        if rising_edge(CLK) then
+        -- if rising_edge(CLK) then
             if ENABLE = '1' then
-                if CHANGE = '1' then
+                if rising_edge(CHANGE) then
                     CARR_ACTUAL <= OLD_ROAD;
                     CARR_FUTURA <= NEW_ROAD;
                 end if;
             end if;
-        end if;
+        -- end if;
     
     end process;
 

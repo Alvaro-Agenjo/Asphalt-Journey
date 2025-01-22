@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Jan 21 18:32:55 2025
-| Host         : DESKTOP-A7KB9SN running 64-bit major release  (build 9200)
+| Date         : Wed Jan 22 13:00:57 2025
+| Host         : BOOPBEEP running 64-bit major release  (build 9200)
 | Command      : report_methodology -file SUPER_TOP_methodology_drc_routed.rpt -pb SUPER_TOP_methodology_drc_routed.pb -rpx SUPER_TOP_methodology_drc_routed.rpx
 | Design       : SUPER_TOP
 | Device       : xc7a100tcsg324-1
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 996
+             Violations found: 999
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 725        |
-| LUTAR-1   | Warning          | LUT drives async reset alert   | 129        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 726        |
+| LUTAR-1   | Warning          | LUT drives async reset alert   | 131        |
 | TIMING-20 | Warning          | Non-clocked latch              | 141        |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
@@ -2242,1762 +2242,1767 @@ Related violations: <none>
 
 TIMING-17#442 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[0]/C is not reached by a timing clock
+The clock pin Generar_carretera/bloqueo_reg_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#443 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[1]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#444 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[2]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#445 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[3]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#446 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[4]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#447 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[5]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#448 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[6]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#449 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[7]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#450 Critical Warning
 Non-clocked sequential cell  
-The clock pin Generar_carretera/tiempo_int_reg[8]/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#451 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/activated_reg/C is not reached by a timing clock
+The clock pin Generar_carretera/tiempo_int_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#452 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[1][0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/activated_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#453 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[1][1]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[1][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#454 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[1][2]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[1][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#455 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[2][0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[1][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#456 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[2][1]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[2][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#457 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[2][2]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[2][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#458 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[3][0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[2][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#459 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[3][1]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[3][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#460 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[3][2]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[3][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#461 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[4][0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[3][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#462 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[4][1]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[4][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#463 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[4][2]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[4][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#464 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[5][0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[4][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#465 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[5][1]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[5][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#466 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[5][2]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[5][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#467 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[6][0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[5][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#468 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[6][1]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[6][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#469 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[6][2]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[6][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#470 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[7][0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[6][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#471 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[7][1]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[7][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#472 Critical Warning
 Non-clocked sequential cell  
-The clock pin Habilidad_tanque/new_road_reg[7][2]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[7][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#473 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[0]/C is not reached by a timing clock
+The clock pin Habilidad_tanque/new_road_reg[7][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#474 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[1]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#475 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[2]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#476 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[3]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#477 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[4]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#478 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[5]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#479 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[6]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#480 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[0]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/CARACTER_reg_rep[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#481 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[10]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#482 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[11]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#483 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[12]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#484 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[13]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#485 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[14]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#486 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[15]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#487 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[16]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#488 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[17]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#489 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[18]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#490 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[19]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#491 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[1]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#492 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[20]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#493 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[21]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#494 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[22]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#495 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[23]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#496 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[24]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#497 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[25]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#498 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[26]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#499 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[27]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#500 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[28]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#501 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[29]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#502 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[2]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#503 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[30]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#504 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[31]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#505 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[3]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#506 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[4]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#507 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[5]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#508 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[6]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#509 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[7]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#510 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[8]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#511 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[9]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#512 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[0]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/DISPLAY_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#513 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[10]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#514 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[11]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#515 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[12]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#516 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[13]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#517 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[14]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#518 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[15]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#519 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[16]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#520 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[17]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#521 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[18]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#522 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[19]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#523 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[1]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#524 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[20]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#525 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[21]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#526 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[22]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#527 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[23]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#528 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[24]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#529 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[25]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#530 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[26]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#531 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[27]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#532 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[28]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#533 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[29]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#534 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[2]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#535 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[30]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#536 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[31]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#537 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[3]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#538 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[4]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#539 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[5]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#540 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[6]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#541 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[7]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#542 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[8]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#543 Critical Warning
 Non-clocked sequential cell  
-The clock pin Impresion_texto/inst_mux_txt/i_reg[9]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#544 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[0]/C is not reached by a timing clock
+The clock pin Impresion_texto/inst_mux_txt/i_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#545 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[1]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#546 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[2]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#547 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[3]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#548 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[4]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#549 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[5]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#550 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[6]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#551 Critical Warning
 Non-clocked sequential cell  
-The clock pin Maquina_estados/FSM_onehot_cur_state_reg[7]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#552 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[0]/C is not reached by a timing clock
+The clock pin Maquina_estados/FSM_onehot_cur_state_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#553 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[10]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#554 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[11]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#555 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[12]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#556 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[13]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#557 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[14]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#558 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[15]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#559 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[16]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#560 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[17]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#561 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[18]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#562 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[19]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#563 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[1]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#564 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[20]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#565 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[21]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#566 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[22]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#567 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[23]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#568 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[24]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#569 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[25]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#570 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[26]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#571 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[27]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#572 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[28]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#573 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[29]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#574 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[2]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#575 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[30]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#576 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[3]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#577 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[4]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#578 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[5]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#579 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[6]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#580 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[7]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#581 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[8]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#582 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_CAR/valor_reg[9]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#583 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[0]/C is not reached by a timing clock
+The clock pin SEL_CAR/valor_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#584 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[10]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#585 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[11]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#586 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[12]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#587 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[13]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#588 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[14]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#589 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[15]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#590 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[16]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#591 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[17]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#592 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[18]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#593 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[19]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#594 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[1]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#595 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[20]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#596 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[21]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#597 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[22]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#598 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[23]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#599 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[24]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#600 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[25]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#601 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[26]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#602 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[27]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#603 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[28]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#604 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[29]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#605 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[2]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#606 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[30]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#607 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[3]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#608 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[4]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#609 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[5]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#610 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[6]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#611 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[7]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#612 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[8]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#613 Critical Warning
 Non-clocked sequential cell  
-The clock pin SEL_DIF/valor_reg[9]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#614 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin SEL_DIF/valor_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#615 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#616 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#617 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#618 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#619 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#620 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#621 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#622 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#623 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#624 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[0].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#625 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#626 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#627 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#628 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#629 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#630 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#631 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#632 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#633 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#634 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[1].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#635 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#636 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#637 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#638 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#639 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#640 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#641 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#642 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#643 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#644 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[2].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#645 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#646 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#647 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#648 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#649 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#650 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#651 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#652 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#653 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#654 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[3].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#655 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#656 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#657 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#658 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#659 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#660 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#661 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#662 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/edge/sreg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#663 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/sync/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#664 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[0]/C is not reached by a timing clock
+The clock pin Tratamiento_Botones/for_generate[4].inst_sync_edge/sync/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#665 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[10]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#666 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[11]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#667 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[12]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#668 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[13]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#669 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[14]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#670 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[15]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#671 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[16]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#672 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[17]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#673 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[18]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#674 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[19]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#675 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[1]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#676 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[20]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#677 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[21]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#678 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[22]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#679 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[23]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#680 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[24]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#681 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[25]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#682 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[26]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#683 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[27]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#684 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[28]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#685 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[29]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#686 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[2]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#687 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[30]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#688 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[3]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#689 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[4]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#690 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[5]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#691 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[6]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#692 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[7]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#693 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[8]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#694 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[0].tx/count_reg[9]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#695 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[0]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[0].tx/count_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#696 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[10]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#697 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[11]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#698 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[12]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#699 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[13]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#700 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[14]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#701 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[15]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#702 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[16]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#703 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[17]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#704 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[18]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#705 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[19]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#706 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[1]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#707 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[20]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#708 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[21]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#709 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[22]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#710 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[23]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#711 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[24]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#712 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[25]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#713 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[26]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#714 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[27]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#715 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[28]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#716 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[29]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#717 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[2]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#718 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[30]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#719 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[3]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#720 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[4]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#721 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[5]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#722 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[6]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#723 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[7]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#724 Critical Warning
 Non-clocked sequential cell  
-The clock pin gen_clk/timer_gen[1].tx/count_reg[8]/C is not reached by a timing clock
+The clock pin gen_clk/timer_gen[1].tx/count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#725 Critical Warning
+Non-clocked sequential cell  
+The clock pin gen_clk/timer_gen[1].tx/count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#726 Critical Warning
 Non-clocked sequential cell  
 The clock pin gen_clk/timer_gen[1].tx/count_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#5 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#7 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#8 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#9 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#10 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#11 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#12 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#13 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#14 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#15 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#16 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#17 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#18 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#19 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#20 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#21 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#22 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#23 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#24 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#25 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#26 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#27 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#28 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#29 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#30 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#31 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#32 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#33 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#34 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#35 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#36 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#37 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#38 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#39 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#40 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#41 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#42 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#43 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#44 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#45 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#46 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#47 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#48 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#49 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#50 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#51 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#52 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#53 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#54 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#55 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#56 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#57 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#58 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#59 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#60 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#61 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#62 Warning
 LUT drives async reset alert  
-LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_C/CLR
+LUT cell ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_C/CLR
 ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
@@ -4008,356 +4013,366 @@ Related violations: <none>
 
 LUTAR-1#64 Warning
 LUT drives async reset alert  
-LUT cell Cuent_atras/Logica/count_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Cuent_atras/Logica/count_reg[0]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#65 Warning
 LUT drives async reset alert  
-LUT cell Cuent_atras/Logica/count_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[0]_C/CLR
+LUT cell Cuent_atras/Logica/count_reg[0]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[0]_C/CLR
 Cuent_atras/Logica/count_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#66 Warning
 LUT drives async reset alert  
-LUT cell Habilidad_tanque/FIN_NOK_reg_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) DetectorColision/FIN_NOK_reg_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Generar_carretera/bloqueo_reg_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Generar_carretera/bloqueo_reg_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#67 Warning
 LUT drives async reset alert  
-LUT cell Habilidad_tanque/FIN_NOK_reg_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) DetectorColision/FIN_NOK_reg_C/CLR, DetectorColision/FIN_NOK_reg_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Generar_carretera/bloqueo_reg_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Generar_carretera/bloqueo_reg_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#68 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Habilidad_tanque/FIN_NOK_reg_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) DetectorColision/FIN_NOK_reg_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#69 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[10]_C/CLR
-Cuent_atras/Logica/count_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Habilidad_tanque/FIN_NOK_reg_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) DetectorColision/FIN_NOK_reg_C/CLR, DetectorColision/FIN_NOK_reg_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#70 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[10]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#71 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[11]_C/CLR
-Cuent_atras/Logica/count_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[10]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[10]_C/CLR
+Cuent_atras/Logica/count_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#72 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[11]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#73 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[12]_C/CLR
-Cuent_atras/Logica/count_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[11]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[11]_C/CLR
+Cuent_atras/Logica/count_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#74 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[12]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#75 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[13]_C/CLR
-Cuent_atras/Logica/count_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[12]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[12]_C/CLR
+Cuent_atras/Logica/count_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#76 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[13]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#77 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[14]_C/CLR
-Cuent_atras/Logica/count_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[13]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[13]_C/CLR
+Cuent_atras/Logica/count_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#78 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[14]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#79 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[15]_C/CLR
-Cuent_atras/Logica/count_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[14]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[14]_C/CLR
+Cuent_atras/Logica/count_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#80 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[16]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[15]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#81 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[16]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[16]_C/CLR
-Cuent_atras/Logica/count_reg[16]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[15]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[15]_C/CLR
+Cuent_atras/Logica/count_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#82 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[17]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[16]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#83 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[17]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[17]_C/CLR
-Cuent_atras/Logica/count_reg[17]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[16]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[16]_C/CLR
+Cuent_atras/Logica/count_reg[16]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#84 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[18]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[17]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#85 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[18]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[18]_C/CLR
-Cuent_atras/Logica/count_reg[18]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[17]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[17]_C/CLR
+Cuent_atras/Logica/count_reg[17]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#86 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[19]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[18]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#87 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[19]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[19]_C/CLR
-Cuent_atras/Logica/count_reg[19]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[18]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[18]_C/CLR
+Cuent_atras/Logica/count_reg[18]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#88 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[19]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#89 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[1]_C/CLR
-Cuent_atras/Logica/count_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[19]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[19]_C/CLR
+Cuent_atras/Logica/count_reg[19]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#90 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[20]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[1]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#91 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[20]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[20]_C/CLR
-Cuent_atras/Logica/count_reg[20]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[1]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[1]_C/CLR
+Cuent_atras/Logica/count_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#92 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[21]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[20]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#93 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[21]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[21]_C/CLR
-Cuent_atras/Logica/count_reg[21]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[20]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[20]_C/CLR
+Cuent_atras/Logica/count_reg[20]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#94 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[22]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[21]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#95 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[22]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[22]_C/CLR
-Cuent_atras/Logica/count_reg[22]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[21]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[21]_C/CLR
+Cuent_atras/Logica/count_reg[21]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#96 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[23]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[22]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#97 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[23]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[23]_C/CLR
-Cuent_atras/Logica/count_reg[23]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[22]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[22]_C/CLR
+Cuent_atras/Logica/count_reg[22]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#98 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[24]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[23]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#99 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[24]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[24]_C/CLR
-Cuent_atras/Logica/count_reg[24]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[23]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[23]_C/CLR
+Cuent_atras/Logica/count_reg[23]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#100 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[25]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[24]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#101 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[25]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[25]_C/CLR
-Cuent_atras/Logica/count_reg[25]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[24]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[24]_C/CLR
+Cuent_atras/Logica/count_reg[24]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#102 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[26]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[25]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#103 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[26]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[26]_C/CLR
-Cuent_atras/Logica/count_reg[26]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[25]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[25]_C/CLR
+Cuent_atras/Logica/count_reg[25]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#104 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[27]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[26]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#105 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[27]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[27]_C/CLR
-Cuent_atras/Logica/count_reg[27]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[26]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[26]_C/CLR
+Cuent_atras/Logica/count_reg[26]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#106 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[28]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[27]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#107 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[28]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[28]_C/CLR
-Cuent_atras/Logica/count_reg[28]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[27]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[27]_C/CLR
+Cuent_atras/Logica/count_reg[27]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#108 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[29]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[28]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#109 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[29]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[29]_C/CLR
-Cuent_atras/Logica/count_reg[29]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[28]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[28]_C/CLR
+Cuent_atras/Logica/count_reg[28]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#110 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[29]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#111 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[2]_C/CLR
-Cuent_atras/Logica/count_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[29]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[29]_C/CLR
+Cuent_atras/Logica/count_reg[29]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#112 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[30]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[2]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#113 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[30]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[30]_C/CLR
-Cuent_atras/Logica/count_reg[30]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[2]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[2]_C/CLR
+Cuent_atras/Logica/count_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#114 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[30]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#115 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[3]_C/CLR
-Cuent_atras/Logica/count_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[30]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[30]_C/CLR
+Cuent_atras/Logica/count_reg[30]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#116 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[3]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#117 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[4]_C/CLR
-Cuent_atras/Logica/count_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[3]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[3]_C/CLR
+Cuent_atras/Logica/count_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#118 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[4]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#119 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[5]_C/CLR
-Cuent_atras/Logica/count_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[4]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[4]_C/CLR
+Cuent_atras/Logica/count_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#120 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[5]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#121 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[6]_C/CLR
-Cuent_atras/Logica/count_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[5]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[5]_C/CLR
+Cuent_atras/Logica/count_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#122 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[6]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#123 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[7]_C/CLR
-Cuent_atras/Logica/count_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[6]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[6]_C/CLR
+Cuent_atras/Logica/count_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#124 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[7]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#125 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[8]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[8]_C/CLR
-Cuent_atras/Logica/count_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[7]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[7]_C/CLR
+Cuent_atras/Logica/count_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#126 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[8]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#127 Warning
 LUT drives async reset alert  
-LUT cell Maquina_estados/count_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[9]_C/CLR
-Cuent_atras/Logica/count_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Maquina_estados/count_reg[8]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[8]_C/CLR
+Cuent_atras/Logica/count_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#128 Warning
+LUT drives async reset alert  
+LUT cell Maquina_estados/count_reg[9]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#129 Warning
+LUT drives async reset alert  
+LUT cell Maquina_estados/count_reg[9]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) Cuent_atras/Logica/count_reg[9]_C/CLR
+Cuent_atras/Logica/count_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#130 Warning
 LUT drives async reset alert  
 LUT cell gen_clk/timer_gen[0].tx/count[0]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) gen_clk/timer_gen[0].tx/count_reg[24]/CLR,
 gen_clk/timer_gen[0].tx/count_reg[25]/CLR,
@@ -4376,7 +4391,7 @@ gen_clk/timer_gen[0].tx/count_reg[8]/CLR,
 gen_clk/timer_gen[0].tx/count_reg[9]/CLR (the first 15 of 31 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#129 Warning
+LUTAR-1#131 Warning
 LUT drives async reset alert  
 LUT cell gen_clk/timer_gen[1].tx/count[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) gen_clk/timer_gen[1].tx/count_reg[24]/CLR,
 gen_clk/timer_gen[1].tx/count_reg[25]/CLR,
@@ -4832,7 +4847,7 @@ Related violations: <none>
 
 TIMING-20#88 Warning
 Non-clocked latch  
-The latch Generar_carretera/bloqueo_reg cannot be properly analyzed as its control pin Generar_carretera/bloqueo_reg/G is not reached by a timing clock
+The latch Generar_carretera/bloqueo_reg_LDC cannot be properly analyzed as its control pin Generar_carretera/bloqueo_reg_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#89 Warning
