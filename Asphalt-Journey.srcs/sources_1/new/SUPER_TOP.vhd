@@ -246,6 +246,16 @@ architecture Behavioral of SUPER_TOP is
     );
     end component;
     
+    --Niveles predefinidos
+    component NIVELES_CARRETERAS is
+    port( 
+        ENABLE : in std_logic; --Habilitación en estado JUEGO
+        CHANGE : in std_logic; --Cambio de carretera al acabar el contador
+        DIF : in positive; --Nivel de dificultad
+        CARR_FUTURA : out road_tile_array; --Carretera futura
+        CARR_ACTUAL : out road_tile_array --Carretera actual
+    );
+    end component NIVELES_CARRETERAS;
      
 --señales
     
@@ -460,24 +470,33 @@ begin
         SEG => numero
     );
     
-    Generar_carretera: CARR_ALG_AUX
-    generic map(
-        WIDTH => 3
-    )
-    port map(
-        CLK => relojes(0),
-        CHANGE => relojes(2),
-        salida_d => new_road
-    );
+--    Generar_carretera: CARR_ALG_AUX
+--    generic map(
+--        WIDTH => 3
+--    )
+--    port map(
+--        CLK => relojes(0),
+--        CHANGE => relojes(2),
+--        salida_d => new_road
+--    );
     
-    Administrar_carretera: ADMIN_CARR
+--    Administrar_carretera: ADMIN_CARR
+--    port map(
+--        CLK => relojes(0),
+--        ENABLE => State(4),
+--        CHANGE => relojes(2),
+--        NEW_ROAD => new_road,
+--        OLD_ROAD => road_ft,
+--        CARR_FUTURA => road_ft,
+--        CARR_ACTUAL => raw_road_ac
+--    );
+    
+     Niveles_de_carreteras: NIVELES_CARRETERAS
     port map(
-        CLK => relojes(0),
         ENABLE => State(4),
-        CHANGE => relojes(2),
-        NEW_ROAD => new_road,
-        OLD_ROAD => road_ft,
-        CARR_FUTURA => road_ft,
-        CARR_ACTUAL => raw_road_ac
+        CHANGE => relojes(2), --CAMBIAR POR SEÑAL DEL CONTADOR CUANDO FUCNIONE
+        DIF => dificultad,
+        CARR_FUTURA => road_ft, 
+        CARR_ACTUAL => raw_road_ac 
     );
 end Behavioral;
