@@ -64,11 +64,9 @@ begin
         s_sync_in <= '1'; --recibe señal síncrona
         wait for 2.6*period; --espera un tiempo arbitrario (está pulsando)
         s_sync_in <= '0'; --termina de pulsar
-        for i in 0 to 3 loop  --espero a que se produzca el desplamiento de bits
-            wait until s_clk <= '1';
-        end loop;
-        
-        wait for period;
+        wait until s_edge = '1';  --espero a que se produzca el desplamiento de bits
+           
+        wait for 0.5*period;
         
         assert s_edge = '1'
             report "[ERROR]: la señal de salida no es 1 pasados dos ciclos de reloj"

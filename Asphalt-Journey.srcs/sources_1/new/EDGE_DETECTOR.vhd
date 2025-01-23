@@ -31,5 +31,5 @@ end BEHAVIORAL;
 
 --Breve explicación:
 --la señal EDGE pasará a valer '1' durante un ciclo de reloj,
---cuando hayan pasado dos flancos de reloj positivos desde que se
+--cuando hayan pasado siete flancos de reloj positivos desde que se
 --dejó de pulsar 

@@ -30,11 +30,11 @@ architecture Behavioral of NIVELES_CARRETERAS_tb is
 --Componente
     component NIVELES_CARRETERAS is
         port( 
-            CLK : in std_logic; --Señal de reloj
             ENABLE : in std_logic; --Habilitación en estado JUEGO
             CHANGE : in std_logic; --Cambio de carretera al acabar el contador
             DIF : in positive; --Nivel de dificultad
-            CARR_FUTURA : out road_tile_array --Carretera futura
+            CARR_FUTURA : out road_tile_array; --Carretera futura
+            CARR_ACTUAL : out road_tile_array --Carretera actual
         );
     end component;
 
@@ -54,10 +54,10 @@ architecture Behavioral of NIVELES_CARRETERAS_tb is
     signal s_change : std_logic := '0';
     signal s_dif    : positive;
     signal s_carr_futura : road_tile_array;
+    signal s_carr_actual : road_tile_array;
 
 begin
 --Generadores de CLK y CHANGE
-    gen_clk: s_clk <= not s_clk after 0.5*period;
     gen_change: process
     begin --Dura un ciclo activa, cada 10 ciclos
         s_change <= '1'; 
@@ -70,23 +70,19 @@ begin
 --Unit Under Test
     uut: NIVELES_CARRETERAS 
     port map(
-        CLK => s_clk, 
         ENABLE => s_enable,
         CHANGE => s_change,
         DIF => s_dif,
-        CARR_FUTURA => s_carr_futura 
+        CARR_FUTURA => s_carr_futura,
+        CARR_ACTUAL => s_carr_actual 
     );
 
 --Test
     process 
     begin
         --********* TEST ENABLE ************
-        s_enable <= '0';
-        for i in 1 to 10 loop
-            wait until s_clk = '1';
-        end loop;        
+        s_enable <= '0';        
         wait for 10*period;
-        
         s_enable <= '1';
         
         --********* TEST DIF 1 *************

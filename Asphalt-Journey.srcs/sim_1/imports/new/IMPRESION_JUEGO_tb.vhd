@@ -72,7 +72,7 @@ begin
             s_display <= test(i).display;
             
             wait for period;
-       
+            
         end loop;
     
         assert false 

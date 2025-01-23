@@ -13,6 +13,7 @@ architecture Behavioral of IMPRIMIR_JUEGO_tb is
     component IMPRIMIR_JUEGO is
         port(
             CLK : in std_logic; --Reloj
+            CE: in std_logic;
             CARR_ACTUAL : in road_tile_array; --Carretera Actual: Segmentos e.g.c 
             CARR_FUTURA : in road_tile_array; --Carretera Futura: Segmentos f.a.b
             SEGMENT_CNT: in std_logic_vector (7 downto 0); --Numero decodificado
@@ -27,6 +28,7 @@ architecture Behavioral of IMPRIMIR_JUEGO_tb is
 
 --Señales
     signal s_clk : std_logic := '0';
+    signal s_ce : std_logic := '1';
     signal s_carr_actual : road_tile_array;
     signal s_carr_futura : road_tile_array;
     signal s_pos_car : positive;
@@ -65,6 +67,7 @@ begin
     uut: IMPRIMIR_JUEGO
         port map(
             CLK => s_clk,
+            CE => s_ce,
             CARR_ACTUAL => s_carr_actual,
             CARR_FUTURA => s_carr_futura,
             SEGMENT_CNT => s_segment_cnt,

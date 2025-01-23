@@ -12,6 +12,7 @@ architecture Behavioral of ORDEN_IMPRESION_JUEGO_tb is
 --Componente
     component ORDEN_IMPRESION_JUEGO is
         port (
+            ENABLE: IN STD_LOGIC;
             DIGSEL_ACTUAL : in std_logic_vector(7 downto 0); --Display de estado actual a encender 
             DIGSEL_FUTURO : in std_logic_vector(7 downto 0); --Display de estado futuro a encender
             SEGMENT_ACTUAL : in std_logic_vector(2 downto 0); --Segmentos del estado actual a encender
@@ -28,6 +29,7 @@ architecture Behavioral of ORDEN_IMPRESION_JUEGO_tb is
     
 --Señales
     signal s_clk : std_logic := '0';
+    signal s_enable : std_logic;
     signal s_digsel_actual : std_logic_vector(7 downto 0);
     signal s_digsel_futuro : std_logic_vector(7 downto 0);
     signal s_segment_actual : std_logic_vector(2 downto 0);
@@ -113,6 +115,7 @@ begin
 --Unit Under Test
     uut: ORDEN_IMPRESION_JUEGO
     port map(
+        ENABLE => s_enable,
         DIGSEL_ACTUAL => s_digsel_actual,
         DIGSEL_FUTURO => s_digsel_futuro,
         SEGMENT_ACTUAL => s_segment_actual,
@@ -126,6 +129,15 @@ begin
 --Test
     process
     begin
+        assert false
+        report "*****TEST ENABLE DESACTIVADO*****"
+        severity note;
+        
+        s_enable <= '0';
+        wait for 2*period;
+        s_enable <= '1';
+    
+    
         assert false
         report "*****TEST DIGSEL DISTINTOS*****"
         severity note;

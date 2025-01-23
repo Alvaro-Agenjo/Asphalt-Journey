@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Jan 22 13:16:23 2025
-# Process ID         : 15116
+# Start of session at: Thu Jan 23 11:16:21 2025
+# Process ID         : 7208
 # Current directory  : C:/Users/cesar/Documents/GitHub/Asphalt-Journey
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20052 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2304 C:\Users\cesar\Documents\GitHub\Asphalt-Journey\Asphalt-Journey.xpr
 # Log file           : C:/Users/cesar/Documents/GitHub/Asphalt-Journey/vivado.log
 # Journal file       : C:/Users/cesar/Documents/GitHub/Asphalt-Journey\vivado.jou
 # Running On         : DESKTOP-1HN8B7K
@@ -19,45 +19,88 @@
 # Host memory        : 16969 MB
 # Swap memory        : 18253 MB
 # Total Virtual      : 35223 MB
-# Available Virtual  : 25958 MB
+# Available Virtual  : 26854 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw_manager
+launch_simulation
+source GESTION_IMPRESION_JUEGO_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ORDEN_IMPRESION_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source ORDEN_IMPRESION_JUEGO_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRIMIR_JUEGO_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+source IMPRIMIR_JUEGO_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CONTROL_IMPRESION_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source CONTROL_IMPRESION_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_TXT_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source MUX_TXT_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRESION_BCD_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source IMPRESION_BCD_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IMPRIMIR_TXT_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source IMPRIMIR_TXT_tb.tcl
+close_sim
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NIVELES_CARRETERAS_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source NIVELES_CARRETERAS_tb.tcl
+close_sim
+launch_simulation
+source NIVELES_CARRETERAS_tb.tcl
+close_sim
+launch_simulation
+source NIVELES_CARRETERAS_tb.tcl
+close_sim
+launch_simulation
+source NIVELES_CARRETERAS_tb.tcl
+close_sim

@@ -1,4 +1,4 @@
 Time resolution is 1 ps
 Failure: [FIN SIMULACION]
-Time: 795 ns  Iteration: 0  Process: /NIVELES_CARRETERAS_tb/line__81  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/NIVELES_CARRETERAS_tb.vhd
-$finish called at time : 795 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/NIVELES_CARRETERAS_tb.vhd" Line 118
+Time: 700 ns  Iteration: 0  Process: /NIVELES_CARRETERAS_tb/line__81  File: C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/NIVELES_CARRETERAS_tb.vhd
+$finish called at time : 700 ns : File "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/sim_1/new/NIVELES_CARRETERAS_tb.vhd" Line 105
