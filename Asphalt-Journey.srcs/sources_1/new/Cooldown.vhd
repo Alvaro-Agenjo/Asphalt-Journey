@@ -67,33 +67,25 @@ architecture Behavioral of Cooldown is
     signal s_listo: std_logic;
 begin
     
-    Temporizador: CNTR_Logic
-    generic map(
-        INIT_COUNT => WAIT_TIME
-    )
-    port map (
-        RESET => reset_tem,
-        CLK => CLK,
-        CE => CE,
-        PULSE => SEGUNDO,
-        LOAD => '0',
-        ADD => 0,                 
-        ZERO => s_listo
-    );
     
-    process(CLK) 
+    process(CLK, s_listo) 
+    variable listo: std_logic := '0';
     begin
+        if s_listo = '1' then
+            listo := '1';
+        end if;
         if rising_edge(CLK) then
             if CE = '1' then 
                 reset_tem <= '0';
                 hability <= '0';
                 if CENTER = '1' then
-                    if s_listo = '1' then
+                    if listo = '1' then
                         hability <= '1';
-                        reset_tem <= '1';                        
+                        reset_tem <= '1';  
+                        listo := '0';                      
                     end if;
                 end if;
-            else 
+            elsif CE = '0' then  
                 reset_tem <= '1';
             end if;    
         end if;

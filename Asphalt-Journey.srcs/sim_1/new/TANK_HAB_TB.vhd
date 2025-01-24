@@ -41,6 +41,7 @@ architecture Behavioral of TANK_HAB_TB is
     port(
         CLK: in std_logic;                  --Reloj del sistema
         CE: in std_logic;                   --CE (Habilitación de móduo)
+        PULSE: in std_logic;                --Señal que indica el cambio de carretera
         TANK_POS: in positive;              --Posicion del vehículo.
         HAB_TANK: in std_logic;             -- Señal que indica la activación de habilidad
         RAW_ROAD_AC: in road_tile_array;    --Carretera antes de habilidad
@@ -55,6 +56,7 @@ architecture Behavioral of TANK_HAB_TB is
 --señales
     signal s_clk: std_logic := '0';
     signal s_ce: std_logic;
+    signal s_pulse: std_logic;
     signal s_tank_pos: positive;
     signal s_hab_tank: std_logic;
     signal s_raw_road: road_tile_array := CARRETERA;
@@ -80,7 +82,8 @@ begin
     UUT: TANK_HAB 
     port map(
         CLK => s_clk,
-        CE => s_ce, 
+        CE => s_ce,
+        PULSE => s_pulse, 
         RAW_ROAD_AC => s_raw_road,
         TANK_POS => s_tank_pos,
         HAB_TANK => s_hab_tank, 
@@ -126,6 +129,17 @@ begin
             severity failure;
             
             s_hab_tank <= '0';
+            
+            wait until s_clk = '1';
+            
+            wait for 0.2*CLK_PERIOD;
+            assert s_road(i) = value(i).t_new_road
+                report "[ERROR] La carretera regresado a antes de la destruccion y deberia mantenerse"
+            severity failure;
+            
+            s_pulse <= '1';
+            wait until s_clk = '1'; 
+            s_pulse <= '0';
         end loop;
         
         

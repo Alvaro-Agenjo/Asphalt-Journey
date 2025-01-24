@@ -22,7 +22,7 @@ architecture Behavioral of CARR_ALG_AUX is
 signal dcha_ver           : std_logic_vector(WIDTH-1 DOWNTO 0):="101";
 signal izq_ver            : std_logic_vector(WIDTH-1 DOWNTO 0):="000";
 signal obs_ver            : std_logic_vector(WIDTH-1 DOWNTO 0):="111";
-signal aux                : road_tile_array:=(no_road,no_road,no_road,no_road,no_road,no_road,no_road);
+signal aux                : road_tile_array:=(left_limit,road,road,road,road,road,right_limit);
 --signal aux : std_logic_vector(WIDTH*3-1 downto 0);
 --signal ver1 : std_logic:='0';
 --signal ver2 : std_logic:='0';
@@ -42,7 +42,7 @@ begin
         variable salida :  std_logic_vector(WIDTH*3-1 downto 0);
         variable salida_aux : road_tile_array;
     begin
-    if CHANGE = '1' then 
+    if rising_edge(CHANGE) then  -- Solia ser = '1'
         bloqueo:='0';
     end if;
         -- Convertir tiempo a entero (en nanosegundos)
@@ -86,14 +86,16 @@ begin
             if unsigned(izq)<unsigned(dcha_ver) and unsigned(dcha)>unsigned(izq_ver) then -- Caso posible
                 if unsigned(izq)<unsigned(dcha) then 
                     if unsigned(izq_ver)-unsigned(dcha) =1 and obs/=std_logic_vector(unsigned(izq_ver)-1) then
-                        ver2:='1';
+                        ver2:='1'; 
+                        bloqueo:= '1';
                     else 
                         ver1:='1';
+                        bloqueo:= '1';
                     end if;
                 end if;
             end if;
         end if;
-        if CHANGE = '1' then
+        if CHANGE = '1'  then -- Solia ser = '1'
             if ver1='1' and sec='0' then
                     dcha_ver<=dcha;
                     izq_ver<=izq;
@@ -112,12 +114,19 @@ begin
                         salida_aux(to_integer(unsigned(obs_ver)+1)):=no_road;
                     end if;
                     
+                    for i in 2 to 6 loop
+                        if (i > to_integer(unsigned(izq_ver)+1)) and (i < to_integer(unsigned(dcha_ver)+1)) then 
+                            if salida_aux(i)/=obstacle and salida_aux(i)/=right_obstacle and salida_aux(i)/=left_obstacle then
+                                salida_aux(i):= road;
+                            end if;
+                        end if;
+                    end loop;
     --                salida(WIDTH-1 downto 0)<=dcha_ver;
     --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
     --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
                     
-                    --Cuando tengas una carretera nueva que este bien
-                    --bloqueo:= '1';??
+                    -- Si la carretera es válida, bloquea el proceso iterativo
+                   -- bloqueo:= '1';
                 
                 
                 
@@ -169,7 +178,7 @@ begin
                     
                     
                     --Cuando tengas una carretera nueva que este bien
-                    bloqueo:= '1';
+                   -- bloqueo:= '1';
                 
                 
                 else
@@ -185,6 +194,13 @@ begin
                     else
                         salida_aux(to_integer(unsigned(obs_ver)+1)):=no_road;
                     end if;
+                     for i in 2 to 6 loop
+                        if (i > to_integer(unsigned(izq_ver)+1)) and (i < to_integer(unsigned(dcha_ver)+1)) then 
+                            if salida_aux(i)/=obstacle and salida_aux(i)/=right_obstacle and salida_aux(i)/=left_obstacle then
+                                salida_aux(i):= road;
+                            end if;
+                        end if;
+                    end loop;
     --                salida(WIDTH-1 downto 0)<=dcha_ver;
     --                salida(WIDTH*2-1 downto WIDTH)<=izq_ver;
     --                salida(WIDTH*3-1 downto WIDTH*2)<=obs_ver;
@@ -192,10 +208,6 @@ begin
                     
                     --Cuando tengas una carretera nueva que este bien
                     --bloqueo:= '1';??
-                    
-                
-                
-                
                 end if;
             end if;
             if CHANGE = '1' then 
