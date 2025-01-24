@@ -18,6 +18,7 @@ architecture Behavioral of CARR_ALG_AUX_TB is
         );
         Port (
             CLK      : in  std_logic;
+            CHANGE   : in  std_logic;
             salida_d : out road_tile_array
         );
     end component;
@@ -33,6 +34,7 @@ begin
         )
         port map (
             CLK      => CLK,
+            CHANGE   => CHANGE,
             salida_d => salida_d
         );
 
@@ -40,9 +42,11 @@ begin
     CLK_GEN: process
     begin
         while true loop
-            CLK <= '1';
+            CHANGE <= '1';
+            CLK    <= '1';
             wait for CLK_PERIOD / 2;
-            CLK <= '0';
+            CHANGE <= '0';            
+            CLK    <= '0';
             wait for CLK_PERIOD / 2;
         end loop;
         wait; -- Indica que el proceso es infinito, garantiza que no temrine
