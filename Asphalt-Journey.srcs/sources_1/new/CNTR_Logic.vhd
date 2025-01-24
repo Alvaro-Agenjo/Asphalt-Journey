@@ -36,7 +36,7 @@ entity CNTR_Logic is
         INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
     );
     port(
-        RESET_N: in std_logic;                    -- Reset asynchronus (active high).
+        RESET: in std_logic;                    -- Reset asynchronus (active high).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -51,27 +51,48 @@ architecture Behavioral of CNTR_Logic is
 signal val: natural;
 begin
     
-    process (CLK, RESET_N, LOAD)
+    process (CLK, RESET, LOAD)
         variable count: natural := INIT_COUNT;  
     begin
-        if rising_edge(CLK) then
-            if RESET_N ='0' then
-                count := INIT_COUNT;
+        if RESET ='1' then
+            count := INIT_COUNT;
+            ZERO <= '0';
+--        elsif PULSE = '1' then
+--            if CE = '1'then
+--                count := count - 1;
+--            end if;
+        elsif rising_edge(CLK) then             
+            if CE /= '1' then  -- modulo no habilitado valor a transmitir 10 
                 ZERO <= '0';
-            end if;             
-            if CE = '1' then  -- modulo habilitado valor a transmitir 10 
-                if PULSE = '1' then
+                val <= 10; --fuera de rango usado como nulo --> 1111111
+            else
+               if PULSE = '1' then
                     count := count - 1;
                 end if;
                 if LOAD = '1' then
                     count := count + ADD;
                 end if;
-                if count <= 0 then 
+                
+   --version A          
+--                if count = 0 then 
+--                    ZERO <= '1';
+--                elsif count <= -1 then 
+--                    ZERO <= '0';
+--                    count:= INIT_COUNT;
+--                end if;
+                
+    --version B Cuenta pero nunca resetea automatico
+                if count  = 0 then 
                     ZERO <= '1';
-                end if;
-                val <= count;
-            else    -- modulo no habilitado valor a transmitir 10
-               val <= 10; --fuera de rango usado como nulo --> 1111111                
+                end if; 
+   --version B'
+--                if count  = 1 then 
+--                    ZERO <= '1';
+--                elsif count < 1 then 
+--                    ZERO <= '0';
+--                    --count:= INIT_COUNT;
+--                end if;
+                val <= count;                
             end if;
         end if;         
     end process;

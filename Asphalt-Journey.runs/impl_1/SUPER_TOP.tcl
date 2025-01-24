@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.tcl"
+  variable script "C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/impl_1/SUPER_TOP.tcl"
   variable category "vivado_impl"
 }
 
@@ -105,7 +105,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
@@ -113,16 +112,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.cache/wt [current_project]
-  set_property parent.project_path C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.xpr [current_project]
-  set_property ip_output_repo C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.cache/wt} [current_project]
+  set_property parent.project_path {C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.xpr} [current_project]
+  set_property ip_output_repo {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.runs/synth_1/SUPER_TOP.dcp
+  add_files -quiet {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.runs/synth_1/SUPER_TOP.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc -mode out_of_context C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/Progreso_LED/new/Progreso_LED_ooc.xdc
-  read_xdc C:/Users/cesar/Documents/GitHub/Asphalt-Journey/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc
+  read_xdc {{C:/ALVARO/UPM/Cuarto de carrera/Primer cuatri/Sistemas electronicos digitales/3. Trabajo/VHDL/Asphalt-Journey/Asphalt-Journey.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

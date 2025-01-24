@@ -110,7 +110,7 @@ begin
     ce_gen: process
     begin 
         while true loop
-            for i in 0 to 5 loop
+            for i in 0 to 2 loop
                 wait until s_clk = '1';
             end loop;         
             
@@ -123,7 +123,7 @@ begin
     pulse_gen: process
     begin 
         while true loop
-            for i in 0 to 1000 loop
+            for i in 0 to 8 loop
                 wait until s_clk = '1';
             end loop;         
             
@@ -201,7 +201,7 @@ begin
         report "[ERROR] Finish bit should be 1"
             severity failure;
         
-        
+        wait for 3* CLK_PERIOD;
         --Fin de simulacion
         wait for 0.2* CLK_PERIOD;
         assert false

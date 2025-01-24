@@ -51,7 +51,7 @@ architecture Behavioral of Cooldown is
         INIT_COUNT: natural := 3                -- Valor donde inicia la cuenta tras reset
     );
     port(
-        RESET_N: in std_logic;                    -- Reset asynchronus (active high).
+        RESET: in std_logic;                    -- Reset asynchronus (active high).
         CLK: in std_logic;                      -- Clock
         CE: in std_logic;                       -- CE (Habilitción de modulo)
         PULSE: in std_logic;                    -- Señal produce el incremento(1Hz)
@@ -67,34 +67,26 @@ architecture Behavioral of Cooldown is
     signal s_listo: std_logic;
 begin
     
-    Temporizador: CNTR_Logic
-    generic map(
-        INIT_COUNT => WAIT_TIME
-    )
-    port map (
-        RESET_N => reset_tem,
-        CLK => CLK,
-        CE => CE,
-        PULSE => SEGUNDO,
-        LOAD => '0',
-        ADD => 0,                 
-        ZERO => s_listo
-    );
     
-    process(CLK) 
+    process(CLK, s_listo) 
+    variable listo: std_logic := '0';
     begin
+        if s_listo = '1' then
+            listo := '1';
+        end if;
         if rising_edge(CLK) then
             if CE = '1' then 
-                reset_tem <= '1';
+                reset_tem <= '0';
                 hability <= '0';
                 if CENTER = '1' then
-                    if s_listo = '1' then
+                    if listo = '1' then
                         hability <= '1';
-                        reset_tem <= '0';                        
+                        reset_tem <= '1';  
+                        listo := '0';                      
                     end if;
                 end if;
-            else 
-                reset_tem <= '0';
+            elsif CE = '0' then  
+                reset_tem <= '1';
             end if;    
         end if;
     end process; 

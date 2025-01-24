@@ -34,8 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity Display_LED is
     port (
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel alto
-        CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        CE: in std_logic;                       -- Clock enable (200 Hz)
+        ENABLE: in std_logic;                   -- Habilitacion del módulo
         N_LED: in natural;                      -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     ); 
@@ -44,17 +43,15 @@ end Display_LED;
 architecture Behavioral of Display_LED is
     signal s_leds: std_logic_vector(LEDS'range);
 begin
-    process(RESET_N, CLK)
+    process(RESET_N, ENABLE, N_LED)
     begin
         if RESET_N = '0' then
             s_leds <= (others=> '0');
-        elsif rising_edge(CLK) then
-            if CE = '1' then  
-                if N_LED > 0 then 
-                    s_leds (0 to N_LED-1) <= (others => '1');
-                else
-                    s_leds <= (others => '0');
-                end if;
+        elsif ENABLE = '1' then
+            if N_LED > 0 then 
+                s_leds (0 to N_LED-1) <= (others => '1');
+            else
+                s_leds <= (others => '0');
             end if;
         end if;     
     end process;

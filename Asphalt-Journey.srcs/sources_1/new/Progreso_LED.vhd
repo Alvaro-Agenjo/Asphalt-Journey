@@ -51,8 +51,7 @@ architecture Structural of Progreso_LED is
     
     port(
         RESET_N: in std_logic;                  -- Asincrono y activo a nivel bajo
-        CLK: in std_logic;                      -- Reloj (el mismo que el contador, no muy rápido)
-        CE: in std_logic;                       -- Clock enable (200 Hz)
+        ENABLE: in std_logic;                       -- Habilitacion del módulo
         N_LED: in natural;                      -- Numero de leds a iluminar
         LEDS: out std_logic_vector (0 to 15)    -- Barra de progreso
     );
@@ -90,8 +89,7 @@ begin
     Display: Display_LED 
     port map(
         RESET_N => RESET_N,
-        CLK => CLK,
-        CE => s_ce_enable,
+        ENABLE => s_ce_enable,
         N_LED => s_n_led,
         LEDS => LEDS
     );

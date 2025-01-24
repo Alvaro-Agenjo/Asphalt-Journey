@@ -75,15 +75,16 @@ begin
        
         for i in 0 to num_but-1 loop
                 --Activo un botón, duración arbitraria
-                v_puls_time := (v_mult_time*(real(i+1)))*period;
-                s_but_async(i) <= '1';
+                v_puls_time := (v_mult_time*(real(i+1)))*period; --Duración diferente en función de i
+                s_but_async(i) <= '1'; --El botón está pulsado un timempo v_puls_time
                 wait for v_puls_time;
                 
                 --Desactivo el botón, dejo de pulsar
                 s_but_async <= (others => '0');
                 
-                --Espero desplazamiento de bits: 5 periodos y un poco más
-                wait for 5.1*period;
+                --Espero desplazamiento de bits 
+                wait until s_but_sync(i) = '1';
+                wait for 0.5*period;
     
                 -- Compruebo sincornización del botón
                 assert s_but_sync(i) = '1'

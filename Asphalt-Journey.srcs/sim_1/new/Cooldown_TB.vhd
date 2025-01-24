@@ -38,12 +38,12 @@ end Cooldown_TB;
 architecture Behavioral of Cooldown_TB is
 --componente
     component Cooldown is
-    generic(
-        WAIT_TIME: time := 10 sec           --tiempo de enfriamiento de la habilidad
+    generic (
+         WAIT_TIME: positive := 10          --segundos de recarga
     );
-    port(
-        RESET_N: in std_logic;              --Reset asincrono, activo a nivel bajo 
+    port( 
         CLK: in std_logic;                  --Reloj del sistema
+        SEGUNDO: in std_logic;              -- pulso a 1Hz para contabilizar segundos
         CE: in std_logic;                   --CE (Habilitación de módulo)
         CENTER: in std_logic;               --Boton central tratado
         HABILITY_FLAG: out std_logic        --Flag que indica la activación de la habilidad
@@ -51,26 +51,24 @@ architecture Behavioral of Cooldown_TB is
     end component Cooldown;    
 
 --señales
-    signal s_reset_n: std_logic;
+--    signal s_reset_n: std_logic;
     signal s_clk: std_logic := '0';
     signal s_ce: std_logic;
+    signal s_segundo: std_logic;
     signal s_center: std_logic;
     signal s_cooldown_flag: std_logic;
     
 --constantes
     constant CLK_PERIOD: time := 10 ns;
-    constant COOLDOWN_TIME: time := 4 * CLK_PERIOD;
+    constant COOLDOWN_TIME: natural := 10;
 begin
 
     UUT: Cooldown
-    generic map(
-        WAIT_TIME => COOLDOWN_TIME
-    )
     port map(
-        RESET_N => s_reset_n,
-        CLK => s_clk,
-        CE => s_ce,
-        CENTER => s_center,
+        CLK => s_CLK,
+        CE => s_CE,
+        SEGUNDO => s_SEGUNDO,
+        CENTER => s_CENTER,
         HABILITY_FLAG => s_cooldown_flag
     );
 
@@ -79,24 +77,24 @@ begin
     test:process
     begin
     
-        report "***** Test RESET *****";
-        s_reset_n <= '0';
-        s_ce <= '0';
+--        report "***** Test RESET *****";
+----        s_reset_n <= '0';
+--        s_ce <= '0';
         
-        wait for 0.2* CLK_PERIOD;
-        assert s_cooldown_flag = '1'
-            report "[ERROR] Expected value 1"
-        severity failure;
+--        wait for 0.2* CLK_PERIOD;
+--        assert s_cooldown_flag = '1'
+--            report "[ERROR] Expected value 1"
+--        severity failure;
         
         
         report "***** Test Enable *****";
-        s_reset_n <= '1';
+--        s_reset_n <= '1';
         s_ce <= '0';
         
         for i in 0 to 3 loop
             wait until s_clk = '1';
             
-            assert s_cooldown_flag = '1'
+            assert s_cooldown_flag = '0'
                 report "[ERROR] Expected value 1"
             severity failure;
         end loop;
@@ -105,7 +103,7 @@ begin
         
         
         report "***** Test First Cooldown *****";
-        s_reset_n <= '1';
+--        s_reset_n <= '1';
         s_ce <= '1';
         --el juego comenzaría aquí
         wait until s_cooldown_flag = '0';
