@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Jan 22 13:47:10 2025
+| Date         : Fri Jan 24 19:37:48 2025
 | Host         : DESKTOP-1HN8B7K running 64-bit major release  (build 9200)
 | Command      : report_drc -file SUPER_TOP_drc_routed.rpt -pb SUPER_TOP_drc_routed.pb -rpx SUPER_TOP_drc_routed.rpx
 | Design       : SUPER_TOP
@@ -24,15 +24,17 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 96
+             Checks found: 37
 +----------+----------+-----------------------------------------------------+--------+
 | Rule     | Severity | Description                                         | Checks |
 +----------+----------+-----------------------------------------------------+--------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1      |
-| PDRC-132 | Warning  | SLICE_PairEqSame_A6A5_WARN                          | 20     |
+| PDRC-132 | Warning  | SLICE_PairEqSame_A6A5_WARN                          | 19     |
+| PDRC-134 | Warning  | SLICE_PairEqSame_B6B5_WARN                          | 1      |
+| PDRC-136 | Warning  | SLICE_PairEqSame_C6C5_WARN                          | 2      |
 | PDRC-138 | Warning  | SLICE_PairEqSame_D6D5_WARN                          | 1      |
-| PDRC-140 | Warning  | SLICE_PairEqSame_A6A5_WARN                          | 9      |
-| PDRC-153 | Warning  | Gated clock check                                   | 65     |
+| PDRC-140 | Warning  | SLICE_PairEqSame_A6A5_WARN                          | 10     |
+| PDRC-153 | Warning  | Gated clock check                                   | 3      |
 +----------+----------+-----------------------------------------------------+--------+
 
 2. REPORT DETAILS
@@ -52,92 +54,92 @@ Related violations: <none>
 
 PDRC-132#1 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X0Y110 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X11Y88 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#2 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X0Y92 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X13Y88 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#3 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X11Y101 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X1Y78 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#4 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X13Y99 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X28Y82 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#5 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X15Y101 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X29Y84 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#6 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X1Y100 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X29Y93 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#7 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X1Y91 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X31Y83 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#8 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X28Y100 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X31Y92 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#9 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X29Y100 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X32Y91 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#10 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X3Y102 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X33Y91 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#11 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X3Y93 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X36Y91 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#12 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X4Y103 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X37Y91 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#13 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X4Y113 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X3Y81 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#14 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X4Y93 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X3Y90 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#15 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X5Y104 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X4Y77 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#16 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X5Y86 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X5Y73 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#17 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X5Y95 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X5Y90 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#18 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X7Y105 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X7Y78 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#19 Warning
@@ -145,384 +147,89 @@ SLICE_PairEqSame_A6A5_WARN
 Luts A6LUT and A5LUT in use in site SLICE_X7Y87 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
-PDRC-132#20 Warning
-SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X9Y102 with different equations without A6 pin connected to Global Logic High.
+PDRC-134#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X1Y86 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X1Y86 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#2 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X5Y106 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-138#1 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X0Y129 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X5Y118 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#1 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X10Y99 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X10Y88 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#2 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X14Y99 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X12Y86 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#3 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X2Y104 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X14Y89 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#4 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X2Y86 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X2Y87 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#5 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X2Y95 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X30Y82 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#6 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X6Y109 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X30Y91 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#7 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X6Y99 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X34Y91 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#8 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X8Y89 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X6Y78 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-140#9 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X8Y99 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X6Y87 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-140#10 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X8Y88 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Ctrl_impresion/inst_gestion_impresion_juego/mux_and_imp_juego_futuro/multiplexor_juego/E[0] is a gated clock net sourced by a combinational pin Ctrl_impresion/inst_gestion_impresion_juego/mux_and_imp_juego_futuro/multiplexor_juego/SEGMENT_reg[7]_i_2/O, cell Ctrl_impresion/inst_gestion_impresion_juego/mux_and_imp_juego_futuro/multiplexor_juego/SEGMENT_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Habilidad_tanque/FSM_onehot_cur_state_reg[0]_0 is a gated clock net sourced by a combinational pin Habilidad_tanque/FIN_NOK_reg_LDC_i_1/O, cell Habilidad_tanque/FIN_NOK_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#4 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#5 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#6 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#7 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#8 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#9 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#10 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#11 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#12 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#13 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#14 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#15 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#16 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#17 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#18 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#19 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#20 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#21 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#22 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#23 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#24 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#25 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#26 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#27 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#28 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#29 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#30 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#31 Warning
-Gated clock check  
-Net ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC_i_1/O, cell ControlCoche/Cooldown_dev/Temporizador/count_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#32 Warning
-Gated clock check  
-Net Ctrl_impresion/inst_gestion_impresion_juego/mux_and_imp_juego_futuro/multiplexor_juego/E[0] is a gated clock net sourced by a combinational pin Ctrl_impresion/inst_gestion_impresion_juego/mux_and_imp_juego_futuro/multiplexor_juego/SEGMENT_reg[7]_i_2/O, cell Ctrl_impresion/inst_gestion_impresion_juego/mux_and_imp_juego_futuro/multiplexor_juego/SEGMENT_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#33 Warning
-Gated clock check  
-Net Cuent_atras/Logica/count_reg[0]_LDC_i_1__0_n_0 is a gated clock net sourced by a combinational pin Cuent_atras/Logica/count_reg[0]_LDC_i_1__0/O, cell Cuent_atras/Logica/count_reg[0]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#34 Warning
-Gated clock check  
-Net Habilidad_tanque/FSM_onehot_cur_state_reg[0]_0 is a gated clock net sourced by a combinational pin Habilidad_tanque/FIN_NOK_reg_LDC_i_1/O, cell Habilidad_tanque/FIN_NOK_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#35 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_34 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[1]_LDC_i_1__0/O, cell Maquina_estados/count_reg[1]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#36 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_35 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[30]_LDC_i_1__0/O, cell Maquina_estados/count_reg[30]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#37 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_36 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[29]_LDC_i_1__0/O, cell Maquina_estados/count_reg[29]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#38 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_37 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[28]_LDC_i_1__0/O, cell Maquina_estados/count_reg[28]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#39 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_38 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[27]_LDC_i_1__0/O, cell Maquina_estados/count_reg[27]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#40 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_39 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[26]_LDC_i_1__0/O, cell Maquina_estados/count_reg[26]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#41 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_40 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[25]_LDC_i_1__0/O, cell Maquina_estados/count_reg[25]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#42 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_41 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[24]_LDC_i_1__0/O, cell Maquina_estados/count_reg[24]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#43 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_42 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[23]_LDC_i_1__0/O, cell Maquina_estados/count_reg[23]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#44 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_43 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[22]_LDC_i_1__0/O, cell Maquina_estados/count_reg[22]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#45 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_44 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[21]_LDC_i_1__0/O, cell Maquina_estados/count_reg[21]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#46 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_45 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[20]_LDC_i_1__0/O, cell Maquina_estados/count_reg[20]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#47 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_46 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[19]_LDC_i_1__0/O, cell Maquina_estados/count_reg[19]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#48 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_47 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[18]_LDC_i_1__0/O, cell Maquina_estados/count_reg[18]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#49 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_48 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[17]_LDC_i_1__0/O, cell Maquina_estados/count_reg[17]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#50 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_49 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[16]_LDC_i_1__0/O, cell Maquina_estados/count_reg[16]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#51 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_50 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[15]_LDC_i_1__0/O, cell Maquina_estados/count_reg[15]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#52 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_51 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[14]_LDC_i_1__0/O, cell Maquina_estados/count_reg[14]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#53 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_52 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[13]_LDC_i_1__0/O, cell Maquina_estados/count_reg[13]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#54 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_53 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[12]_LDC_i_1__0/O, cell Maquina_estados/count_reg[12]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#55 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_54 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[11]_LDC_i_1__0/O, cell Maquina_estados/count_reg[11]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#56 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_55 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[10]_LDC_i_1__0/O, cell Maquina_estados/count_reg[10]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#57 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_56 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[9]_LDC_i_1__0/O, cell Maquina_estados/count_reg[9]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#58 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_57 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[8]_LDC_i_1__0/O, cell Maquina_estados/count_reg[8]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#59 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_58 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[7]_LDC_i_1__0/O, cell Maquina_estados/count_reg[7]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#60 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_59 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[6]_LDC_i_1__0/O, cell Maquina_estados/count_reg[6]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#61 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_60 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[5]_LDC_i_1__0/O, cell Maquina_estados/count_reg[5]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#62 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_61 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[4]_LDC_i_1__0/O, cell Maquina_estados/count_reg[4]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#63 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_62 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[3]_LDC_i_1__0/O, cell Maquina_estados/count_reg[3]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#64 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_63 is a gated clock net sourced by a combinational pin Maquina_estados/count_reg[2]_LDC_i_1__0/O, cell Maquina_estados/count_reg[2]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#65 Warning
-Gated clock check  
-Net Maquina_estados/FSM_onehot_cur_state_reg[3]_65[0] is a gated clock net sourced by a combinational pin Maquina_estados/s_leds_reg[0]_i_2/O, cell Maquina_estados/s_leds_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Maquina_estados/FSM_onehot_cur_state_reg[3]_5[0] is a gated clock net sourced by a combinational pin Maquina_estados/s_leds_reg[0]_i_2/O, cell Maquina_estados/s_leds_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

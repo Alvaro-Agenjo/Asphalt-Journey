@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737549930" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Logic_LED.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1737743710" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Logic_LED.dcp">
+  <File Type="PA-TCL" Name="SUPER_TOP.tcl"/>
   <File Type="REPORTS-TCL" Name="SUPER_TOP_reports.tcl"/>
+  <File Type="RDS-RDS" Name="SUPER_TOP.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="SUPER_TOP_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="SUPER_TOP_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SUPER_TOP_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="SUPER_TOP.tcl"/>
-  <File Type="RDS-RDS" Name="SUPER_TOP.vds"/>
   <File Type="RDS-DCP" Name="SUPER_TOP.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SUPER_TOP_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SUPER_TOP_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/MyPackage.vhd">
@@ -22,7 +25,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/DEC_NUM.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -123,12 +125,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/MUX_JUEGO.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/MUX_AND_IMP_JUEGO.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -208,12 +204,6 @@
         <Attr Name="UsedIn" Val="out_of_context"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/IMPRESION_JUEGO.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/IMPRESION_BCDs.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -227,6 +217,18 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/NIVELES_CARRETERAS.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX_JUEGO.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IMPRESION_JUEGO.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
