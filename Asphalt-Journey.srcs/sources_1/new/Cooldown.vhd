@@ -71,9 +71,10 @@ begin
     process(CLK, s_listo) 
     variable listo: std_logic := '0';
     begin
-        if falling_edge (s_listo) then
+        if s_listo = '1' then
             listo := '1';
-        elsif rising_edge(CLK) then
+        end if;
+        if rising_edge(CLK) then
             if CE = '1' then 
                 reset_tem <= '0';
                 hability <= '0';

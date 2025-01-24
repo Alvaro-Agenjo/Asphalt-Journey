@@ -204,7 +204,7 @@ architecture Behavioral of SUPER_TOP is
             POS_CAR : in positive; --Posición del coche: en qué Display está
             DIGSEL : out std_logic_vector(7 downto 0); --Selección de Display a encender
             SEGMENT : out std_logic_vector(7 downto 0) --Selección de Segmentos del Display a encender
-        );        
+        );             
     end component;
     
     --Contador descencente
@@ -230,7 +230,7 @@ architecture Behavioral of SUPER_TOP is
             CLK : in std_logic;
             CHANGE : in std_logic;
             salida_d : out road_tile_array -- Salida de tipo riad_tile_array de tamaño 7
-        );  
+        ); 
     end component;
     
     --Administrar carretera
@@ -470,31 +470,32 @@ begin
         SEG => numero
     );
     
+-- VERSION GENERAR CARRETERA   
 --    Generar_carretera: CARR_ALG_AUX
 --    generic map(
 --        WIDTH => 3
 --    )
 --    port map(
 --        CLK => relojes(0),
---        CHANGE => fin_fase, --relojes(2),
+--        CHANGE => relojes(2),
 --        salida_d => new_road
 --    );
-    
+--    
 --    Administrar_carretera: ADMIN_CARR
 --    port map(
 --        CLK => relojes(0),
 --        ENABLE => State(4),
---        CHANGE => fin_fase,   --relojes(2),
+--        CHANGE => relojes(2),
 --        NEW_ROAD => new_road,
 --        OLD_ROAD => road_ft,
 --        CARR_FUTURA => road_ft,
 --        CARR_ACTUAL => raw_road_ac
 --    );
     
-     Niveles_de_carreteras: NIVELES_CARRETERAS
+    Niveles_de_carreteras: NIVELES_CARRETERAS
     port map(
         ENABLE => State(4),
-        CHANGE => fin_fase, --relojes(2), --CAMBIAR POR SEÑAL DEL CONTADOR CUANDO FUCNIONE
+        CHANGE => relojes(2), --CAMBIAR POR SEÑAL DEL CONTADOR CUANDO FUCNIONE
         DIF => dificultad,
         CARR_FUTURA => road_ft, 
         CARR_ACTUAL => raw_road_ac 

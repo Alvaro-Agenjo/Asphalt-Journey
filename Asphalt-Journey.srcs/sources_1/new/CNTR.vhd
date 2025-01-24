@@ -98,9 +98,9 @@ begin
     Logica: CNTR_Logic
     port map (
         --version A y B'
-        --RESET => RESET,
+        RESET => RESET,
         --version B
-        RESET => reset_tem, 
+        --RESET => reset_tem, 
         CLK => CLK,
         CE => CE,
         PULSE => PULSE,

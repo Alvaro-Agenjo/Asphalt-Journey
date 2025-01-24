@@ -82,16 +82,16 @@ begin
 --                end if;
                 
     --version B Cuenta pero nunca resetea automatico
---                if count  = 0 then 
---                    ZERO <= '1';
---                end if; 
-   --version B'
-                if count  = 1 then 
+                if count  = 0 then 
                     ZERO <= '1';
-                elsif count < 1 then 
-                    ZERO <= '0';
-                    --count:= INIT_COUNT;
-                end if;
+                end if; 
+   --version B'
+--                if count  = 1 then 
+--                    ZERO <= '1';
+--                elsif count < 1 then 
+--                    ZERO <= '0';
+--                    --count:= INIT_COUNT;
+--                end if;
                 val <= count;                
             end if;
         end if;         
